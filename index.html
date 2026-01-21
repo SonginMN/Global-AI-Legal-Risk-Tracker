@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global AI Legal Risk Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">
+                        <h1>Global AI Legal Risk Tracker</h1>
+                        <span class="subtitle">全球AI法律风险追踪器</span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="tracker-id">
+                        <span class="label">档案编号</span>
+                        <span class="value">Tracker-20260119</span>
+                    </div>
+                    <div class="update-time">
+                        <span class="label">更新时间</span>
+                        <span class="value">2026-01-19</span>
+                    </div>
+                    <div class="next-update">
+                        <span class="label">下次更新</span>
+                        <span class="value">2026-01-26 周日 20:00</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="overview-section">
+            <h2 class="overview-title">本期更新概览</h2>
+            <div class="overview-content">
+                <div class="overview-stats">
+                    <div class="overview-item">
+                        <span class="overview-label">追踪立法/法规</span>
+                        <span class="overview-value">6 项</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="overview-label">追踪诉讼/执法</span>
+                        <span class="overview-value">5 项</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="overview-label">覆盖地区</span>
+                        <span class="overview-value">美国、欧盟、中国、英国、韩国、德国</span>
+                    </div>
+                    <div class="overview-item highlight">
+                        <span class="overview-label">P0 优先关注</span>
+                        <span class="overview-value">进出口管制与监管制裁</span>
+                    </div>
+                </div>
+                <div class="overview-alerts">
+                    <div class="overview-alert critical">
+                        <span class="alert-label">紧急</span>
+                        <span class="alert-text">韩国 AI Basic Act 将于 2026-01-22 生效（3天后）</span>
+                    </div>
+                    <div class="overview-alert high">
+                        <span class="alert-label">关注</span>
+                        <span class="alert-text">英国深度伪造条款将于 2026-02-06 生效（18天后）</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="main-content">
+            <nav class="tabs">
+                <button class="tab-btn active" data-tab="priority">
+                    P0 深度分析
+                </button>
+                <button class="tab-btn" data-tab="legislation">
+                    立法与法规
+                </button>
+                <button class="tab-btn" data-tab="litigation">
+                    诉讼与执法
+                </button>
+                <button class="tab-btn" data-tab="timeline">
+                    时间线
+                </button>
+                <button class="tab-btn" data-tab="analysis">
+                    分析报告
+                </button>
+                <button class="tab-btn" data-tab="archives">
+                    历史归档
+                </button>
+            </nav>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="priority">
+                    <div class="priority-section">
+                        <h2 class="section-title">P0 优先级：进出口管制与监管制裁</h2>
+                        
+                        <div class="priority-card">
+                            <div class="priority-header">
+                                <span class="priority-badge">P0 深度分析</span>
+                                <span class="case-region">中国</span>
+                            </div>
+                            <h3 class="priority-title">中国商务部调查：Meta收购Manus AI案</h3>
+                            
+                            <div class="analysis-block">
+                                <h4>事件背景</h4>
+                                <p>日本AI创业公司Manus被Meta收购后，中国商务部审查是否违反出口管制法与技术转移规定。这一案件被分析人士视为中国对"新加坡洗白"策略的回应。</p>
+                            </div>
+
+                            <div class="analysis-block">
+                                <h4>法规依据</h4>
+                                <ul>
+                                    <li>《中华人民共和国出口管制法》(2020年12月1日生效)</li>
+                                    <li>《技术进出口管理条例》</li>
+                                    <li>《外商投资安全审查办法》</li>
+                                </ul>
+                            </div>
+
+                            <div class="analysis-block">
+                                <h4>关键审查点</h4>
+                                <table class="analysis-table">
+                                    <tr><th>审查维度</th><th>具体关注</th></tr>
+                                    <tr><td>技术转让</td><td>AI核心算法、模型权重是否属于限制出口技术</td></tr>
+                                    <tr><td>人才流动</td><td>中国籍研发人员是否参与敏感技术开发</td></tr>
+                                    <tr><td>数据合规</td><td>是否涉及中国用户数据跨境传输</td></tr>
+                                    <tr><td>战略意图</td><td>是否通过"新加坡洗白"规避监管</td></tr>
+                                </table>
+                            </div>
+
+                            <div class="analysis-block recommendations">
+                                <h4>应对建议</h4>
+                                <ol>
+                                    <li><strong>尽调强化</strong>：收购目标公司时，评估其技术来源、人员背景、数据处理链路</li>
+                                    <li><strong>合规架构</strong>：考虑设立"clean team"隔离敏感技术</li>
+                                    <li><strong>监管沟通</strong>：重大交易前与相关监管机构进行预沟通</li>
+                                    <li><strong>持续监控</strong>：关注本案后续裁决，作为先例参考</li>
+                                </ol>
+                            </div>
+
+                            <a href="https://www.businessinsider.com/china-probe-meta-manus-deal-warning-us-analysts-singapore-washing-2026-1" target="_blank" class="source-link">查看来源报道</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="legislation">
+                    <div class="cards-grid" id="legislation-cards"></div>
+                </div>
+
+                <div class="tab-pane" id="litigation">
+                    <div class="cards-grid" id="litigation-cards"></div>
+                </div>
+
+                <div class="tab-pane" id="timeline">
+                    <div class="timeline-container">
+                        <div class="timeline-item past">
+                            <span class="timeline-date">2026-01-01</span>
+                            <div class="timeline-content">
+                                <h4>加州AI透明法、德州RAIGA生效</h4>
+                                <span class="timeline-region">美国</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item past">
+                            <span class="timeline-date">2026-01-16</span>
+                            <div class="timeline-content">
+                                <h4>首次Tracker报告发布</h4>
+                                <span class="timeline-region">内部</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item past">
+                            <span class="timeline-date">2026-01-19</span>
+                            <div class="timeline-content">
+                                <h4>本期报告发布</h4>
+                                <span class="timeline-region">内部</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item upcoming critical">
+                            <span class="timeline-date">2026-01-22</span>
+                            <div class="timeline-content">
+                                <h4>韩国AI Basic Act生效（3天后）</h4>
+                                <span class="timeline-region">韩国</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item upcoming">
+                            <span class="timeline-date">2026-01-26</span>
+                            <div class="timeline-content">
+                                <h4>下次Tracker更新</h4>
+                                <span class="timeline-region">内部</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item future">
+                            <span class="timeline-date">2026-02-06</span>
+                            <div class="timeline-content">
+                                <h4>英国AI深度伪造条款生效</h4>
+                                <span class="timeline-region">英国</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="analysis">
+                    <div class="analysis-report">
+                        <h2 class="section-title">本周分析报告</h2>
+                        
+                        <div class="report-meta">
+                            <span>报告日期：2026年1月19日</span>
+                            <span>档案编号：Tracker-20260119</span>
+                        </div>
+
+                        <div class="report-section highlight-section">
+                            <h3>本周重点</h3>
+                            
+                            <div class="highlight-item critical">
+                                <div class="highlight-header">
+                                    <div class="highlight-title-row">
+                                        <span class="highlight-badge">紧急</span>
+                                        <h4>韩国 AI Basic Act 生效</h4>
+                                    </div>
+                                    <span class="highlight-date">2026-01-22（3天后）</span>
+                                </div>
+                                
+                                <div class="highlight-analysis">
+                                    <p class="highlight-summary">亚洲首个全面性AI法律框架即将正式实施，对在韩运营的AI企业具有直接合规影响。</p>
+                                    
+                                    <div class="analysis-detail">
+                                        <h5>核心要求</h5>
+                                        <ul>
+                                            <li><strong>高影响力AI系统</strong>：需进行风险评估、持续监测社会影响</li>
+                                            <li><strong>透明度披露</strong>：向用户披露AI系统的能力和限制</li>
+                                            <li><strong>AI内容标识</strong>：AI生成内容须添加水印或标签</li>
+                                            <li><strong>文档保存</strong>：保留开发和部署相关记录</li>
+                                        </ul>
+                                        
+                                        <h5>合规准备建议</h5>
+                                        <ol>
+                                            <li>评估是否有"高影响力AI系统"在韩国运营</li>
+                                            <li>准备风险评估文档和透明度披露材料</li>
+                                            <li>实施AI内容水印/标签机制</li>
+                                            <li>关注韩国国家AI委员会发布的官方指南</li>
+                                        </ol>
+                                        
+                                        <h5>宽限期说明</h5>
+                                        <p>法案设有至少一年宽限期，初期以指导、咨询为主，但建议尽早启动合规准备以避免后续被动。</p>
+                                    </div>
+                                    
+                                    <div class="highlight-links">
+                                        <a href="https://aibasicact.kr/" target="_blank" rel="noopener">官方法条全文（韩英双语）</a>
+                                        <a href="https://cset.georgetown.edu/publication/south-korea-ai-law-2025/" target="_blank" rel="noopener">Georgetown CSET 英文翻译及分析</a>
+                                        <a href="https://www.trade.gov/market-intelligence/south-korea-artificial-intelligence-ai-basic-act" target="_blank" rel="noopener">美国商务部市场分析</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item high">
+                                <div class="highlight-header">
+                                    <div class="highlight-title-row">
+                                        <span class="highlight-badge warning">高优先级</span>
+                                        <h4>英国 Data (Use and Access) Act 深度伪造条款生效</h4>
+                                    </div>
+                                    <span class="highlight-date">2026-02-06（18天后）</span>
+                                </div>
+                                
+                                <div class="highlight-analysis">
+                                    <p class="highlight-summary">创造或请求非自愿AI深度伪造裸露图像将构成刑事犯罪，平台可能面临最高全球营收10%的罚款。</p>
+                                    
+                                    <div class="analysis-detail">
+                                        <h5>核心要求</h5>
+                                        <ul>
+                                            <li><strong>刑事化</strong>：创造或请求非自愿AI深度伪造裸露图像设为刑事犯罪</li>
+                                            <li><strong>平台责任</strong>：纳入Online Safety Act优先罪行，平台需主动审核</li>
+                                            <li><strong>执法权限</strong>：Ofcom可对违规平台处以最高全球营收10%的罚款</li>
+                                        </ul>
+                                        
+                                        <h5>合规准备建议</h5>
+                                        <ol>
+                                            <li>审查AI图像生成功能的安全防护机制</li>
+                                            <li>实施真实人物/未成年人检测和拦截</li>
+                                            <li>考虑对英国用户实施地理限制（geofencing）</li>
+                                            <li>建立用户举报和内容下架快速响应机制</li>
+                                        </ol>
+                                        
+                                        <h5>关联案件</h5>
+                                        <p>Ofcom正在调查xAI的Grok工具生成非自愿性图像事件，该案件进展将直接影响法案执行力度的预期。</p>
+                                    </div>
+                                    
+                                    <div class="highlight-links">
+                                        <a href="https://bills.parliament.uk/bills/3825" target="_blank" rel="noopener">英国议会法案页面</a>
+                                        <a href="https://www.legislation.gov.uk/ukpga/2023/50/contents/enacted" target="_blank" rel="noopener">Online Safety Act 2023 全文</a>
+                                        <a href="https://www.ofcom.org.uk/" target="_blank" rel="noopener">Ofcom 官方网站</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>关键趋势分析</h3>
+                            <div class="trends-grid">
+                                <div class="trend-item">
+                                    <span class="trend-number">1</span>
+                                    <div class="trend-content">
+                                        <h4>亚洲AI监管里程碑即将到来</h4>
+                                        <p>韩国AI Basic Act将于1月22日生效，标志着亚洲首个全面性AI法律框架正式实施，对区域内AI企业具有示范效应。预计日本、新加坡等地将密切关注其实施效果。</p>
+                                    </div>
+                                </div>
+                                <div class="trend-item">
+                                    <span class="trend-number">2</span>
+                                    <div class="trend-content">
+                                        <h4>深度伪造内容监管全球收紧</h4>
+                                        <p>英国即将实施刑事化措施，加之Grok事件引发的关注，深度伪造内容的平台责任和技术防护成为监管焦点。多国正在酝酿类似立法。</p>
+                                    </div>
+                                </div>
+                                <div class="trend-item">
+                                    <span class="trend-number">3</span>
+                                    <div class="trend-content">
+                                        <h4>跨境AI并购面临多重审查</h4>
+                                        <p>Meta收购Manus AI案表明，即使通过第三国注册，涉及中国技术/人才的AI并购仍可能面临出口管制审查。"新加坡洗白"策略可能失效。</p>
+                                    </div>
+                                </div>
+                                <div class="trend-item">
+                                    <span class="trend-number">4</span>
+                                    <div class="trend-content">
+                                        <h4>版权诉讼示范效应显现</h4>
+                                        <p>GEMA v. OpenAI判决确立了LLM记忆版权内容构成侵权的先例，Text & Data Mining例外不能作为免责理由。预计将引发更多类似诉讼。</p>
+                                    </div>
+                                </div>
+                                <div class="trend-item">
+                                    <span class="trend-number">5</span>
+                                    <div class="trend-content">
+                                        <h4>消费者保护执法加强</h4>
+                                        <p>美国FTC和欧盟竞争监管机构同时对AI领域加强执法，关注训练数据合法性、消费者伤害防护和市场竞争公平性。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>风险控制建议</h3>
+                            <table class="risk-table">
+                                <thead>
+                                    <tr>
+                                        <th>风险类别</th>
+                                        <th>建议措施</th>
+                                        <th>优先级</th>
+                                        <th>截止日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="risk-urgent">
+                                        <td>韩国业务合规</td>
+                                        <td>立即评估高影响力AI系统；准备风险评估文档</td>
+                                        <td><span class="priority-tag urgent">🔴 紧急</span></td>
+                                        <td>2026-01-22</td>
+                                    </tr>
+                                    <tr class="risk-high">
+                                        <td>深度伪造内容防护</td>
+                                        <td>审查AI图像生成功能；实施地理限制</td>
+                                        <td><span class="priority-tag high">🟠 高</span></td>
+                                        <td>2026-02-06</td>
+                                    </tr>
+                                    <tr class="risk-high">
+                                        <td>进出口管制</td>
+                                        <td>建立出口合规程序；定期核查客户清单</td>
+                                        <td><span class="priority-tag high">🟠 高</span></td>
+                                        <td>持续</td>
+                                    </tr>
+                                    <tr class="risk-high">
+                                        <td>知识产权</td>
+                                        <td>审查训练数据；不依赖TDM例外</td>
+                                        <td><span class="priority-tag high">🟠 高</span></td>
+                                        <td>持续</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>官方法条链接汇总</h3>
+                            <table class="links-table">
+                                <thead>
+                                    <tr>
+                                        <th>法规</th>
+                                        <th>地区</th>
+                                        <th>官方来源</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>California AI Transparency Act (SB-942)</td>
+                                        <td>🇺🇸 美国-加州</td>
+                                        <td><a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB942" target="_blank" rel="noopener">加州立法信息网 →</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Texas RAIGA (HB 1709)</td>
+                                        <td>🇺🇸 美国-德州</td>
+                                        <td><a href="https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1709" target="_blank" rel="noopener">德州立法在线 →</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EU AI Act (Regulation 2024/1689)</td>
+                                        <td>🇪🇺 欧盟</td>
+                                        <td><a href="http://data.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">EUR-Lex 官方公报 →</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AI Basic Act</td>
+                                        <td>🇰🇷 韩国</td>
+                                        <td><a href="https://aibasicact.kr/" target="_blank" rel="noopener">韩国AI基本法官网 →</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Data (Use and Access) Bill</td>
+                                        <td>🇬🇧 英国</td>
+                                        <td><a href="https://bills.parliament.uk/bills/3825" target="_blank" rel="noopener">英国议会法案页 →</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>网络安全法（现行）</td>
+                                        <td>🇨🇳 中国</td>
+                                        <td><a href="https://www.cac.gov.cn/2016-11/07/c_1119867116.htm" target="_blank" rel="noopener">国家网信办 →</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="report-footer">
+                            <p>报告生成时间：2026-01-19 20:00 北京时间</p>
+                            <p>下次更新：2026-01-26 (周日) 20:00-22:00 北京时间</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="archives">
+                    <div class="archives-section">
+                        <h2 class="section-title">历史归档</h2>
+                        <p class="archives-desc">所有历史报告按日期归档保存，包含完整的分析报告和结构化JSON数据。</p>
+                        
+                        <div class="archives-schedule">
+                            <h3>更新节奏</h3>
+                            <table class="schedule-table">
+                                <tr>
+                                    <td>定期检索</td>
+                                    <td>每周日 20:00 北京时间</td>
+                                </tr>
+                                <tr>
+                                    <td>交付截止</td>
+                                    <td>每周日 22:00 北京时间</td>
+                                </tr>
+                                <tr>
+                                    <td>下次更新</td>
+                                    <td>2026-01-26（周日）</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="archives-list-container">
+                            <h3>报告列表</h3>
+                            <div id="archives-list" class="archives-list"></div>
+                        </div>
+
+                        <div class="archives-structure">
+                            <h3>归档目录结构</h3>
+                            <pre class="structure-code">archives/
+├── 2026-01-19/
+│   ├── report.md    # 分析报告（Markdown格式）
+│   └── data.json    # 结构化数据
+├── 2026-01-16/
+│   ├── report.md
+│   └── data.json
+└── ...（按日期递增）</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Global AI Legal Risk Tracker © 2026</p>
+            <p>每周日北京时间 20:00-22:00 更新</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
