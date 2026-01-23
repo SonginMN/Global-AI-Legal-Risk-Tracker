@@ -103,13 +103,31 @@ function updateTimelineDates() {
 // 历史归档数据
 const archivesData = [
     {
+        id: 'Tracker-20260123',
+        date: '2026-01-23',
+        title: '第4期报告（TikTok USDS合资企业成立）',
+        highlights: ['TikTok USDS Joint Venture正式成立', '美国数据安全监管里程碑'],
+        legislation: 12,
+        litigation: 6,
+        isCurrent: true
+    },
+    {
+        id: 'Tracker-20260122',
+        date: '2026-01-22',
+        title: '第3期报告（芯片与云服务管制扩展）',
+        highlights: ['Remote Access Security Act众议院通过', '芯片与云服务管制全覆盖'],
+        legislation: 12,
+        litigation: 5,
+        isCurrent: false
+    },
+    {
         id: 'Tracker-20260119',
         date: '2026-01-19',
         title: '第2期报告',
         highlights: ['韩国AI Basic Act即将生效', '英国深度伪造条款倒计时'],
         legislation: 6,
         litigation: 5,
-        isCurrent: true
+        isCurrent: false
     },
     {
         id: 'Tracker-20260116',
@@ -176,6 +194,146 @@ function showArchiveModal(title, content) {
 }
 
 function getArchiveReportContent(date) {
+    if (date === '2026-01-23') {
+        return `
+            <div class="archive-report-content">
+                <div class="report-info">
+                    <p><strong>档案编号：</strong>Tracker-20260123</p>
+                    <p><strong>报告日期：</strong>2026年1月23日（周四）</p>
+                    <p><strong>报告类型：</strong>TikTok USDS合资企业成立特别版</p>
+                </div>
+                
+                <div class="report-section-modal">
+                    <h4>本期概述</h4>
+                    <p>TikTok USDS Joint Venture LLC于今日正式成立，这是美国对外国科技公司数据安全和算法监管的重大里程碑，为AI行业的数据本地化合规提供重要参考。</p>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>追踪范围</h4>
+                    <ul>
+                        <li>立法/法规：12项</li>
+                        <li>诉讼/执法：6项（+1项TikTok USDS）</li>
+                        <li>覆盖地区：美国、欧盟、中国、英国、韩国、德国、荷兰</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>P0 优先关注</h4>
+                    <ul>
+                        <li><strong style="color:#dc2626;">【今日】TikTok USDS Joint Venture成立</strong> - 美国多数持股，Oracle托管数据和算法</li>
+                        <li><strong>Remote Access Security Act (H.R. 2683)</strong> - 众议院通过，等待参议院</li>
+                        <li><strong>Meta收购Manus AI案</strong> - 中国商务部审查进行中</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>TikTok USDS 核心要点</h4>
+                    <ul>
+                        <li>股权结构：Silver Lake/Oracle/MGX各15%，ByteDance保留19.9%</li>
+                        <li>数据存储：美国用户数据存于Oracle美国云环境</li>
+                        <li>算法安全：推荐算法在美国数据上重新训练</li>
+                        <li>内容审核：合资企业拥有决策权</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>重要时间节点</h4>
+                    <ul>
+                        <li>2026-01-23：TikTok USDS Joint Venture成立（今日）</li>
+                        <li>2026-01-22：韩国AI Basic Act生效（昨日）</li>
+                        <li>2026-02-06：英国AI深度伪造条款生效</li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
+    if (date === '2026-01-22') {
+        return `
+            <div class="archive-report-content">
+                <div class="report-info">
+                    <p><strong>档案编号：</strong>Tracker-20260122</p>
+                    <p><strong>报告日期：</strong>2026年1月22日（周三）</p>
+                    <p><strong>报告类型：</strong>芯片与云服务管制扩展版</p>
+                </div>
+                
+                <div class="report-section-modal">
+                    <h4>本期概述</h4>
+                    <p>本期重点扩展了美国芯片与云服务出口管制的追踪范围，新增6项相关立法/法规。</p>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>追踪范围</h4>
+                    <ul>
+                        <li>立法/法规：12项（+6项芯片与云服务管制）</li>
+                        <li>诉讼/执法：5项</li>
+                        <li>覆盖地区：美国、欧盟、中国、英国、韩国、德国、荷兰</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>P0 优先关注</h4>
+                    <ul>
+                        <li><strong>Remote Access Security Act (H.R. 2683)</strong> - 众议院1月12日以369-22通过，堵住云端出口管制漏洞</li>
+                        <li><strong>Meta收购Manus AI案</strong> - 中国商务部审查出口管制与技术转移</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>新增芯片与云服务管制追踪</h4>
+                    <ul>
+                        <li>BIS 先进芯片出口管制规则（A100/H100等）</li>
+                        <li>BIS IaaS出口管制规则（云服务算力）</li>
+                        <li>半导体设备出口管制（ASML光刻机）</li>
+                        <li>Remote Access Security Act（远程访问管制）</li>
+                        <li>DOJ 敏感数据跨境传输规则</li>
+                        <li>BIS IaaS 客户识别规则（草案）</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>重要时间节点</h4>
+                    <ul>
+                        <li>2026-01-22：韩国AI Basic Act生效（当日）</li>
+                        <li>2026-02-06：英国AI深度伪造条款生效</li>
+                        <li>待定：Remote Access Security Act参议院审议</li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
+    if (date === '2026-01-19') {
+        return `
+            <div class="archive-report-content">
+                <div class="report-info">
+                    <p><strong>档案编号：</strong>Tracker-20260119</p>
+                    <p><strong>报告日期：</strong>2026年1月19日（周日）</p>
+                    <p><strong>报告类型：</strong>常规更新</p>
+                </div>
+                
+                <div class="report-section-modal">
+                    <h4>本期概述</h4>
+                    <p>第二期报告，重点关注韩国AI Basic Act即将生效及英国深度伪造条款倒计时。</p>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>追踪范围</h4>
+                    <ul>
+                        <li>立法/法规：6项</li>
+                        <li>诉讼/执法：5项</li>
+                        <li>覆盖地区：美国、欧盟、中国、英国、韩国、德国</li>
+                    </ul>
+                </div>
+
+                <div class="report-section-modal">
+                    <h4>重要时间节点</h4>
+                    <ul>
+                        <li>2026-01-22：韩国AI Basic Act生效</li>
+                        <li>2026-02-06：英国AI深度伪造条款生效</li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
     if (date === '2026-01-16') {
         return `
             <div class="archive-report-content">
@@ -203,14 +361,6 @@ function getArchiveReportContent(date) {
                     <h4>P0 优先关注</h4>
                     <p>进出口管制与监管制裁，重点跟踪中国商务部对Meta收购Manus AI案的调查。</p>
                 </div>
-
-                <div class="report-section-modal">
-                    <h4>重要时间节点</h4>
-                    <ul>
-                        <li>2026-01-22：韩国AI Basic Act生效</li>
-                        <li>2026-02-06：英国AI深度伪造条款生效</li>
-                    </ul>
-                </div>
             </div>
         `;
     }
@@ -218,7 +368,42 @@ function getArchiveReportContent(date) {
 }
 
 function getArchiveDataContent(date) {
-    if (date === '2026-01-19') {
+    if (date === '2026-01-23') {
+        return JSON.stringify({
+            tracker_id: "Tracker-20260123",
+            date: "2026-01-23",
+            legislation_count: 12,
+            litigation_count: 6,
+            regions: ["美国", "欧盟", "中国", "英国", "韩国", "德国", "荷兰"],
+            p0_focus: "TikTok USDS合资企业成立 + 进出口管制",
+            p0_events: [
+                "TikTok USDS Joint Venture成立（今日）",
+                "Remote Access Security Act（众议院通过）",
+                "Meta收购Manus AI案（调查中）"
+            ],
+            highlights: [
+                "TikTok USDS Joint Venture正式成立",
+                "美国数据安全监管里程碑",
+                "算法本地化先例"
+            ],
+            note: "完整数据请查看当期报告"
+        }, null, 2);
+    } else if (date === '2026-01-22') {
+        return JSON.stringify({
+            tracker_id: "Tracker-20260122",
+            date: "2026-01-22",
+            legislation_count: 12,
+            litigation_count: 5,
+            regions: ["美国", "欧盟", "中国", "英国", "韩国", "德国", "荷兰"],
+            p0_focus: "进出口管制与监管制裁",
+            highlights: [
+                "Remote Access Security Act众议院通过",
+                "芯片与云服务管制全覆盖",
+                "韩国AI Basic Act生效"
+            ],
+            note: "完整数据请查看 archives/2026-01-22/data.json"
+        }, null, 2);
+    } else if (date === '2026-01-19') {
         return JSON.stringify({
             tracker_id: "Tracker-20260119",
             date: "2026-01-19",
@@ -352,10 +537,110 @@ const legislationData = [
         relatedLaw: "https://www.cac.gov.cn/2016-11/07/c_1119867116.htm",
         relatedLawName: "现行《网络安全法》全文",
         tags: ["cybersecurity", "cross-border-data", "critical-infrastructure"]
+    },
+    { 
+        id: "LEG-007",
+        region: "美国-联邦", 
+        name: "BIS 先进芯片出口管制规则", 
+        status: "effective", 
+        date: "2022-10-07 / 持续更新", 
+        summary: "限制向中国出口先进AI芯片（A100/H100等）及半导体制造设备",
+        fullSummary: "美国商务部BIS对华芯片出口管制：禁止向中国出口先进AI芯片（如NVIDIA A100、H100、H800等）；限制半导体制造设备出口；限制美国人为中国半导体产业提供支持",
+        obligations: ["出口许可证要求", "最终用户/用途审查", "美国人员限制", "设备转让限制"],
+        penalties: "违反出口管制可面临刑事和民事处罚",
+        officialSource: "https://www.bis.doc.gov/index.php/policy-guidance/semiconductor-related-information",
+        officialSourceName: "美国商务部BIS半导体出口管制专页",
+        tags: ["export-control", "semiconductor", "AI-chip", "GPU", "China"]
+    },
+    { 
+        id: "LEG-008",
+        region: "美国-联邦", 
+        name: "BIS IaaS出口管制规则（云服务算力）", 
+        status: "effective", 
+        date: "2024-01-29 / 生效中", 
+        summary: "要求云服务商对外国客户进行KYC，限制提供AI训练算力",
+        fullSummary: "针对基础设施即服务(IaaS)的出口管制：要求美国云服务商对外国客户进行身份识别(KYC)；需报告外国客户使用IaaS训练大型AI模型的情况",
+        obligations: ["客户身份识别(KYC)", "交易记录保留", "可疑活动报告", "大型AI模型训练活动报告"],
+        penalties: "违规可面临民事和刑事处罚",
+        officialSource: "https://www.bis.doc.gov/",
+        officialSourceName: "BIS IaaS KYC指南",
+        tags: ["export-control", "cloud-computing", "IaaS", "compute", "KYC"]
+    },
+    { 
+        id: "LEG-009",
+        region: "荷兰/多边", 
+        name: "半导体设备出口管制（光刻机）", 
+        status: "effective", 
+        date: "2023-09-01 / 持续更新", 
+        summary: "荷兰限制ASML先进光刻机出口，与美日协调管制",
+        fullSummary: "荷兰政府限制ASML向中国出口先进DUV光刻机（EUV早已受限）；与美国、日本协调半导体制造设备出口管制",
+        obligations: ["出口许可证申请", "最终用户审查", "技术转让限制"],
+        penalties: "违规出口可导致许可证撤销和法律处罚",
+        officialSource: "https://www.government.nl/topics/export-controls-of-strategic-goods",
+        officialSourceName: "荷兰政府出口管制页面",
+        tags: ["export-control", "semiconductor-equipment", "lithography", "ASML", "multilateral"]
+    },
+    { 
+        id: "LEG-010",
+        region: "美国-联邦", 
+        name: "Remote Access Security Act (H.R. 2683)", 
+        status: "pending", 
+        priority: "P0",
+        date: "2026-01-12 众议院通过", 
+        summary: "【P0】堵住云端出口管制漏洞，远程访问受控技术需许可证（等待参议院）",
+        fullSummary: "修补'云服务租用规避出口管制'的漏洞：即使芯片/设备不出境，外国人远程访问美国受控技术（包括云端运行的高级AI、算力等）也需要出口许可证。众议院以369-22压倒性票数通过。",
+        obligations: ["远程访问受控技术需许可证", "云服务商需审查外国用户访问权限", "与物理出口管制同等适用"],
+        penalties: "违反出口管制法规可面临刑事和民事处罚",
+        officialSource: "https://www.congress.gov/bill/119th-congress/house-bill/2683",
+        officialSourceName: "美国国会法案追踪 (congress.gov)",
+        tags: ["export-control", "cloud-computing", "remote-access", "P0"]
+    },
+    { 
+        id: "LEG-011",
+        region: "美国-联邦", 
+        name: "DOJ 敏感数据跨境传输规则", 
+        status: "effective", 
+        date: "2025-04-08 生效", 
+        summary: "限制向'关注国家'传输敏感个人数据，含云服务场景",
+        fullSummary: "司法部(DOJ)规则限制包含美国敏感个人数据和政府相关数据向'关注国家'的传输；适用于供应商协议、雇佣协议、投资协议等场景；'供应商协议'明确包括云计算服务",
+        obligations: ["禁止/限制向关注国家传输敏感数据", "云服务商需审查数据流向", "合同条款需符合规则要求"],
+        penalties: "民事和刑事处罚",
+        officialSource: "https://www.federalregister.gov/",
+        officialSourceName: "Federal Register",
+        tags: ["data-transfer", "sensitive-data", "countries-of-concern", "cloud-service"]
+    },
+    { 
+        id: "LEG-012",
+        region: "美国-联邦", 
+        name: "BIS IaaS 客户识别规则（草案）", 
+        status: "proposed", 
+        date: "2024-01-29 草案发布", 
+        summary: "要求云服务商建立外国客户识别程序(CIP)，报告AI训练活动",
+        fullSummary: "Commerce部BIS提议规则'Know Your Cloud Customer'：要求美国IaaS提供商及外国转售商建立客户识别程序(CIP)；核验外国客户真实身份和受益所有人",
+        obligations: ["客户识别程序(CIP)", "外国客户身份核验", "AI模型训练报告义务"],
+        penalties: "民事和刑事处罚（若最终通过）",
+        officialSource: "https://www.bis.doc.gov/",
+        officialSourceName: "BIS",
+        tags: ["cloud-computing", "IaaS", "KYC", "AI-training", "proposed-rule"]
     }
 ];
 
 const litigationData = [
+    { 
+        id: "LIT-006",
+        region: "美国", 
+        name: "TikTok USDS Joint Venture 成立", 
+        status: "decided", 
+        priority: "P0", 
+        date: "2026-01-23",
+        summary: "【P0】美国多数持股合资企业正式成立，Oracle托管数据和算法",
+        fullSummary: "TikTok USDS Joint Venture LLC 于2026年1月23日正式成立，遵守特朗普总统2025年9月25日签署的行政命令。该合资企业由美国投资者多数持股（Silver Lake、Oracle、MGX各持15%，ByteDance保留19.9%），将负责：(1) 美国用户数据存储在Oracle的美国云环境中；(2) 推荐算法在美国数据上重新训练并托管于美国；(3) 内容审核决策权归合资企业；(4) 持续的第三方安全审计。这是美国对外国科技公司数据安全监管的重大里程碑。",
+        parties: { complainant: "美国政府/行政命令", respondent: "TikTok / ByteDance → TikTok USDS Joint Venture" },
+        decision: "合规解决方案：成立美国多数持股合资企业，数据和算法托管于Oracle美国云",
+        potentialImpact: "为其他外国科技公司（尤其是AI公司）在美国运营设立数据本地化和算法审查先例；可能影响中国AI公司在美国市场的运营模式",
+        source: "https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc",
+        tags: ["data-localization", "algorithm-security", "national-security", "precedent", "P0"]
+    },
     { 
         id: "LIT-002",
         region: "中国", 
@@ -423,16 +708,28 @@ const litigationData = [
 function renderLegislation() {
     const container = document.getElementById('legislation-cards');
     if (!container) return;
-    container.innerHTML = legislationData.map(item => `
-        <div class="leg-card" data-id="${item.id}" data-type="legislation">
+    
+    // 按重要性排序：P0优先 > 状态(imminent > pending > effective > proposed)
+    const statusOrder = { 'imminent': 1, 'pending': 2, 'effective': 3, 'proposed': 4 };
+    const sortedData = [...legislationData].sort((a, b) => {
+        if (a.priority === 'P0' && b.priority !== 'P0') return -1;
+        if (b.priority === 'P0' && a.priority !== 'P0') return 1;
+        return (statusOrder[a.status] || 5) - (statusOrder[b.status] || 5);
+    });
+    
+    container.innerHTML = sortedData.map(item => `
+        <div class="leg-card ${item.priority === 'P0' ? 'priority-p0' : ''}" data-id="${item.id}" data-type="legislation">
             <div class="card-header">
                 <span class="card-region">${item.region}</span>
                 <span class="card-status ${item.status}">${getStatusLabel(item.status)}</span>
+                ${item.priority === 'P0' ? '<span class="card-priority p0">P0</span>' : ''}
             </div>
             <h3 class="card-title">${item.name}</h3>
             <p class="card-summary">${item.summary}</p>
+            <div class="card-tags">
+                ${(item.tags || []).slice(0, 3).map(tag => `<span class="card-tag">${tag}</span>`).join('')}
+            </div>
             <p class="card-date">${item.date}</p>
-            <p class="card-click-hint">点击查看详情 →</p>
         </div>
     `).join('');
     
@@ -449,18 +746,27 @@ function renderLegislation() {
 function renderLitigation() {
     const container = document.getElementById('litigation-cards');
     if (!container) return;
-    container.innerHTML = litigationData.map(item => `
-        <div class="lit-card" data-id="${item.id}" data-type="litigation" style="${item.priority === 'P0' ? 'border-color:#dc2626;background:linear-gradient(135deg,#fff 0%,#fef2f2 100%);' : ''}">
+    
+    // 按重要性排序：P0优先 > 状态(ongoing > decided)
+    const statusOrder = { 'ongoing': 1, 'decided': 2 };
+    const sortedData = [...litigationData].sort((a, b) => {
+        if (a.priority === 'P0' && b.priority !== 'P0') return -1;
+        if (b.priority === 'P0' && a.priority !== 'P0') return 1;
+        return (statusOrder[a.status] || 3) - (statusOrder[b.status] || 3);
+    });
+    
+    container.innerHTML = sortedData.map(item => `
+        <div class="lit-card ${item.priority === 'P0' ? 'priority-p0' : ''}" data-id="${item.id}" data-type="litigation">
             <div class="card-header">
                 <span class="card-region">${item.region}</span>
-                <div>
-                    ${item.priority === 'P0' ? '<span style="background:#dc2626;color:white;padding:2px 8px;border-radius:6px;font-size:0.7rem;margin-right:4px;font-weight:600;">P0</span>' : ''}
-                    <span class="card-status ${item.status}">${getStatusLabel(item.status)}</span>
-                </div>
+                <span class="card-status ${item.status}">${getStatusLabel(item.status)}</span>
+                ${item.priority === 'P0' ? '<span class="card-priority p0">P0</span>' : ''}
             </div>
             <h3 class="card-title">${item.name}</h3>
             <p class="card-summary">${item.summary}</p>
-            <p class="card-click-hint">点击查看详情 →</p>
+            <div class="card-tags">
+                ${(item.tags || []).slice(0, 3).map(tag => `<span class="card-tag">${tag}</span>`).join('')}
+            </div>
         </div>
     `).join('');
     
