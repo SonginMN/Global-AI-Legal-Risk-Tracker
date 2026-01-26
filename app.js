@@ -36,13 +36,16 @@ function updateDynamicDates() {
     const koreaDays = calculateDaysUntil(koreaDate);
     const ukDays = calculateDaysUntil(ukDate);
     
-    // 更新概览区域
+    // 更新概览区域 - 根据日期判断用"已于"还是"将于"
     const overviewAlerts = document.querySelectorAll('.overview-alert .alert-text');
     if (overviewAlerts[0]) {
-        overviewAlerts[0].textContent = `韩国 AI Basic Act 将于 ${koreaDate} 生效（${formatDaysText(koreaDays)}）`;
+        const koreaVerb = koreaDays < 0 ? '已于' : '将于';
+        overviewAlerts[0].textContent = `韩国 AI Basic Act ${koreaVerb} ${koreaDate} 生效（${formatDaysText(koreaDays)}）`;
     }
-    if (overviewAlerts[1]) {
-        overviewAlerts[1].textContent = `英国深度伪造条款将于 ${ukDate} 生效（${formatDaysText(ukDays)}）`;
+    // overviewAlerts[1] 现在是新加坡框架，跳过
+    if (overviewAlerts[2]) {
+        const ukVerb = ukDays < 0 ? '已于' : '将于';
+        overviewAlerts[2].textContent = `英国深度伪造条款${ukVerb} ${ukDate} 生效（${formatDaysText(ukDays)}）`;
     }
     
     // 更新分析报告中的日期显示
@@ -103,13 +106,22 @@ function updateTimelineDates() {
 // 历史归档数据
 const archivesData = [
     {
+        id: 'Tracker-20260126',
+        date: '2026-01-26',
+        title: '第5期报告（新加坡Agentic AI框架）',
+        highlights: ['新加坡发布全球首个Agentic AI治理框架', '韩国AI Basic Act已生效', 'Remote Access Security Act参议院待审'],
+        legislation: 13,
+        litigation: 6,
+        isCurrent: true
+    },
+    {
         id: 'Tracker-20260123',
         date: '2026-01-23',
         title: '第4期报告（TikTok USDS合资企业成立）',
         highlights: ['TikTok USDS Joint Venture正式成立', '美国数据安全监管里程碑'],
         legislation: 12,
         litigation: 6,
-        isCurrent: true
+        isCurrent: false
     },
     {
         id: 'Tracker-20260122',
@@ -164,9 +176,9 @@ function renderArchives() {
             <div class="archive-actions">
                 ${archive.isCurrent 
                     ? `<button class="archive-link" onclick="switchToTab('analysis')">查看报告</button>`
-                    : `<button class="archive-link" onclick="showArchiveReport('${archive.date}')">查看报告</button>`
+                    : `<a class="archive-link" href="archives/${archive.date}/index.html">查看报告</a>`
                 }
-                <button class="archive-link secondary" onclick="showArchiveData('${archive.date}')">查看数据</button>
+                <a class="archive-link secondary" href="archives/${archive.date}/data.json" target="_blank">查看数据</a>
             </div>
         </div>
     `).join('');
@@ -498,9 +510,9 @@ const legislationData = [
         id: "LEG-004",
         region: "韩国", 
         name: "AI Basic Act", 
-        status: "imminent", 
+        status: "effective", 
         date: "2026-01-22", 
-        summary: "亚洲首个全面AI法律框架，3天后生效，AI内容水印义务",
+        summary: "亚洲首个全面AI法律框架，已于1月22日生效，AI内容水印义务",
         fullSummary: "亚洲首个全面性AI法律框架：设立国家AI委员会；高影响力AI系统需风险评估、透明度披露；AI生成内容标签/水印义务",
         obligations: ["高影响力AI系统风险管理", "持续监测社会影响", "AI内容水印/标签", "文档保存"],
         penalties: "设有至少一年宽限期，主要先指导、咨询",
@@ -514,7 +526,7 @@ const legislationData = [
         name: "Data (Use and Access) Act - 深度伪造条款", 
         status: "pending", 
         date: "2026-02-06", 
-        summary: "非自愿深度伪造裸露图像设为刑事犯罪（18天后生效）",
+        summary: "非自愿深度伪造裸露图像设为刑事犯罪（2月6日生效）",
         fullSummary: "将创造或请求非自愿AI深度伪造裸露图像设为刑事犯罪；纳入Online Safety Act优先罪行；Ofcom可处以最高全球营收10%罚款",
         obligations: ["禁止非自愿深度伪造裸露图像", "平台内容审核义务"],
         penalties: "最高全球营收10%",
@@ -622,6 +634,21 @@ const legislationData = [
         officialSource: "https://www.bis.doc.gov/",
         officialSourceName: "BIS",
         tags: ["cloud-computing", "IaaS", "KYC", "AI-training", "proposed-rule"]
+    },
+    { 
+        id: "LEG-013",
+        region: "新加坡", 
+        name: "Model AI Governance Framework for Agentic AI", 
+        status: "effective", 
+        priority: "P0",
+        date: "2026-01-22 发布", 
+        summary: "【P0】全球首个Agentic AI专门治理框架，四维治理要求",
+        fullSummary: "新加坡信息通信媒体发展局(IMDA)发布全球首个专门针对Agentic AI（智能代理AI）的治理框架Version 1.0。针对基于语言模型的AI代理（如编程助手、客服代理、企业自动化工作流），提出四维治理要求：(1) 预先评估和限制风险；(2) 确保人类有意义的责任；(3) 实施技术控制和流程；(4) 赋能最终用户责任。框架为指导性文件，非强制法律，但具有国际示范效应。",
+        obligations: ["预先评估代理行为范围和可逆性", "设计人工审批检查点(高风险/不可逆操作)", "开发阶段技术控制+部署前测试+部署后监控", "告知用户代理行为范围并提供培训"],
+        penalties: "指导性框架，非强制法律",
+        officialSource: "https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf",
+        officialSourceName: "新加坡IMDA官网",
+        tags: ["agentic-ai", "governance-framework", "ai-agents", "human-oversight", "international-standard", "P0"]
     }
 ];
 
@@ -634,7 +661,7 @@ const litigationData = [
         priority: "P0", 
         date: "2026-01-23",
         summary: "【P0】美国多数持股合资企业正式成立，Oracle托管数据和算法",
-        fullSummary: "TikTok USDS Joint Venture LLC 于2026年1月23日正式成立，遵守特朗普总统2025年9月25日签署的行政命令。该合资企业由美国投资者多数持股（Silver Lake、Oracle、MGX各持15%，ByteDance保留19.9%），将负责：(1) 美国用户数据存储在Oracle的美国云环境中；(2) 推荐算法在美国数据上重新训练并托管于美国；(3) 内容审核决策权归合资企业；(4) 持续的第三方安全审计。这是美国对外国科技公司数据安全监管的重大里程碑。",
+        fullSummary: "TikTok USDS Joint Venture LLC 于2026年1月23日正式成立，遵守美国政府的监管要求。该合资企业由美国投资者多数持股（Silver Lake、Oracle、MGX各持15%，ByteDance保留19.9%），将负责：(1) 美国用户数据存储在Oracle的美国云环境中；(2) 推荐算法在美国数据上重新训练并托管于美国；(3) 内容审核决策权归合资企业；(4) 持续的第三方安全审计。这是美国对外国科技公司数据安全监管的重大里程碑。",
         parties: { complainant: "美国政府/行政命令", respondent: "TikTok / ByteDance → TikTok USDS Joint Venture" },
         decision: "合规解决方案：成立美国多数持股合资企业，数据和算法托管于Oracle美国云",
         potentialImpact: "为其他外国科技公司（尤其是AI公司）在美国运营设立数据本地化和算法审查先例；可能影响中国AI公司在美国市场的运营模式",
@@ -648,7 +675,7 @@ const litigationData = [
         status: "ongoing", 
         priority: "P0", 
         summary: "中国商务部审查出口管制与技术转移",
-        fullSummary: "日本AI创业公司Manus被Meta收购后，中国监管机构审查是否违反出口管制法与技术转移规定；被认为是对美国企业收购中国AI技术/人才的警告",
+        fullSummary: "中国团队创立、注册于新加坡的AI公司Manus被Meta收购后，中国监管机构审查是否违反出口管制法与技术转移规定；被认为是对美国企业收购涉华AI技术/人才的警告",
         parties: { complainant: "中国商务部", respondent: "Meta / Manus AI" },
         potentialImpact: "可能要求交易条件、罚款或限制未来类似并购",
         source: "https://www.businessinsider.com/china-probe-meta-manus-deal-warning-us-analysts-singapore-washing-2026-1",
