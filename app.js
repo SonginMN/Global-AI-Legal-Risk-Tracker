@@ -217,7 +217,7 @@ function getArchiveReportContent(date) {
                 
                 <div class="report-section-modal">
                     <h4>本期概述</h4>
-                    <p>TikTok USDS Joint Venture LLC于今日正式成立，这是美国对外国科技公司数据安全和算法监管的重大里程碑，为AI行业的数据本地化合规提供重要参考。</p>
+                    <p>TikTok USDS Joint Venture LLC于1月23日正式成立，这是美国对外国科技公司数据安全和算法监管的重大里程碑，为AI行业的数据本地化合规提供重要参考。</p>
                 </div>
 
                 <div class="report-section-modal">
