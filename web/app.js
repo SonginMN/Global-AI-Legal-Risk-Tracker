@@ -170,7 +170,7 @@ function closeDrawer() {
 async function loadReport(date) {
   currentDate = date;
   closeDrawer();
-  const resp = await fetch(`/archives/${date}/data.json`);
+  const resp = await fetch(`archives/${date}/data.json`);
   const data = await resp.json();
   applyData(data, date);
 }
@@ -223,14 +223,14 @@ function applyData(data, date) {
 async function init() {
   // Load manifest for history
   try {
-    const mResp = await fetch('/archives/manifest.json');
+    const mResp = await fetch('archives/manifest.json');
     const manifest = await mResp.json();
     renderHistoryList(manifest.reports || []);
   } catch(e) { /* silent */ }
 
   // Load latest report
   try {
-    const resp = await fetch(`/archives/${currentDate}/data.json`);
+    const resp = await fetch(`archives/${currentDate}/data.json`);
     if (!resp.ok) throw new Error('数据加载失败');
     const data = await resp.json();
     applyData(data, currentDate);
