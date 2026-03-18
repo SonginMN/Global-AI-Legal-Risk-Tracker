@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全球AI法律风险追踪</title>
+  <link rel="stylesheet" href="web/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <h1>全球AI法律风险追踪</h1>
+    <span class="header-sub">Global AI Legal Risk Tracker</span>
+  </div>
+  <div class="header-right">
+    <div class="meta" id="header-meta">加载中...</div>
+    <div class="header-actions">
+      <button class="btn-history" id="btn-history">📋 历史报告</button>
+      <span class="issue-badge" id="header-issue"></span>
+    </div>
+  </div>
+</header>
+
+<!-- 历史报告抽屉 -->
+<div class="history-drawer" id="history-drawer">
+  <div class="drawer-header">
+    <span>历史报告</span>
+    <button class="drawer-close" id="drawer-close">✕</button>
+  </div>
+  <div class="drawer-list" id="history-list"></div>
+</div>
+<div class="drawer-mask" id="drawer-mask"></div>
+
+<div class="main-layout">
+
+  <!-- 内容概览 -->
+  <div class="overview-card" id="overview-card"></div>
+
+  <!-- 统计栏 -->
+  <div class="summary-bar">
+    <div class="summary-card total" data-filter="all">
+      <div class="num" id="stat-total">—</div>
+      <div class="label">本期动态总数</div>
+    </div>
+    <div class="summary-card p0" data-filter="P0">
+      <div class="num" id="stat-p0">—</div>
+      <div class="label">🔴 P0 出口管制 & 制裁</div>
+    </div>
+    <div class="summary-card p1" data-filter="P1">
+      <div class="num" id="stat-p1">—</div>
+      <div class="label">🟠 P1 AI立法 & 执法</div>
+    </div>
+    <div class="summary-card p2" data-filter="P2">
+      <div class="num" id="stat-p2">—</div>
+      <div class="label">🟡 P2 法规更新 & 草案</div>
+    </div>
+  </div>
+
+  <!-- 截止日期提醒 -->
+  <div class="deadline-banner" id="deadline-banner"></div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-filter="all">全部 <span class="count" id="tab-count-all"></span></button>
+    <button class="tab p0" data-filter="P0">🔴 P0 深度分析 <span class="count" id="tab-count-p0"></span></button>
+    <button class="tab p1" data-filter="P1">🟠 P1 重点追踪 <span class="count" id="tab-count-p1"></span></button>
+    <button class="tab p2" data-filter="P2">🟡 P2 常规更新 <span class="count" id="tab-count-p2"></span></button>
+  </div>
+
+  <!-- 动态列表 -->
+  <div class="cards" id="cards-container"></div>
+
+  <!-- 趋势 & 链接 -->
+  <div class="side-panels">
+    <div class="panel">
+      <h2>📈 本周趋势分析</h2>
+      <ul class="trend-list" id="trends-list"></ul>
+    </div>
+    <div class="panel">
+      <h2>🔗 官方来源快速入口</h2>
+      <div class="links-grid" id="links-grid"></div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="web/app.js"></script>
+</body>
+</html>
