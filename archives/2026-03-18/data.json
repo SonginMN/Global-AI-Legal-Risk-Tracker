@@ -83,7 +83,7 @@
         ]
       },
       "sources": [
-        "https://www.bis.gov/press-releases"
+        "https://www.bis.gov/press-release/applied-materials-pay-252-million-penalty-bis-illegally-exporting-semiconductor-manufacturing-equipment"
       ],
       "tags": [
         "半导体设备",
@@ -119,7 +119,7 @@
         ]
       },
       "sources": [
-        "https://www.bis.gov/enforcement"
+        "https://www.bis.gov/press-release/bis-reaches-administrative-enforcement-settlement-teledyne-flir-llc-its-affiliates-flir-optoelectronic"
       ],
       "tags": [
         "热成像",
@@ -134,12 +134,12 @@
       "id": "2026-03-18-008",
       "priority": "P0",
       "category": "trade_policy",
-      "title": "美国Project Vault：建立战略关键矿物储备",
+      "title": "美国Project Vault：100亿美元关键矿物战略储备计划启动",
       "region": "US",
-      "institution": "特朗普政府",
-      "date": "2026-03",
+      "institution": "美国进出口银行（EXIM）& 特朗普政府",
+      "date": "2026-02-02",
       "status": "announced",
-      "summary": "特朗普政府宣布\"Project Vault\"计划，建立战略关键矿物储备，应对AI产业链中稀土、钴等关键矿物的地缘政治供应链风险。",
+      "summary": "特朗普政府在首届关键矿物部长级会议上宣布\"Project Vault\"计划，由美国进出口银行提供100亿美元贷款（该行92年历史最大单笔贷款），建立公私合作战略关键矿物储备，覆盖美国地质调查局2025年关键矿物清单全部60种矿物。",
       "impact": "medium",
       "action_required": false,
       "deadline": null,
@@ -153,7 +153,9 @@
           "关注后续采购法规，评估是否有参与政府采购机会"
         ]
       },
-      "sources": [],
+      "sources": [
+        "https://www.csis.org/analysis/project-vault-pillar-economic-security"
+      ],
       "tags": [
         "关键矿物",
         "供应链",
@@ -184,6 +186,7 @@
         "待签署生效：仍需州长签署，预计数周内完成"
       ],
       "sources": [
+        "https://app.leg.wa.gov/billsummary?BillNumber=1170&Year=2026",
         "https://www.jdsupra.com/topics/artificial-intelligence/"
       ],
       "tags": [
@@ -204,10 +207,10 @@
       "institution": "欧盟委员会",
       "date": "2026-03-05",
       "status": "consultation",
-      "summary": "欧盟委员会发布《AI生成内容标注与标记实践守则》第二稿，为EU AI Act透明度条款提供合规指引。高风险AI系统最严格义务将于2026年8月2日生效。",
+      "summary": "欧盟委员会发布《AI生成内容标注与标记实践守则》第二稿，为EU AI Act第50条透明度条款提供合规指引。意见征集截止2026年3月30日，守则正式适用日期为2026年8月2日。",
       "impact": "high",
       "action_required": true,
-      "deadline": "2026-08-02",
+      "deadline": "2026-03-30",
       "impact_summary": "该守则为AI生成文本、图像、音视频的标注义务提供细化指引，是EU AI Act合规的重要参考文件。8月2日截止日期涵盖所有高风险AI系统（医疗、司法、就业、教育、金融等领域），企业须完成风险分类、技术文档准备、合规体系搭建。",
       "key_points": [
         "适用范围：所有在欧盟市场部署高风险AI系统的企业（无论注册地）",
@@ -216,7 +219,7 @@
         "Digital Omnibus提案或调整部分中小企业义务，但大企业合规节奏不应放缓"
       ],
       "sources": [
-        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-second-draft-code-practice-marking-and-labelling-ai-generated-content"
       ],
       "tags": [
         "EU AI Act",
@@ -345,8 +348,7 @@
         "监管信号：CMA将Agentic AI列为2026年重点监控领域"
       ],
       "sources": [
-        "https://www.gov.uk/government/publications/agentic-ai-and-consumers",
-        "https://www.gov.uk/government/organisations/competition-and-markets-authority"
+        "https://www.gov.uk/government/publications/agentic-ai-and-consumers/agentic-ai-and-consumers"
       ],
       "tags": [
         "Agentic AI",
@@ -378,7 +380,10 @@
         "知情同意：患者须被告知AI在其诊疗中的参与方式",
         "适用范围：在巴西提供医疗AI SaaS、影像AI、诊断辅助工具的企业"
       ],
-      "sources": [],
+      "sources": [
+        "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2026/2454",
+        "https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2026/2454_2026.pdf"
+      ],
       "tags": [
         "医疗AI",
         "巴西",
@@ -433,7 +438,9 @@
       "impact": "medium",
       "action_required": false,
       "deadline": null,
-      "sources": [],
+      "sources": [
+        "https://www.justice.gov/dag/media/1430731/dl?inline"
+      ],
       "tags": [
         "DOJ",
         "自愿披露",
@@ -481,7 +488,7 @@
       "action_required": false,
       "deadline": null,
       "sources": [
-        "https://www.semiconductors.org/news/"
+        "https://www.semiconductors.org/sia-statement-on-chip-security-act/"
       ],
       "tags": [
         "SIA",
@@ -505,7 +512,7 @@
       "action_required": false,
       "deadline": null,
       "sources": [
-        "https://www.semiconductors.org/news/"
+        "https://www.semiconductors.org/global-semiconductor-sales-increase-3-7-month-to-month-in-january/"
       ],
       "tags": [
         "半导体市场",
@@ -572,8 +579,13 @@
   ],
   "key_deadlines": [
     {
+      "date": "2026-03-30",
+      "item": "EU AI生成内容标注实践守则意见征集截止",
+      "priority": "P1"
+    },
+    {
       "date": "2026-08-02",
-      "item": "EU AI Act 高风险AI系统合规截止",
+      "item": "EU AI Act 高风险AI系统合规截止 & 内容标注守则正式适用",
       "priority": "P1"
     }
   ]
