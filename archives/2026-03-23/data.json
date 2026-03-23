@@ -77,9 +77,9 @@
         ]
       },
       "sources": [
-        "https://www.reuters.com/business/us-commerce-department-withdraws-planned-rule-on-ai-chip-exports-government-website-2026-03-13/",
+        "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202504&RIN=0694-AK22",
         "https://www.bloomberg.com/news/articles/2026-03-14/us-withdraws-draft-rule-that-called-for-global-ai-chip-permits",
-        "https://www.jenner.com/en/news-insights/client-alerts/whats-next-for-the-ai-diffusion-rule"
+        "https://exportcompliancedaily.com/article/2026/03/17/bis-withdraws-draft-ai-chip-export-control-rule-2603160006"
       ],
       "tags": ["AI芯片", "出口管制", "扩散规则", "商务部", "政策撤回", "Nvidia", "AMD"]
     },
@@ -158,8 +158,8 @@
         "分析人士指出，此举可能与中美贸易谈判筹码相关，后续走向取决于更广泛的中美关系"
       ],
       "sources": [
+        "https://www.nvidia.com/gtc/keynote/",
         "https://www.axios.com/2026/03/17/nvidia-huang-china-h200",
-        "https://www.wsj.com/tech/ai/nvidia-says-it-is-restarting-production-of-ai-chips-for-sale-in-china-eea7029e",
         "https://news.bloomberglaw.com/tech-and-telecom-law/nvidia-h200-chip-china-export-review-process-eased-by-the-us"
       ],
       "tags": ["Nvidia", "H200", "AI芯片", "中国", "出口管制", "GTC", "半导体"]
@@ -185,8 +185,8 @@
         "EU AI Act高风险合规截止日期（2026年8月2日）距今约4.5个月，委员会正加速发布实施指引"
       ],
       "sources": [
-        "https://changeflow.com/govping/telecom-technology/seventh-ai-board-meeting-discusses-ai-strategy-implementatio-2026-03-21",
-        "https://digital-strategy.ec.europa.eu/en/policies/ai-board"
+        "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+        "https://changeflow.com/govping/telecom-technology/seventh-ai-board-meeting-discusses-ai-strategy-implementatio-2026-03-21"
       ],
       "tags": ["EU AI Act", "AI委员会", "欧盟", "监管", "高风险AI", "合规"]
     },
