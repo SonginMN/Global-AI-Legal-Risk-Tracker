@@ -21,7 +21,7 @@ const OFFICIAL_LINKS = [
 
 let allItems = [];
 let currentFilter = 'all';
-let currentDate = '2026-03-18';
+let currentDate = '';
 
 function formatDate(s) {
   if (!s || s.length <= 7) return s;
@@ -69,8 +69,10 @@ function renderCard(item) {
   const cat = CATEGORY_LABELS[item.category] || item.category;
   const pc = item.priority.toLowerCase();
   const tags = (item.tags||[]).slice(0,6).map(t=>`<span class="tag">${t}</span>`).join('');
-  const sourceLink = item.sources?.[0]
-    ? `<a class="source-link" href="${item.sources[0]}" target="_blank">📎 官方来源</a>` : '';
+  const SOURCE_LABELS = ['📎 官方来源', '📰 媒体报道', '⚖️ 律所分析', '📄 补充来源', '📄 补充来源'];
+  const sourceLinks = (item.sources || []).map((url, i) =>
+    `<a class="source-link" href="${url}" target="_blank">${SOURCE_LABELS[i] || SOURCE_LABELS[SOURCE_LABELS.length-1]}</a>`
+  ).join('');
   const actionBadge = item.action_required ? `<span class="action-badge">⚡ 需关注</span>` : '';
   const dlBadge = item.deadline ? `<span class="deadline-tag">⏰ ${formatDate(item.deadline)}</span>` : '';
 
@@ -129,7 +131,7 @@ function renderCard(item) {
         <div class="card-summary">${item.summary}</div>
         <div class="card-footer">
           <div class="tags">${tags}</div>
-          <div class="card-badges">${dlBadge}${actionBadge}${sourceLink}</div>
+          <div class="card-badges">${dlBadge}${actionBadge}${sourceLinks}</div>
         </div>
       </div>
       ${expandSection}
@@ -225,7 +227,9 @@ async function init() {
   try {
     const mResp = await fetch('archives/manifest.json');
     const manifest = await mResp.json();
-    renderHistoryList(manifest.reports || []);
+    const reports = manifest.reports || [];
+    renderHistoryList(reports);
+    if (reports.length > 0) currentDate = reports[0].date;
   } catch(e) { /* silent */ }
 
   // Load latest report

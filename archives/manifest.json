@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-03-23",
+      "issue": 10,
+      "period_start": "2026-03-19",
+      "period_end": "2026-03-23",
+      "count": 7,
+      "headline": "Super Micro联创被起诉走私AI芯片，白宫发布国家AI立法框架"
+    },
+    {
       "date": "2026-03-18",
       "issue": 9,
       "period_start": "2026-03-10",
