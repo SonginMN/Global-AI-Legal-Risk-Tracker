@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-03-26",
+      "issue": 11,
+      "period_start": "2026-03-24",
+      "period_end": "2026-03-26",
+      "count": 3,
+      "headline": "EU议会投票推迟AI Act高风险合规并禁止nudifier，OpenAI关闭Sora迪士尼10亿合作告吹"
+    },
+    {
       "date": "2026-03-23",
       "issue": 10,
       "period_start": "2026-03-19",
