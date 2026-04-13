@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-04-13",
+      "issue": 13,
+      "period_start": "2026-04-07",
+      "period_end": "2026-04-13",
+      "count": 7,
+      "headline": "DC巡回法院拒绝阻止五角大楼Anthropic黑名单，Bartz版权和解15亿美元进入最终审批，中国十部门发布强制性AI伦理审查制度"
+    },
+    {
       "date": "2026-04-07",
       "issue": 12,
       "period_start": "2026-03-31",
