@@ -77,9 +77,9 @@
         ]
       },
       "sources": [
-        "https://www.mayerbrown.com/en/insights/publications/2026/04/china-issues-draft-rules-on-interactive-ai-services",
-        "https://ittcnet.org/insights/china-launches-new-ai-compliance-framework-governing-human-like-digital-interaction-platforms/",
-        "https://www.geopolitechs.org/p/china-issues-new-rules-on-ai-ethics"
+        "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm",
+        "https://www.cac.gov.cn/2025-12/28/c_1768662848000498.htm",
+        "https://www.mayerbrown.com/en/insights/publications/2026/04/china-issues-draft-rules-on-interactive-ai-services"
       ],
       "tags": ["中国", "网信办", "拟人化AI", "AI伴侣", "情感交互", "未成年人保护", "暂行办法"]
     },
@@ -135,9 +135,10 @@
         "首次将\u201c算法审计\u201d机制引入平台经济，要求算法系统纳入人工干预功能防止\u201c算法剥削\u201d"
       ],
       "sources": [
-        "https://www.geopolitechs.org/p/china-issues-new-rules-on-ai-ethics",
-        "https://english.www.gov.cn/news/202604/03/content_WS69cfc212c6d00ca5f9a0a407.html",
-        "https://www.dataguidance.com/news/china-miit-issues-measures-review-and-service-ethics"
+        "https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2026/art_2995f16b28504ddcbb604e918eb15759.html",
+        "https://mp.weixin.qq.com/s/oDlcgxL4DpOsptbSm-fQNA",
+        "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202604/t20260408_243198.html",
+        "https://tradeinservices.mofcom.gov.cn/article/news/ywdt/202604/182501.html"
       ],
       "tags": ["中国", "AI伦理审查", "工信部", "强制合规", "高风险AI", "算法审计", "十部门"]
     },
