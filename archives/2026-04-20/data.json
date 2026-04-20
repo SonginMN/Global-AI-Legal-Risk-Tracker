@@ -1,0 +1,310 @@
+{
+  "report_meta": {
+    "issue": 14,
+    "date": "2026-04-20",
+    "period_start": "2026-04-14",
+    "period_end": "2026-04-20",
+    "generated_at": "2026-04-20T00:00:00Z",
+    "item_count": 7
+  },
+  "overview": {
+    "summary": "本周AI法律风险聚焦版权、模型蒸馏和反垄断三大战场：Bartz诉Anthropic 15亿美元版权和解创下91.3%的索赔率，近12万作者参与索赔。4月15日，众议员Huizenga提出《遏制美国AI模型盗窃法案》（HR 8283），首次将AI模型蒸馏纳入联邦立法层面，DeepSeek、MiniMax、Moonshot等中国AI公司被点名为潜在制裁对象；次日众议院中国问题特设委员会发布调查报告并举行听证会，建议将模型蒸馏定性为“工业间谍”并移交司法部起诉。DOJ代理反垄断主管同时释放信号——支持美国AI领导地位但将严打企业非法串通。缅因州通过全美首个州级数据中心建设禁令，联邦AI基础设施推进遭遇州级阻力。",
+    "highlights": [
+      "Bartz诉Anthropic 15亿美元和解：91.3%索赔率覆盖44万部作品，近12万作者参与，5月14日最终审批听证",
+      "《遏制美国AI模型盗窃法案》：首次将AI蒸馏纳入联邦立法，DeepSeek/MiniMax/Moonshot被点名，众议院中国特委会同步发布调查报告",
+      "DOJ代理反垄断主管：美国要做AI巨头，但不容许企业非法串通——OpenAI/Google/Anthropic联合抗华引发反垄断审视",
+      "缅因州通过全美首个州级数据中心建设禁令：大型项目暂停至2027年11月，联邦AI基础设施政策遭遇州级阻力",
+      "众议院外交委员会4月22日表决半导体设备出口管制法案，法案在行业反对声中已被缩减"
+    ],
+    "risk_alert": "AI版权赔偿基准正式锁定：Bartz案91.3%的索赔率意味着15亿美元将按约$3,000/作品分配，这一单价将成为OpenAI、Meta等AI公司面临的类似诉讼的参照标准。所有使用版权材料训练的AI企业应立即完成训练数据来源审计，评估潜在版权风险敞口。"
+  },
+  "items": [
+    {
+      "id": "2026-04-20-001",
+      "priority": "P0",
+      "category": "litigation",
+      "title": "Bartz诉Anthropic版权和解创纪录：91.3%索赔率，近12万作者参与，5月14日最终审批",
+      "region": "US",
+      "institution": "美国加州北区联邦法院",
+      "date": "2026-04-17",
+      "status": "pending_approval",
+      "summary": "4月17日法庭文件显示，Bartz诉Anthropic 15亿美元版权和解案的索赔率从3月19日报告的54%飙升至91.3%——482,460部符合条件的作品中已有440,490部被索赔，近120,000名作者和版权持有人提交了索赔申请。这一索赔率远超美国集体诉讼中位数9%（FTC数据），创下版权集体诉讼的历史纪录。原告首席律师Justin Nelson称这一索赔率“证明了集体成员的压倒性支持”。但高索赔率也意味着每部作品的实际赔付将回落至最初预估的约$3,000，而非此前基于54%索赔率乐观预期的更高金额。最终公平性听证定于5月14日由Araceli Martínez-Olguín法官主持。律师费已从最初的20%（3亿美元）削减至12.5%（1.875亿美元）。部分作者提出异议，认为和解金额不足、律师费过高或不当排除部分外国版权持有人。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-05-14",
+      "deep_analysis": {
+        "scope": "直接影响所有使用版权材料训练AI模型的企业。Bartz案的核心法律认定是：法官Alsup裁定Anthropic使用作者作品训练Claude构成合理使用（fair use），但将超过700万部盗版书籍保存到“中央图书馆”则侵犯了版权——区分了“训练使用”和“系统性复制保存”的法律边界。91.3%的索赔率远超行业预期，反映出版权持有人群体对AI训练使用的高度关注和集体行动意愿。该案的最终赔付金额将为正在进行中的OpenAI（Tremblay v. OpenAI等）、Meta（Kadrey v. Meta等）以及其他AI公司面临的类似诉讼设定赔偿基准。和解范围限于从LibGen和PiLiMi获取的约48万部作品——通过合法渠道获取的训练数据不在此案范围内。",
+        "compliance_timeline": "5月14日最终公平性听证是关键节点。如法官批准和解，Anthropic将按此前约定的分期付款计划继续支付（首笔3亿美元已于2025年10月到位，全部支付将延续至2027年9月）。若和解被驳回，案件将回到庭审轨道，潜在赔偿金额可能达到数百亿美元。选择退出和解的作者（2月9日截止）可单独提起诉讼。",
+        "violation_risk": "对AI企业的系统性风险：①从非法来源（盗版网站、种子下载）获取训练数据的企业面临最高风险——Bartz案的核心就是Anthropic使用LibGen盗版书籍；②即使训练本身可能构成合理使用，“系统性复制保存”（如建立训练数据中央库）仍可能构成版权侵权；③91.3%的索赔率表明版权持有人群体的维权意识和行动能力远超以往预期——未来类似诉讼的参与度可能同样高。",
+        "peer_response": "OpenAI、Meta等公司面临类似的集体诉讼，但尚未和解。Anthropic是唯一与版权持有人达成重大和解的AI公司。部分行业观察者认为Anthropic的和解策略为行业设定了“市场价格”——约$3,000/作品的赔付标准将成为后续诉讼的参照。出版商和作者组织（如Authors Guild）积极推动索赔，对高参与率功不可没。部分作者对和解金额提出异议，认为15亿美元相对于Anthropic的估值和收入偏低。",
+        "recommendations": [
+          "所有AI企业：立即审计训练数据来源，特别关注从非法或灰色渠道获取的内容——这是最高优先级的合规行动",
+          "评估“系统性复制保存”风险：即使训练构成合理使用，将版权材料保存到可供持续访问的数据库可能独立构成侵权",
+          "法务团队应关注5月14日听证结果——和解条款、赔付标准和律师费比例将为整个行业设定先例",
+          "内容许可团队：加速与出版商和版权持有人的授权谈判，降低未来诉讼风险敞口"
+        ]
+      },
+      "sources": [
+        "https://authorsguild.org/news/anthropic-settlement-update-91-percent-of-books-claimed/",
+        "https://www.reuters.com/legal/government/thousands-authors-seek-share-anthropic-copyright-settlement-2026-04-17/",
+        "https://www.authorsalliance.org/2026/04/14/bartz-v-anthropic-settlement-update-new-date-and-time-for-the-fairness-hearing-you-can-join-online-and-unsealed-objections/"
+      ],
+      "tags": [
+        "Anthropic",
+        "版权",
+        "和解",
+        "集体诉讼",
+        "AI训练数据",
+        "91.3%索赔率",
+        "15亿美元"
+      ]
+    },
+    {
+      "id": "2026-04-20-002",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "《遏制美国AI模型盗窃法案》提出：首次将AI蒸馏纳入联邦立法，DeepSeek等中国AI公司被点名",
+      "region": "US",
+      "institution": "美国众议院外交委员会 / 众议院中国问题特设委员会",
+      "date": "2026-04-15",
+      "status": "introduced",
+      "summary": "4月15日，众议院外交委员会成员、密歇根州共和党众议员Bill Huizenga提出《遏制美国AI模型盗窃法案》（Deterring American AI Model Theft Act, HR 8283），联署人为中国问题特设委员会主席John Moolenaar。法案要求美国政府识别中国和俄罗斯通过不当查询-复制技术（即对抗性蒸馏）窃取美国AI模型能力的实体，并考虑通过商务部实体清单和总统紧急经济权力（IEEPA）实施制裁。DeepSeek、MiniMax（稀宇科技）和Moonshot AI（月之暗面）被明确列为潜在制裁对象。次日（4月16日），中国问题特设委员会发布调查报告《买得到的就买，买不到的就偷》并举行听证会，建议将模型蒸馏定性为“工业间谍”、移交司法部起诉，并要求商务部评估将上述三家公司列入实体清单。法案将于下周由HFAC审议，与十余项其他出口管制法案一并讨论。此前OpenAI、Anthropic和Google已开始共享信息以检测对抗性蒸馏行为。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "impact_summary": "这是美国国会首次通过立法手段直接针对AI模型蒸馏行为。法案将“对抗性蒸馏”从违反服务条款的商业行为提升至联邦立法层面，潜在后果包括实体清单制裁和IEEPA紧急经济制裁。对中国AI行业影响深远：①被点名的DeepSeek、MiniMax、Moonshot面临实体清单风险，可能切断其访问美国AI服务和云基础设施的能力；②更广泛地，所有依赖蒸馏美国模型输出来训练自身模型的中国AI企业都将面临法律风险；③法案还鼓励建立美国政府协调的信息共享中心以检测蒸馏威胁。配套的特设委员会报告进一步建议加强芯片出口管制（MATCH Act、AI OVERWATCH Act、SCALE Act）和云端访问限制（Remote Access Security Act），形成“芯片+模型+云”三位一体的技术封锁框架。",
+      "key_points": [
+        "4月15日提出HR 8283：首个联邦层面针对AI模型蒸馏的法案，由Huizenga提出、Moolenaar联署",
+        "潜在制裁对象：DeepSeek、MiniMax（稀宇科技）、Moonshot AI（月之暗面）被明确点名",
+        "制裁工具：商务部实体清单 + IEEPA总统紧急经济权力",
+        "4月16日特设委员会报告《买得到的就买，买不到的就偷》：详述中国通过芯片走私、模型蒸馏、云端绕道获取AI能力",
+        "听证会证人警告：中国企业对美国AI平台发动“工业规模”的蒸馏攻击，每家主要美国AI实验室都已遭遇",
+        "配套立法建议：MATCH Act（设备管制）、AI OVERWATCH Act（芯片出口许可）、SCALE Act（出口限额）、Remote Access Security Act（云端限制）"
+      ],
+      "sources": [
+        "https://chinaselectcommittee.house.gov/media/press-releases/select-committee-investigation-reveals-china-s-history-of-ai-chip-smuggling-and-model-distillation",
+        "https://www.straitstimes.com/world/united-states/us-house-to-weigh-penalties-on-ai-model-copying-by-chinese-firms",
+        "https://www.voachinese.com/a/congressional-hearing-on-china-stealing-us-ai-edge-as-lawmakers-warns-chip-smuggling-and-model-theft-threaten-national-secuirty-20260417/8138793.html"
+      ],
+      "tags": [
+        "AI蒸馏",
+        "模型盗窃",
+        "DeepSeek",
+        "MiniMax",
+        "Moonshot",
+        "实体清单",
+        "HR 8283",
+        "中国问题特设委员会"
+      ]
+    },
+    {
+      "id": "2026-04-20-003",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "缅因州通过全美首个州级数据中心建设禁令：大型项目暂停至2027年11月",
+      "region": "US",
+      "institution": "缅因州议会",
+      "date": "2026-04-15",
+      "status": "sent_to_governor",
+      "summary": "缅因州议会于4月15日通过法案，对大型数据中心建设实施暂停令至2027年11月，成为全美首个通过州级数据中心建设禁令的州。法案旨在让州政府有时间分析数据中心对电力成本、水资源消耗和环境的影响。州长Janet Mills（民主党，正在竞选参议员）尚未表态是否签署。此举反映了各州对AI驱动的数据中心扩张的日益增长的担忧——能源密集型设施可能推高居民电费、消耗水资源、占用土地。目前已有27个州在推进数据中心相关立法，超过300项数据中心相关法案在30个州提出。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "impact_summary": "缅因州的数据中心禁令标志着AI基础设施建设从“无阻推进”转向“州级审查”的拐点。尽管特朗普政府通过行政令推动联邦层面简化数据中心审批，但联邦政策无法覆盖州级土地使用、分区规划和公用事业监管权限。缅因州的先例效应可能引发更多州效仿——已有多个州和地方政府考虑类似禁令措施。对于正在扩张数据中心版图的AI企业和云服务商（如AWS、Google、Microsoft、Meta），州级监管不确定性增加了选址和投资决策的复杂性。",
+      "key_points": [
+        "4月15日通过：缅因州成为全美首个通过州级数据中心建设禁令的州",
+        "暂停至2027年11月：适用于大型数据中心项目，较小项目不受影响",
+        "州长尚未签署：民主党州长Janet Mills正在竞选参议员，签署决定具有政治敏感性",
+        "联邦政策无力覆盖：特朗普行政令仅适用于联邦审批流程，不能覆盖州级土地使用和公用事业监管权",
+        "白宫数据中心承诺有限：2026年3月4日的“用户保护承诺”属自愿性质，不具法律约束力",
+        "27个州正在推进数据中心相关立法，加州、俄亥俄、犹他已颁布相关法律"
+      ],
+      "sources": [
+        "https://news.bloomberglaw.com/environment-and-energy/maine-lawmakers-pass-first-in-nation-data-center-moratorium",
+        "https://www.nytimes.com/2026/04/16/us/maines-moratorium-data-centers.html",
+        "https://www.multistate.us/insider/2026/4/14/federal-ai-data-center-policy-meets-resistance-from-state-lawmakers"
+      ],
+      "tags": [
+        "缅因州",
+        "数据中心",
+        "建设禁令",
+        "AI基础设施",
+        "能源",
+        "州级监管"
+      ]
+    },
+    {
+      "id": "2026-04-20-004",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "DOJ代理反垄断主管释放AI行业信号：支持美国AI领导地位，但将严打非法串通",
+      "region": "US",
+      "institution": "美国司法部反垄断司",
+      "date": "2026-04-16",
+      "status": "ongoing",
+      "summary": "美国司法部反垄断司代理助理司法部长Omeed Assefi于4月16日在Semafor世界经济峰会上表示，DOJ希望确保美国成为AI领域的全球巨头，但同时将确保企业不违反信息共享和协作方面的反垄断法。他的表态背景是Bloomberg此前报道OpenAI、Google和Anthropic正在联合对抗中国方面复制其专有技术的行为——这种AI行业竞争对手之间的合作引发了反垄断关注。Assefi拒绝就该具体报道发表评论，但表示DOJ“每天都在讨论”AI领域的反垄断平衡问题。他强调对“创新性解决方案”持开放态度，但核心使命不会改变——打击非法串通、促进竞争。此前DOJ已在3月信号中明确：算法定价串通与人为价格串通在法律上无实质区别。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "impact_summary": "Assefi的表态标志着DOJ在AI反垄断执法上采取“支持但监管”的双轨立场。一方面认可AI行业对国家竞争力的战略意义（特别是在与中国竞争的背景下），另一方面明确划定红线——企业间的信息共享和协作不得越过反垄断法边界。这对AI行业的影响深远：①AI企业之间以“国家安全”或“对抗中国”为由的合作需要更谨慎地评估反垄断风险；②算法定价/AI驱动的价格协调将面临与传统价格串通同等的法律审查；③AI领域的“准并购”（acquihire）交易仍是DOJ重点关注的“红旗”。",
+      "key_points": [
+        "Assefi在Semafor峰会上明确表态：美国要做AI巨头，但不容许非法串通",
+        "背景：Bloomberg报道OpenAI/Google/Anthropic联合对抗中国技术复制——竞争对手合作引发反垄断关注",
+        "DOJ立场：算法定价串通与人为价格串通在法律上无实质区别",
+        "“准并购”（acquihire）仍是重点监控对象——DOJ前主管Slater在3月已将其标记为“红旗”",
+        "DOJ和FTC于2月23日联合启动竞争对手协作指南公众咨询，正在制定新版指南替代2024年底撤回的2000年版",
+        "Assefi对“创新性解决方案”持开放态度，暗示可能在AI领域采取灵活但有原则的执法方式"
+      ],
+      "sources": [
+        "https://www.yahoo.com/news/articles/doj-antitrust-chief-wants-us-215735299.html",
+        "https://www.arnoldporter.com/en/perspectives/publications/2026/04/antitrust-agency-insights-developments-at-the-us-antitrust-enforcement-agencies-first-quarter-2026",
+        "https://www.justice.gov/opa/pr/doj-and-ftc-extend-deadline-public-comment-guidance-business-collaborations"
+      ],
+      "tags": [
+        "DOJ",
+        "反垄断",
+        "AI协作",
+        "算法串通",
+        "准并购",
+        "Omeed Assefi",
+        "FTC"
+      ]
+    },
+    {
+      "id": "2026-04-20-005",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "众议院外交委员4月22日表决半导体设备出口管制法案，行业阻力下法案已缩减",
+      "region": "US",
+      "institution": "美国众议院外交委员会",
+      "date": "2026-04-16",
+      "status": "pending_vote",
+      "summary": "众议院外交委员会（HFAC）定于4月22日就一项限制向中国出口半导体制造设备的法案进行表决。路透社4月16日报道，该法案在行业反对声中已被缩减。此前，HFAC已于3月26日以42-0全票通过了《芯片安全法》（Chip Security Act, HR 3447），要求AI芯片内置位置验证技术以防止走私。4月22日的表决针对的是另一项更广泛的法案——由众议员Baumgartner于4月2日提出，旨在收紧对敏感芯片制造设备的出口管制。参议院方面，Kim和Ricketts参议员提出的MATCH Act同样旨在限制半导体制造设备出口中国，但CSIS评估认为该法案存在“操作性模糊”。业界（包括ITIC）对强制追踪技术提出反对意见，认为可能产生意外后果。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-04-22",
+      "impact_summary": "半导体设备出口管制立法正在形成参众两院联动态势。众议院已通过Chip Security Act（芯片追踪），即将表决设备出口管制；参议院MATCH Act瞧准“阻塞点”设备。法案如果通过，将对ASML、东京电子、应用材料等全球半导体设备供应商产生直接影响——中国占ASML销售额的33%。但法案在推进过程中面临行业阻力和“操作性模糊”质疑，缩减版本可能在管制范围上作出妥协。",
+      "key_points": [
+        "HFAC定于4月22日表决半导体设备出口管制法案",
+        "路透社报道法案在行业反对声中已被缩减",
+        "此前Chip Security Act已于3月26日以42-0全票通过HFAC",
+        "参议院MATCH Act同步推进——Kim和Ricketts参议员提出，全面禁止向中国出口DUV光刻设备",
+        "CSIS评估MATCH Act“操作性模糊”——执行层面面临挑战",
+        "行业关切：ITIC等机构认为强制追踪技术可能产生意外后果；中国占全球半导体设备市场重要份额"
+      ],
+      "sources": [
+        "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-hfac-advances-chip-security-act",
+        "https://cset.georgetown.edu/article/ai-tech-brief-congresss-crackdown-on-global-chip-equipment/",
+        "https://baumgartner.house.gov/2026/04/02/baumgartner-introduces-bipartisan-bill-to-tighten-controls-on-sensitive-chipmaking-equipment/"
+      ],
+      "tags": [
+        "半导体",
+        "出口管制",
+        "HFAC",
+        "芯片制造设备",
+        "MATCH Act",
+        "Chip Security Act",
+        "ASML"
+      ]
+    },
+    {
+      "id": "2026-04-20-006",
+      "priority": "P2",
+      "category": "regulation",
+      "title": "DOJ和FTC将竞争对手协作指南评论截止日延长至5月21日",
+      "region": "US",
+      "institution": "美国司法部反垄断司 / 联邦贸易委员会",
+      "date": "2026-04-17",
+      "status": "comment_period",
+      "summary": "美国司法部反垄断司和联邦贸易委员会于4月17日宣布，将竞争对手协作指南的公众评论截止日从4月24日延长至5月21日。该指南旨在替代2024年12月被撤回的2000年版《竞争对手协作反垄断指南》。两机构于2026年2月23日启动联合公众咨询，寻求对联合许可协议、附条件交易、算法定价、信息和数据共享、劳动力协作等领域的意见。FTC主席Andrew Ferguson此前批评撤回旧指南的决定“让数百万企业处于黑暗中”。评论须通过Regulations.gov提交（案卷号ATR-2026-0001），不超过18页。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": "2026-05-21",
+      "sources": [
+        "https://www.justice.gov/opa/pr/doj-and-ftc-extend-deadline-public-comment-guidance-business-collaborations",
+        "https://www.arnoldporter.com/en/perspectives/publications/2026/04/antitrust-agency-insights-developments-at-the-us-antitrust-enforcement-agencies-first-quarter-2026"
+      ],
+      "tags": [
+        "DOJ",
+        "FTC",
+        "反垄断",
+        "竞争对手协作",
+        "公众评论",
+        "指南更新"
+      ]
+    },
+    {
+      "id": "2026-04-20-007",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "美国州级AI立法浪潮加速：两周入19部新法通过，2026年累计25部",
+      "region": "US",
+      "institution": "美国各州立法机构",
+      "date": "2026-04-14",
+      "status": "ongoing",
+      "summary": "据Plural Policy追踪，自3月中旬至4月中旬，美国有19部AI相关法案签署成法，使2026年累计通过的AI法律达到25部。犹他州州长Spencer Cox一人签署9部AI法案，涵盖数字内容来源标准（HB 276）、AI深度伪造色情禁令、AI素养教育、健康保险AI限制等领域。其他通过新法的州包括纽约（RAISE Act修正案S 8828，前沿AI透明度）、俄勒冈（SB 1546，AI伴侣平台监管）、爱达荷（K-12 AI教育框架）、华盛顿（HB 1170 AI内容披露、HB 2225聊天机器人保护）和田纳西（深度伪造政治广告披露、AI心理健康冒充禁令）。另有27部法案已通过两院，等待州长签署。科罗拉多SB 24-205——全美最详尽的AI消费者保护法——将于6月30日生效。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": "2026-06-30",
+      "sources": [
+        "https://pluralpolicy.com/blog/the-ai-governance-watch-april-2026-nineteen-new-ai-bills-passed-into-law/",
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-april10-2026",
+        "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/04/ny-overhauls-frontier-ai-transparency-law"
+      ],
+      "tags": [
+        "州级立法",
+        "犹他",
+        "纽约",
+        "RAISE Act",
+        "科罗拉多",
+        "AI法律",
+        "19部新法"
+      ]
+    }
+  ],
+  "trends": [
+    "AI版权赔偿基准锁定：Bartz案91.3%索赔率确认每作品约$3,000赔付标准，正在为OpenAI、Meta等类似诉讼设定行业参照价——版权持有人的集体维权能力远超AI行业此前预期",
+    "AI模型蒸馏从服务条款争议升级为国家安全议题：美国国会首次立法针对对抗性蒸馏，特设委员会建议定性为“工业间谍”——DeepSeek、MiniMax、Moonshot被点名，“芯片+模型+云”三位一体封锁框架成型",
+    "反垄断执法进入AI时代：DOJ明确算法串通等同人为串通，竞争对手间以“国家安全”为由的合作将面临更严格审查，新版竞争对手协作指南正在制定中",
+    "AI基础设施扩张遭遇州级阻力：缅因州首开数据中心建设禁令先例，27个州推进相关立法，联邦简化审批的行政令无法覆盖州级土地使用和公用事业监管权限",
+    "半导体出口管制立法从“芯片”扩展到“设备”：继Chip Security Act（芯片追踪）之后，国会正在推进对芯片制造设备的出口管制，参众两院联动但法案在行业阻力下缩减",
+    "州级AI立法从量变到质变：2026年前四个月25部新法，犹他一州9部，覆盖深度伪造、AI素养、健康保险、数字内容来源等多领域——联邦立法空白下各州自行填补"
+  ],
+  "key_deadlines": [
+    {
+      "date": "2026-04-22",
+      "item": "众议院外交委员会表决半导体设备出口管制法案",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-05-14",
+      "item": "Bartz诉Anthropic 15亿美元版权和解最终公平性听证（Martínez-Olguín法官主持）",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-05-21",
+      "item": "DOJ/FTC竞争对手协作指南公众评论截止",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-06-30",
+      "item": "科罗拉多SB 24-205（全美最详尽的AI消费者保护法）生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-07-15",
+      "item": "中国《拟人化AI交互服务管理暂行办法》正式生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-08-02",
+      "item": "EU AI Act核心框架全面生效——高风险AI系统合规义务正式适用",
+      "priority": "P0"
+    },
+    {
+      "date": "2027-01-01",
+      "item": "纽约RAISE Act（前沿AI安全与透明法修正版）及科罗拉多/俄勒冈/华盛顿AI法律生效",
+      "priority": "P0"
+    }
+  ]
+}

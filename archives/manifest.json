@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-04-20",
+      "issue": 14,
+      "period_start": "2026-04-14",
+      "period_end": "2026-04-20",
+      "count": 7,
+      "headline": "Anthropic版权和解91.3%索赔率创纪录，首个AI蒸馏法案点名DeepSeek/MiniMax/Moonshot，缅因州首开数据中心建设禁令"
+    },
+    {
       "date": "2026-04-13",
       "issue": 13,
       "period_start": "2026-04-07",
