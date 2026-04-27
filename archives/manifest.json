@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-04-27",
+      "issue": 15,
+      "period_start": "2026-04-21",
+      "period_end": "2026-04-27",
+      "count": 7,
+      "headline": "DOJ首次介入挑战州级AI法律支持xAI诉科罗拉多，国务院全球电报点名DeepSeek/MiniMax/Moonshot蒸馏窃取，Kimi泄露用户简历"
+    },
+    {
       "date": "2026-04-20",
       "issue": 14,
       "period_start": "2026-04-14",
