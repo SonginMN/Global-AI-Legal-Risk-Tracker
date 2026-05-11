@@ -1,0 +1,430 @@
+{
+  "report_meta": {
+    "issue": 16,
+    "date": "2026-05-11",
+    "period_start": "2026-04-28",
+    "period_end": "2026-05-11",
+    "generated_at": "2026-05-11T00:00:00Z",
+    "item_count": 11
+  },
+  "overview": {
+    "summary": "过去两周出现两大标志性转向：特朗普政府一改放任立场，正式酝酿AI安全行政令，要求前沿模型「先审后放」，商务部CAISI同步扩大安全测试范围至Google、Microsoft和xAI；欧盟达成Digital Omnibus协议，将高风险AI义务推迟至2027年12月但维持透明度义务部分按期生效（Art 50(2)水印推迟4个月至12月2日），同时新增AI深度伪造和CSAM禁令。中国监管执法层面，网信办首次公开处罚字节跳动旗下剪映/即梦AI的内容标识违规——中欧同步进入AI透明度实质执法阶段。美国联邦层面，GUARD Act拟禁止AI伴侣面向未成年人。",
+    "highlights": [
+      "白宫酝酿AI安全行政令——拟要求前沿模型「先审后放」，CAISI扩大安全测试至Google/Microsoft/xAI",
+      "EU达成Digital Omnibus协议——高风险AI推迟至2027年12月，Art 50(2)水印推迟至12月2日，新增深度伪造/CSAM禁令",
+      "中国网信办首次公开处罚AI标识违规——字节跳动旗下剪映和即梦AI被约谈警告",
+      "GUARD Act参议院司法委员会全票通过——拟禁止AI伴侣聊天机器人向未成年人开放",
+      "五角大楼与7家AI巨头签署分类网络协议排除Anthropic，中国法院确立AI换人解雇违法裁判规则",
+      "康涅狄格通过全美最全面AI法案，科罗拉多AI法被联邦禁令冻结后启动SB 189重写"
+    ],
+    "risk_alert": "EU Digital Omnibus协议标志着全球AI监管进入「分化期」：欧盟在高风险AI上后退但在深度伪造上前进，美国白宫从放任转向安全审查但州法被联邦打压。企业面临透明度义务(EU 8月2日)与高风险合规(推迟至2027年12月)的时间差。Anthropic Mythos模型展示的网络安全能力持续影响各国政策走向。建议企业优先完成AI交互告知和内容标识合规（中国已在执法，EU 8月生效），密切关注5月14日Bartz诉Anthropic和解最终审批。"
+  },
+  "items": [
+    {
+      "id": "2026-05-11-001",
+      "priority": "P0",
+      "category": "enforcement",
+      "title": "白宫酝酿AI安全行政令——拟要求前沿模型「先审后放」，CAISI扩大安全测试至Google/Microsoft/xAI",
+      "region": "US",
+      "institution": "白宫国家经济委员会 / 商务部AI标准与创新中心(CAISI)",
+      "date": "2026-05-05",
+      "status": "ongoing",
+      "summary": "特朗普政府出现重大政策转向。5月5日，商务部CAISI宣布与Google DeepMind、Microsoft和xAI达成协议，将在其AI模型公开发布前进行安全测试，重点评估网络安全、生物安全和化学武器风险。这是对拜登时期OpenAI和Anthropic协议的重大扩展。次日，国家经济委员会主任Kevin Hassett确认白宫正在研究发布行政令，「就像FDA审批药品一样」要求前沿AI模型在证明安全后才能发布。这一转向的直接触发因素是Anthropic的Mythos模型——该模型展示了一夜之间发现并利用数十年未知软件漏洞的能力，引发全球网络安全担忧。但到了5月8日，Bloomberg报道正在准备的行政令可能不会包含强制性模型测试要求，显示白宫内部仍在「安全审查」与「创新友好」之间摆荡。CAISI表示已完成超40次AI模型评估，包括对「尚未发布的最先进模型」的测试。",
+      "impact": "critical",
+      "action_required": true,
+      "deadline": null,
+      "deep_analysis": {
+        "scope": "直接影响所有前沿AI模型开发者的发布时间线和合规流程。CAISI协议目前为自愿性质，但行政令可能将其转为强制性要求。这标志着特朗普政府从EO 14365的「去监管」立场向「安全审批」的实质性转向，主要由Anthropic Mythos的网络安全能力触发。Mythos发现了一个27年未知的OpenBSD漏洞和一个17年未知的FreeBSD远程代码执行漏洞(CVE-2026-4747)。英国AI安全研究所(AISI)的独立评估证实，Mythos Preview可以利用安全态势薄弱的系统。",
+        "compliance_timeline": "CAISI协议已立即生效。行政令时间节点未明——Hassett仅5月6日表示「正在研究」，但未给出具体时间表。若行政令与商务部NIST标准制定挂钩，可能附3-6个月发布实施细则。",
+        "violation_risk": "当前协议为自愿性质，无违规风险。但若行政令引入强制性审查，未经CAISI评估即发布的模型可能面临监管行动。对中小型AI企业而言，审查流程可能显著延长产品发布周期。",
+        "peer_response": "AEI等保守派智库批评该提案为「坏政策」，警告会分裂共和党「亲创新」基本盘。Anthropic CEO Dario Amodei已与白宫高级官员会面讨论安全问题。Microsoft在博客中表示已对自家模型进行测试，但「国家安全和大规模公共安全风险的测试必须是与政府的协作努力」。",
+        "recommendations": [
+          "前沿AI模型开发者应主动联系CAISI探讨自愿测试安排，在行政令出台前建立合作关系",
+          "关注行政令最终文本中「强制」vs「自愿」测试的定性——这将决定合规成本",
+          "企业应评估自家AI模型是否具备类似Mythos的「双刃」网络安全能力，提前制定责任披露策略",
+          "网络安全团队应立即评估「AI加速漏洞发现」对现有防御体系的影响，更新威胁模型"
+        ]
+      },
+      "sources": [
+        "https://www.theguardian.com/technology/2026/may/05/commerce-department-ai-agreements-google-microsoft-xai",
+        "https://www.bbc.com/news/articles/cgjp2we2j8go",
+        "https://federalnewsnetwork.com/artificial-intelligence/2026/05/wh-studying-ai-security-executive-order/"
+      ],
+      "tags": [
+        "白宫",
+        "CAISI",
+        "AI安全测试",
+        "行政令",
+        "Mythos",
+        "Google",
+        "Microsoft",
+        "xAI"
+      ]
+    },
+    {
+      "id": "2026-05-11-002",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "EU达成Digital Omnibus协议——高风险AI义务推迟至2027年12月，透明度义务8月2日不变，新增深度伪造禁令",
+      "region": "EU",
+      "institution": "欧盟委员会 / AI办公室",
+      "date": "2026-05-07",
+      "status": "consultation",
+      "summary": "5月7日凌晨，欧盟理事会塞浦路斯轮值主席国与欧洲议会达成Digital Omnibus政治协议，对AI Act进行重大调整。核心变化：(1)Annex III高风险AI系统合规义务从2026年8月2日推迟至2027年12月2日（延期16个月）；(2)Annex I嵌入受监管产品的高风险AI从2027年8月推迟至2028年8月；(3)Article 50透明度义务部分调整——50(1)AI交互告知和50(4)部署者深度伪造标注维持8月2日不变，但50(2)提供者水印/标记义务推迟4个月至2026年12月2日；(4)新增两项禁令：禁止AI生成可识别个人的性化深度伪造（「nudifiers」）和AI生成CSAM，均于12月2日生效；(5)大部分工业AI应用被豁免出AI Act适用范围，改由机械指令等行业法规覆盖。该协议在德国（Siemens/Bosch）和美国的持续施压下达成。欧盟委员会主席冯德莱恩称协议提供了「简单、创新友好的环境」，公民社会组织则批评这是对已记录近期危害的保护的倒退。5月8日，欧盟委员会同步发布了Article 50透明度义务实施指南草案，征求意见至6月3日。该协议目前为政治协议(provisional agreement)，仍需正式立法程序确认，但三方谈判协议几乎不会被推翻。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-08-02",
+      "key_points": [
+        "Annex III高风险AI义务推迟16个月至2027年12月2日；Annex I嵌入式高风险AI推迟至2028年8月2日",
+        "Article 50透明度义务部分调整：50(1)AI交互告知+50(4)部署者深度伪造标注维持8月2日；50(2)提供者水印/标记推迟至12月2日",
+        "新增两项禁令（12月2日生效）：AI生成可识别个人的性化深度伪造 + AI生成CSAM",
+        "工业AI大面积豁免——德国推动，通过实施法案机制豁免已有等效行业法规覆盖的AI应用",
+        "5月8日同步发布Article 50实施指南草案——征求意见至6月3日",
+        "当前为政治协议(provisional agreement)——仍需正式立法程序确认"
+      ],
+      "sources": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-guidelines-implementation-transparency-obligations-certain-ai-systems-under-article-50-ai-act",
+        "https://digital-strategy.ec.europa.eu/en/consultations/consultation-draft-guidelines-transparency-obligations-under-ai-act",
+        "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+      ],
+      "tags": [
+        "EU AI Act",
+        "Digital Omnibus",
+        "高风险AI",
+        "透明度",
+        "深度伪造",
+        "CSAM",
+        "工业AI豁免"
+      ],
+      "deep_analysis": {
+        "scope": "指南草案40页，澄清Article 50四层义务的关键模糊地带。最重要的三个澄清：(1) AI Agent明确纳入Art 50(1)——若提供者无法判断Agent是否会与人交互，须默认在所有场景中披露；(2)「明显」豁免采用「合理审慎普通人」标准，高仿真AI（VR真人形象、逼真机器人宠物）不适用豁免；(3) Art 50(2)水印义务排除源代码、机器对机器输出和推荐系统排序，但覆盖3D/VR/AR/数字孪生和Agent的人可感知输出。",
+        "compliance_timeline": "8月2日：Art 50(1)(3)(4)生效。12月2日：Art 50(2)水印生效（Digital Omnibus推迟4个月）。指南征求意见至6月3日。守则最终版预计6月。指南为非约束性，最终解释权归CJEU。",
+        "violation_risk": "罚款上限1500万欧元或全球营业额1%。指南明确以下做法不合规：仅在用户协议中提及AI性质、使用「助手」等模糊表述、AI伴侣场景仅首次披露无后续提醒、高仿真AI误用「明显」豁免、提供水印但未配套检测工具。开源AI不豁免。",
+        "peer_response": "距8月生效不足3个月但最终指南和守则均未定稿，行业合规窗口极紧。AI Agent纳入引发新讨论——Agent与不特定第三方交互时的披露机制是技术和法律挑战。",
+        "recommendations": [
+          "8月2日前：聊天机器人/AI伴侣须在交互界面实时告知（不能仅放用户协议），AI伴侣须设定期提醒",
+          "12月2日前：生成式AI须实施机器可读标记+配套检测工具",
+          "6月3日前向欧盟委员会提交征求意见反馈",
+          "AI Agent须在所有可能与人交互的场景默认披露AI身份"
+        ]
+      }
+    },
+    {
+      "id": "2026-05-11-003",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "中国网信办首次公开处罚AI生成内容标识违规——约谈剪映、猫箱和即梦AI",
+      "region": "CN",
+      "institution": "国家互联网信息办公室(网信办)",
+      "date": "2026-04-28",
+      "status": "enforced",
+      "summary": "4月28日，国家互联网信息办公室通报，「剪映」「猫箱」App及「即梦AI」网站存在未有效落实人工智能生成合成内容标识规定要求等问题，违反《网络安全法》《生成式人工智能服务管理暂行办法》《人工智能生成合成内容标识办法》等法律规定。网信办指导属地互联网信息办公室依法采取约谈、责令改正、警告、从严处理责任人等处置处罚措施。三款产品均与字节跳动相关——剪映(即海外版CapCut)和即梦AI(Dreamina)为字节跳动旗下产品。这是2025年9月《人工智能生成合成内容标识办法》正式生效以来，监管部门首次公开点名执法处罚。人民日报随后发表评论文章称「不能让AI生成内容误导公众」，强调标识是「法律底线红线」。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "impact_summary": "这是中国AI生成内容标识制度从立法走向执法的标志性事件。首次公开处罚选择字节跳动旗下产品(剪映/即梦AI)释放了强烈信号：即使是头部平台也不会获得执法豁免。与EU AI Act第50条透明度义务形成呼应——中欧两大法域同步推进AI生成内容标识的强制执行。对所有在中国运营的AI生成内容平台构成直接合规警示。",
+      "key_points": [
+        "首次公开执法：2025年9月标识办法生效以来首次公开点名处罚",
+        "三款产品被查：剪映(CapCut)、猫箱、即梦AI(Dreamina)——均与字节跳动相关",
+        "处罚措施：约谈、责令改正、警告、从严处理责任人",
+        "违反三部法律：《网络安全法》《生成式AI服务管理暂行办法》《AI生成合成内容标识办法》",
+        "人民日报评论定性：AI生成内容标识是「法律底线红线」"
+      ],
+      "sources": [
+        "https://www.cac.gov.cn/2026-04/28/c_1779119736411711.htm",
+        "https://technode.com/2026/04/29/china-penalizes-ai-platforms-over-failure-to-label-ai-generated-content/",
+        "https://www.reuters.com/legal/litigation/chinas-cyberspace-regulator-warns-bytedance-apps-website-over-ai-content-2026-04-28/"
+      ],
+      "tags": [
+        "网信办",
+        "字节跳动",
+        "剪映",
+        "即梦AI",
+        "内容标识",
+        "AI生成",
+        "执法处罚"
+      ]
+    },
+    {
+      "id": "2026-05-11-004",
+      "priority": "P2",
+      "category": "enforcement",
+      "title": "五角大楼与7家AI巨头签署分类网络部署协议——Anthropic因安全护栏争端被排除",
+      "region": "US",
+      "institution": "美国国防部",
+      "date": "2026-05-01",
+      "status": "ongoing",
+      "summary": "5月1日，五角大楼宣布与七家主要AI公司签署协议，将其AI技术部署到分类军事网络。签约公司包括OpenAI、Google、Nvidia、Microsoft、Amazon Web Services、SpaceX和Reflection AI。这些公司均同意其技术可用于「任何合法用途」。Anthropic被明确排除在外，原因是双方关于AI安全护栏的持续争端——Anthropic拒绝为军事用途降低安全标准，国防部则警告Anthropic可能在「作战行动中」试图禁用其技术。值得注意的是，国防部内部员工对放弃Anthropic存在抵触情绪，多名官员私下表示Anthropic的工具「明显优于」其他公司。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "impact_summary": "这是美国军方最大规模的AI部署协议，标志着AI从R&D助手升级为分类网络的核心基础设施。Anthropic被排除开创了先例——全球技术实力最强的AI公司之一因坚持安全标准而失去军事合同。这对整个AI行业发出信号：在军事市场，「任何合法用途」的不限制承诺是准入门槛。同时，Anthropic与国防部的诉讼仍在进行中，双方在司法战场的较量将塑造AI安全与国家安全的边界。",
+      "key_points": [
+        "七家公司签约：OpenAI、Google、Nvidia、Microsoft、AWS、SpaceX、Reflection AI——均同意「任何合法用途」",
+        "Anthropic被排除——因拒绝为军事用途降低安全护栏，国防部称其「红线」使其成为「不可接受的国家安全风险」",
+        "国防部内部分歧：多名官员私下认为Anthropic工具明显优于替代方案",
+        "协议覆盖分类军事网络部署——从研究助手升级为作战级基础设施",
+        "Anthropic与国防部的诉讼仍在进行中，未解决"
+      ],
+      "sources": [
+        "https://www.theguardian.com/us-news/2026/may/01/pentagon-us-military-pairs-with-spacex-google-openai",
+        "https://thedefensepost.com/2026/05/04/pentagon-snubs-anthropic-ai/",
+        "https://thehill.com/policy/technology/5858995-pentagon-ai-companies-classified-work-deal/"
+      ],
+      "tags": [
+        "五角大楼",
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Microsoft",
+        "军事AI",
+        "安全护栏",
+        "分类网络"
+      ]
+    },
+    {
+      "id": "2026-05-11-005",
+      "priority": "P2",
+      "category": "litigation",
+      "title": "中国法院确立「AI换人解雇违法」裁判规则——全球首个明确禁止以AI替代为由解雇的司法先例",
+      "region": "CN",
+      "institution": "杭州中级人民法院 / 北京市人社局",
+      "date": "2026-05-02",
+      "status": "decided",
+      "summary": "杭州中级人民法院裁定，企业不能以AI替代为由解雇员工。案件中，一名质量保证主管周某于2022年加入一家科技公司，负责优化AI大模型输出，月薪25,000元。2024年公司认为AI系统已改进到可以自动化其岗位，将其降职并减薪40%。周某拒绝后被解雇。法院认定，企业采用AI是「战略性商业决策」而非「不可预见的客观情况变化」，不符合《劳动合同法》第40条的解雇条件。这是继北京类似裁决(2025年12月发布)后，第二个中国法院确立相同原则。全球尚无其他国家有等效的法律保护。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "impact_summary": "这一裁判规则对全球AI行业具有重大示范意义。2026年初全球科技行业已裁员78,000人，近半归因于AI替代。中国法院明确区分了「企业主动的技术创新」与「不可抵抗的客观变化」，认定AI采用属于前者，因此不能作为解雇的法定事由。这意味着在中国运营的企业在引入AI替代岗位时，必须为受影响员工提供转岗或补偿方案，而非直接解雇。美国和欧盟目前均无等效保护。",
+      "key_points": [
+        "杭州中院裁定：AI采用是「战略性商业决策」而非「不可预见的客观变化」，不符合劳动合同法第40条解雇条件",
+        "北京此前已有类似裁决——两地法院确立相同原则，形成司法先例",
+        "2026年初全球科技裁员78,000人，近半归因AI替代——中国率先提供司法保护",
+        "裁判不禁止AI替代本身，但要求企业承担转岗或补偿责任",
+        "美国和EU尚无等效法律保护——中国在劳动者AI保护领域走在前列"
+      ],
+      "sources": [
+        "https://thenextweb.com/news/china-court-ai-layoffs-illegal-labor-law",
+        "https://www.npr.org/2026/05/01/nx-s1-5807131/tech-worker-china-ai",
+        "https://english.elpais.com/economy-and-business/2026-05-07/a-chinese-court-sets-limits-on-the-dismissal-of-a-worker-replaced-by-ai.html"
+      ],
+      "tags": [
+        "中国",
+        "劳动法",
+        "AI替代",
+        "解雇",
+        "杭州",
+        "司法先例",
+        "劳动者保护"
+      ]
+    },
+    {
+      "id": "2026-05-11-006",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "科罗拉多AI法被联邦法院禁令冻结——SB 189替代法案大幅缩减监管范围，推迟至2027年1月",
+      "region": "US",
+      "institution": "科罗拉多联邦地区法院 / 科罗拉多州议会",
+      "date": "2026-04-27",
+      "status": "ongoing",
+      "summary": "4月27日，科罗拉多联邦地区法院发布临时禁制令(TRO)，禁止科罗拉多州执行或调查SB 24-205(算法歧视法)的任何涉嫌违规行为。这是xAI和DOJ联合诉讼的重大成果——法院在未触及实质性审理的情况下就冻结了法律执行。科罗拉多州总检察长Philip Weiser也同意暂停执法。与此同时，州议会于5月初推出SB 189，拟彻底废止并替代SB 24-205。SB 189删除了强制性偏见审计和可解释性要求，代之以披露和通知为核心的简化框架，并将生效日推迟至2027年1月1日。州议会将于5月13日闭会。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-05-13",
+      "impact_summary": "科罗拉多是全美首个综合性AI反歧视法的发源地，其命运对全美州级AI立法具有标杆意义。联邦法院禁令+州议会重写的双重打击，实质上宣告了原版SB 24-205的「死亡」。SB 189将科罗拉多的监管模式从「预防性审计」降级为「透明度披露」。",
+      "key_points": [
+        "联邦法院发布TRO禁止科罗拉多州执行或调查SB 24-205的涉嫌违规行为",
+        "州总检察长也同意暂停执法——各方均认为州议会可能很快大幅修改法律",
+        "SB 189删除强制性偏见审计和可解释性要求，改为披露为核心的简化框架",
+        "生效日从2026年6月30日推迟至2027年1月1日",
+        "州议会5月13日闭会——SB 189必须在此前完成立法"
+      ],
+      "sources": [
+        "https://www.fisherphillips.com/en/insights/insights/colorados-impending-ai-law-thrown-into-more-doubt-by-court-ruling",
+        "https://www.privacyworld.blog/2026/05/the-colorado-ai-act-hits-a-wall-litigation-legislative-uncertainty-and-an-enforcement-standstill/",
+        "https://www.reedsmith.com/our-insights/blogs/technology-law-dispatch/102mrzf/sb-26-189-colorado-legislature-kicks-off-caia-rewrite-race/"
+      ],
+      "tags": [
+        "科罗拉多",
+        "SB 24-205",
+        "SB 189",
+        "禁令",
+        "xAI",
+        "DOJ",
+        "算法歧视",
+        "州级AI立法"
+      ]
+    },
+    {
+      "id": "2026-05-11-007",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "康涅狄格SB 5通过两院——全美最全面AI法案覆盖六大领域，州长确认将签署",
+      "region": "US",
+      "institution": "康涅狄格州议会 / 州长Ned Lamont",
+      "date": "2026-05-01",
+      "status": "passed_legislature",
+      "summary": "5月1日，康涅狄格州众议院以131-17票最终通过SB 5《在线安全法案》，此前参议院已以32-4票通过。这是参议员James Maroney第三次推动AI立法——此前两年法案均因州长威胁否决而止步于众议院。这次州长Ned Lamont已确认将签署。法案长达71页，覆盖六大领域：AI聊天机器人安全、AI招聘监管、数据溯源、前沿模型开发者义务、AI反歧视保护、劳动力AI培训。设定2027年10月1日生效。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": "2027-10-01",
+      "sources": [
+        "https://ctmirror.org/2026/05/01/artificial-intelligence-house-regulation-passage-ct/",
+        "https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/connecticut-poised-to-enact-one-of-the-nations-most-comprehensive-ai-laws-102mrpv",
+        "https://www.troutmanprivacy.com/2026/05/proposed-state-ai-law-update-may-4-2026/"
+      ],
+      "tags": [
+        "康涅狄格",
+        "SB 5",
+        "AI招聘",
+        "前沿模型",
+        "聊天机器人",
+        "数据溯源",
+        "州级AI立法"
+      ]
+    },
+    {
+      "id": "2026-05-11-008",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "马里兰签署全美首个AI动态定价禁令——禁止食品零售商利用个人数据差异化定价",
+      "region": "US",
+      "institution": "马里兰州州长Wes Moore",
+      "date": "2026-04-28",
+      "status": "signed",
+      "summary": "4月28日，马里兰州州长Wes Moore签署HB 895《反掠夺性定价法》，使马里兰成为全美首个禁止AI驱动的个性化动态定价的州。法律禁止食品零售商和第三方外卖平台利用消费者个人数据(浏览记录、位置数据、购买行为、收入等)进行差异化定价。违规企业面临10,000美元罚款。法律将于2026年10月1日生效。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": "2026-10-01",
+      "sources": [
+        "https://www.morganlewis.com/pubs/2026/04/maryland-enacts-hb-895-becoming-first-state-to-restrict-personalized-pricing-in-the-food-sector",
+        "https://www.nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
+        "https://www.troutmanprivacy.com/2026/04/maryland-enacts-protection-from-predatory-pricing-act/"
+      ],
+      "tags": [
+        "马里兰",
+        "HB 895",
+        "动态定价",
+        "算法定价",
+        "食品零售",
+        "消费者保护"
+      ]
+    },
+    {
+      "id": "2026-05-11-009",
+      "priority": "P2",
+      "category": "litigation",
+      "title": "Bartz诉Anthropic 15亿美元版权和解进入最终审批——5月14日公平性听证",
+      "region": "US",
+      "institution": "旧金山联邦地区法院 / 法官Martinez-Olguin",
+      "date": "2026-05-14",
+      "status": "pending",
+      "summary": "美国历史上最大的版权和解案Bartz诉Anthropic将于5月14日迎来最终审批听证。法官Martinez-Olguin将决定是否批准这笔15亿美元的集体诉讼和解。约12万名版权所有者提交了索赔申请，91.3%的作品被认领——这是美国版权集体诉讼中前所未有的高认领率。听证将于5月14日下午2:00(PT)在旧金山联邦法院以现场+Zoom形式举行。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": "2026-05-14",
+      "sources": [
+        "https://www.publishersweekly.com/pw/by-topic/digital/copyright/article/100208-anthropic-settlement-hearing-comes-into-focus.html",
+        "https://authorsguild.org/news/anthropic-settlement-update-91-percent-of-books-claimed/",
+        "https://www.anthropiccopyrightsettlement.com/dates"
+      ],
+      "tags": [
+        "Anthropic",
+        "版权",
+        "和解",
+        "15亿美元",
+        "集体诉讼",
+        "作家",
+        "AI训练"
+      ]
+    },
+    {
+      "id": "2026-05-11-010",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "佛罗里达AI权利法案参议院37-1通过后在众议院夭折——特别会议闭幕",
+      "region": "US",
+      "institution": "佛罗里达州议会 / 州长Ron DeSantis",
+      "date": "2026-04-29",
+      "status": "failed",
+      "summary": "佛罗里达州长DeSantis第二次推动的AI权利法案(SB 2D)再次失败。参议院于4月28日以37-1迅速通过，然而众议院再次拒绝审议，法案于4月29日在众议院信息技术预算与政策小组委员会「死亡」。这是DeSantis AI权利法案第三次失败——2026年常规会议、第一次特别会议和本次特别会议均死于众议院。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.flsenate.gov/Session/Bill/2026D/2D",
+        "https://www.flclerks.com/news/726569/Legislative-update.htm",
+        "https://floridapolitics.com/archives/792707-legislature-gets-ready-to-debate-ai-bill-of-rights-again/"
+      ],
+      "tags": [
+        "佛罗里达",
+        "DeSantis",
+        "AI权利法案",
+        "SB 2D",
+        "特别会议",
+        "未成年人保护"
+      ]
+    },
+    {
+      "id": "2026-05-11-011",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "美国参议院司法委员会全票推进GUARD Act——拟禁止AI伴侣聊天机器人向未成年人开放",
+      "region": "US",
+      "institution": "美国参议院司法委员会",
+      "date": "2026-04-30",
+      "status": "committee_passed",
+      "summary": "4月30日，美国参议院司法委员会全票通过S. 3062《GUARD Act》(用户年龄验证与负责任对话指南法案)。法案由参议员Hawley(R-MO)和Blumenthal(D-CT)联合提出，17名两党参议员联署。核心内容：(1)禁止AI聊天机器人在明知或放任的情况下鼓励自杀、自残、暴力或与未成年人进行性对话；(2)要求AI伴侣类产品实施年龄验证，禁止向18岁以下用户开放；(3)要求所有AI聊天机器人明确披露用户正在与非人类系统交互。违规罚款最高$250,000/次，鼓励自杀/暴力条款可追究刑事责任。法案待参议院全体表决。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.globalpolicywatch.com/2026/05/senate-judiciary-committee-advances-guard-act-regulating-minor-use-of-ai/",
+        "https://www.congress.gov/bill/119th-congress/senate-bill/3062/text",
+        "https://www.k12dive.com/news/proposal-to-ban-ai-companions-for-minors-advances-in-senate/819239/"
+      ],
+      "tags": [
+        "GUARD Act",
+        "未成年人保护",
+        "AI伴侣",
+        "聊天机器人",
+        "年龄验证",
+        "参议院"
+      ]
+    }
+  ],
+  "trends": [
+    "特朗普政府从AI「去监管」急转向「安全审查」：Anthropic Mythos的网络安全能力触发白宫重新评估「放任自由」立场，CAISI安全测试协议扩大与行政令讨论并行推进",
+    "AI安全与国家安全的边界正在美国军方中被塑造：五角大楼排除Anthropic开创「不降低安全标准就没有军事合同」的先例，同时内部官员承认Anthropic工具更优",
+    "EU AI Act进入「分化执行」阶段：Digital Omnibus将高风险义务推迟16个月至2027年12月，但透明度义务维持8月2日不变，合规时间表出现显著分化",
+    "中欧同步推进AI内容标识强制执行：中国网信办首次公开处罚字节跳动旗下产品标识违规，EU新增深度伪造/CSAM禁令并维持透明度义务按期生效",
+    "AI未成年人保护立法全球加速：美国GUARD Act拟禁止AI伴侣面向未成年人，EU Digital Omnibus新增CSAM禁令，多州推进聊天机器人安全法"
+  ],
+  "key_deadlines": [
+    {
+      "date": "2026-06-03",
+      "item": "欧盟AI Act第50条透明度义务指南草案征求意见截止",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-07-15",
+      "item": "中国《拟人化AI交互服务管理暂行办法》正式生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-08-02",
+      "item": "EU AI Act第50条透明度义务部分生效（AI交互告知+部署者深度伪造标注；提供者水印义务推迟至12月2日）",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-12-02",
+      "item": "EU AI Act第50(2)条提供者水印义务生效 + AI深度伪造/CSAM新禁令生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2027-12-02",
+      "item": "EU AI Act Annex III高风险AI系统合规义务生效（Digital Omnibus推迟后）",
+      "priority": "P0"
+    }
+  ]
+}

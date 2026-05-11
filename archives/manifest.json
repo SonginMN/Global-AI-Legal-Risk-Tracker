@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-05-11",
+      "issue": 16,
+      "period_start": "2026-04-28",
+      "period_end": "2026-05-11",
+      "count": 11,
+      "headline": "白宫急转弯酝酿AI安全行政令拟要求前沿模型先审后放，五角大楼签约七家AI巨头排除Anthropic，中国网信办首罚AI标识违规约谈字节跳动"
+    },
+    {
       "date": "2026-04-27",
       "issue": 15,
       "period_start": "2026-04-21",
