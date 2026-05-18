@@ -1,0 +1,398 @@
+{
+  "report_meta": {
+    "issue": 17,
+    "date": "2026-05-18",
+    "period_start": "2026-05-12",
+    "period_end": "2026-05-18",
+    "generated_at": "2026-05-18T00:00:00Z",
+    "item_count": 10
+  },
+  "overview": {
+    "summary": "本周AI法律风险格局呈现三条主线：第一，美国联邦层面AI内容执法进入实质阶段——FTC将于5月19日正式启动《TAKE IT DOWN Act》平台执法，要求所有在线平台48小时内移除被举报的非自愿深度伪造内容，每次违规罚款最高$53,088，FTC主席Ferguson向Amazon、Apple、Google、Meta、Microsoft、TikTok等十余家主要平台发出合规信函；第二，AI版权和解里程碑——Bartz诉Anthropic 15亿美元和解案5月14日公平性听证后法官未当庭裁定，而是聚焦律师费审查（6.92倍乘数），索赔率已攀升至92.77%，预计短期内出裁定；第三，中国发布全球首个国家级AI智能体政策框架——网信办、发改委、工信部三部门联合发文，定义AI智能体、设定2027年智能终端70%搭载目标、明确19个应用场景。数据隐私执法方面，爱尔兰DPC对SHEIN启动跨境数据传输调查（欧盟用户数据传至中国），将对华数据传输列为「重要战略优先事项」；加拿大四省联合发布OpenAI/ChatGPT隐私调查报告，认定初始训练阶段存在过度收集、缺乏同意、不透明等多项违规。白宫AI行政令草案被曝不含强制性模型测试要求。美国州级立法本周迎来密集签署潮：科罗拉多州长Polis签署SB 189彻底重写2024年AI法案，康涅狄格SB5成为全美最全面AI法案之一，佐治亚签署AI聊天机器人安全法，加州悬搁投票推进多项AI法案。",
+    "highlights": [],
+    "risk_alert": "FTC Take It Down Act执法启动意味着所有在线平台——包括AI生成内容平台——立即面临48小时移除深度伪造内容的强制性义务，叠加中国已在执行的AI内容标识制度和EU 8月2日生效的透明度义务，全球三大法域对AI生成内容的平台责任体系正在同步收紧。Bartz和解案若获最终批准，将为AI训练数据使用设定$3,000/作品的市场基准价格。科罗拉多SB 189标志着美国州级AI立法的成熟化——从早期的高合规负担模式向可执行的透明度框架演进。中国AI智能体指南的发布则预示着2027年前AI Agent将面临新一轮监管框架。建议企业：(1)立即确认平台内容举报和移除流程是否满足48小时要求；(2)关注Bartz和解最终裁定对训练数据策略的影响；(3)评估AI Agent产品在中国市场的合规准备度。"
+  },
+  "items": [
+    {
+      "id": "2026-05-18-001",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "FTC正式启动《TAKE IT DOWN Act》平台执法——48小时移除深度伪造，每次违规最高$53,088罚款",
+      "region": "US",
+      "institution": "美国联邦贸易委员会(FTC)",
+      "date": "2026-05-15",
+      "status": "enforced",
+      "summary": "5月15日，FTC主席Andrew Ferguson向Amazon、Alphabet、Apple、Meta、Microsoft、Pinterest、Reddit、Snapchat、TikTok、X等十余家主要在线平台发出正式合规信函，宣布FTC将于5月19日正式启动《TAKE IT DOWN Act》的平台执法。该法案于2025年5月19日由特朗普总统签署，对个人发布非自愿亲密影像(NCII)的条款立即生效，但给予平台一年时间建立内容举报和移除系统。执法启动后，平台在收到受害者举报后必须48小时内移除非自愿亲密影像——包括真实照片和AI生成的「数字伪造」(digital forgeries)。违规平台面临每次最高$53,088的民事罚款。FTC要求平台：(1)建立便捷的举报通道，无需账号即可提交举报；(2)在网站上以通俗语言详细说明举报和移除程序；(3)实施哈希技术防止已删除内容再次上传；(4)与NCMEC和StopNCII.org共享信息以跨平台追踪。值得注意的是，该法案此前已产生首例刑事定罪——2026年4月，一名俄亥俄州男子因使用AI制作当地成人和儿童的非自愿亲密影像被定罪。民权组织CDT对FTC的执法能力表示担忧，指出高额罚款可能激励平台过度删除合法内容，类似DMCA的「通知—删除」滥用问题。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-05-19",
+      "impact_summary": "TAKE IT DOWN Act是美国首部直接规制AI生成深度伪造内容的联邦法律进入平台执法阶段。所有托管用户生成内容的在线平台——包括社交媒体、图像/视频分享服务、游戏平台、约会应用——均须在5月19日前确保48小时移除流程就绪。$53,088/次的罚款标准使任何「边缘案例」的保留成本极高，预计平台将采取激进删除策略。此前Grok/X平台深度伪造泛滥事件导致Elon Musk面临多项刑事和民事调查，凸显了执法的紧迫性。该法与中国AI内容标识执法、EU Art 50透明度义务形成全球三大法域对AI生成内容平台责任的同步收紧。",
+      "key_points": [
+        "5月19日起FTC正式执法——平台须48小时内移除被举报的非自愿亲密影像（含AI生成深度伪造）",
+        "每次违规民事罚款最高$53,088——FTC向Amazon/Apple/Google/Meta/Microsoft/TikTok/X等发送合规信函",
+        "首例刑事定罪已产生——2026年4月俄亥俄州男子因AI制作NCII被定罪",
+        "要求平台实施哈希技术防止已删除内容再现，与NCMEC/StopNCII.org共享信息",
+        "CDT警告：高额罚款可能导致平台过度删除合法内容，类似DMCA「通知—删除」滥用"
+      ],
+      "sources": [
+        "https://cyberscoop.com/ftc-take-it-down-act-enforcement-deepfakes/",
+        "https://www.wiley.law/alert-May-19-Deadline-for-TAKE-IT-DOWN-Act-Compliance-Is-Your-Company-Prepared",
+        "https://www.scworld.com/brief/ftc-begins-enforcing-take-it-down-act-for-nonconsensual-deepfakes"
+      ],
+      "tags": [
+        "FTC",
+        "TAKE IT DOWN Act",
+        "深度伪造",
+        "NCII",
+        "平台执法",
+        "内容审核",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "2026-05-18-002",
+      "priority": "P1",
+      "category": "litigation",
+      "title": "Bartz诉Anthropic 15亿美元版权和解——法官未当庭批准，聚焦律师费6.92倍乘数审查",
+      "region": "US",
+      "institution": "旧金山联邦地区法院 / 法官Martinez-Olguin",
+      "date": "2026-05-14",
+      "status": "pending",
+      "summary": "5月14日下午，美国历史上最大版权和解案Bartz诉Anthropic在旧金山联邦法院举行最终公平性听证。法官Araceli Martinez-Olguin未当庭裁定，而是宣布将案件纳入审议(under submission)，预计短期内发布简短命令。听证中披露的关键进展：索赔率从此前的91.3%进一步攀升至92.77%；有效退出(opt-out)仅350份涉及1,802部作品；约12万名版权所有者提交了索赔。法官的提问重点集中在律师费结构而非异议实质：原告律师团请求的费用为和解金额的12.5%（约1.875亿美元），而基于实际工作时间计算的律师费约为2,200万美元（预计总计2,700万美元），费用乘数(lodestar multiplier)达6.92倍。法官要求律师团提供第九巡回法院支持该费用规模的三个最佳判例。多名异议者在限定的两分钟发言时间内提出：独立出版作者群体注册覆盖不足、笔名作品匹配困难、群组注册下多部作品仅获一份赔偿、$3,000远低于法定$150,000上限、一次性支付无法解决Anthropic持续盈利问题。一名异议人律师Bartolomei指出和解网站未公布Alsup法官的合理使用裁定原文，请求延期35天。法院命令补充材料须于5月21日前提交。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": "2026-05-21",
+      "impact_summary": "这是AI训练数据版权定价的标杆案件。92.77%的索赔率和极低的退出率表明版权所有者压倒性地接受了$3,000/作品的赔偿标准。法官聚焦律师费而非异议实质，被普遍解读为和解获批的积极信号。若获最终批准，15亿美元和解将确立AI训练数据使用的首个大规模市场基准价格，同时为其他AI公司面临的版权诉讼（Meta/OpenAI/Google）提供和解参考框架。6.92倍的费用乘数若获批，也将为AI版权诉讼中的律师费标准设定先例。",
+      "key_points": [
+        "法官未当庭批准——宣布纳入审议，预计短期内发布命令",
+        "索赔率攀升至92.77%——约12万版权所有者提交索赔，仅350份有效退出",
+        "律师费审查成焦点——12.5%费用请求对应6.92倍乘数，法官要求提供第九巡回支持判例",
+        "异议者两分钟发言——指出$3,000远低于法定上限、笔名/群组注册匹配困难、一次性支付无法解决持续盈利",
+        "异议人律师要求延期35天——指和解网站未公布Alsup法官合理使用裁定原文",
+        "补充材料截止5月21日——法官发布正式命令要求额外提交"
+      ],
+      "sources": [
+        "https://www.authorsalliance.org/2026/05/14/bartz-v-anthropic-fairness-hearing-observations-and-takeaways/",
+        "https://chatgptiseatingtheworld.com/2026/05/15/final-approval-of-class-settlement-hearing-in-bartz-v-anthropic-recap/",
+        "https://thenextweb.com/news/anthropic-book-settlement-judge-fairness-hearing"
+      ],
+      "tags": [
+        "Anthropic",
+        "版权",
+        "和解",
+        "15亿美元",
+        "集体诉讼",
+        "AI训练",
+        "律师费",
+        "合理使用"
+      ]
+    },
+    {
+      "id": "2026-05-18-003",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "中国三部门发布全球首个国家级AI智能体政策框架——定义智能体、设定2027年70%搭载目标",
+      "region": "CN",
+      "institution": "国家互联网信息办公室(网信办) / 国家发改委 / 工业和信息化部",
+      "date": "2026-05-08",
+      "status": "published",
+      "summary": "5月8日，网信办、国家发展改革委、工业和信息化部联合发布《关于促进人工智能智能体规范应用和创新发展的实施指南》。这是全球首个国家层面针对AI智能体(AI Agent)的专项政策框架。指南将AI智能体定义为「具备自主感知、记忆、决策、交互和执行能力的智能系统」，明确指出随着大语言模型等先进技术的涌现，智能体正在快速融入网络空间和物理世界。指南确立四大原则——安全可控、规范有序、创新驱动、应用牵引，提出四方面措施：(1)夯实发展基础，完善技术底座和标准协议体系；(2)保障安全，建立AI智能体安全防护机制；(3)应用牵引，明确科学研究、产业发展、消费促进、民生福祉、社会治理五大领域19个典型应用场景；(4)构建创新生态。目标是2027年实现智能终端和AI智能体70%的搭载率。该指南与2025年8月国务院《AI+行动》计划一脉相承。值得注意的是，就在数天前（4月27日），中国发改委以外商投资安全审查为由，阻止了Meta对新加坡AI智能体创业公司Manus的20亿美元收购，要求双方解除交易——这与智能体监管收紧的政策方向一致。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "impact_summary": "这是全球首个国家级AI智能体专项政策框架，标志着中国率先对AI Agent这一前沿形态进行系统性监管定义和产业规划。70%智能终端搭载目标意味着AI Agent将在2027年前成为中国数字经济的基础设施级组件。19个应用场景的明确划定为企业提供了政策绿灯清单，同时安全可控原则和此前阻止Meta/Manus交易的行动表明，外资在中国AI Agent领域的参与将面临更严格的国家安全审查。对于在中国运营AI Agent产品的企业，需要关注后续细则中对智能体安全评估、数据合规和跨境限制的具体要求。",
+      "key_points": [
+        "全球首个国家级AI智能体政策——网信办/发改委/工信部三部门联合发文",
+        "定义AI智能体为具备自主感知、记忆、决策、交互和执行能力的智能系统",
+        "设定2027年智能终端和AI智能体70%搭载率目标",
+        "明确19个典型应用场景——覆盖科研、产业、消费、民生、社会治理五大领域",
+        "与阻止Meta收购Manus(20亿美元)的行动形成政策组合——外资AI Agent参与面临更严安全审查",
+        "四大原则：安全可控、规范有序、创新驱动、应用牵引"
+      ],
+      "sources": [
+        "https://www.cac.gov.cn/2026-05/08/c_1779979789523320.htm",
+        "https://www.geopolitechs.org/p/chinas-first-policy-framework-for",
+        "https://www.caixinglobal.com/2026-05-12/china-issues-guidelines-to-standardize-ai-agent-development-102443370.html"
+      ],
+      "tags": [
+        "中国",
+        "AI智能体",
+        "网信办",
+        "发改委",
+        "工信部",
+        "政策框架",
+        "AI Agent",
+        "Meta",
+        "Manus"
+      ]
+    },
+    {
+      "id": "2026-05-18-004",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "爱尔兰DPC对SHEIN启动GDPR跨境数据传输调查——欧盟用户数据传至中国，对华数据传输列为「战略优先事项」",
+      "region": "EU",
+      "institution": "爱尔兰数据保护委员会(DPC)",
+      "date": "2026-05-05",
+      "status": "investigation_opened",
+      "summary": "5月5日，爱尔兰数据保护委员会(DPC)宣布对Infinite Styles Services Co. Ltd.（即SHEIN Ireland）启动正式调查，聚焦该公司将欧盟/EEA数据主体的个人数据传输至中国的行为。调查将审查SHEIN Ireland是否遵守GDPR三方面义务：第5条数据处理基本原则（合法性、公正性、透明性）、第13条透明度义务（向数据主体提供的信息）、以及第五章关于向第三国传输个人数据的规则。DPC副专员Graham Doyle明确表示，对华数据传输已成为DPC的「重要战略优先事项」(important strategic priority)——近期DPC的监管行动和其他欧洲监管机构收到的投诉，已将对华数据传输推到了执法聚焦点。SHEIN于2023年在都柏林设立欧洲总部，此后受DPC管辖。该公司2012年在中国创立，现总部位于新加坡。中国目前不具有欧盟数据保护充分性认定(adequacy decision)，这意味着向中国传输数据必须满足更严格的第五章条件（如标准合同条款SCCs），且须证明接收国的法律和实践提供与欧盟实质等同的保护。此前DPC已对TikTok的对华数据传输进行类似审查，自2020年以来累计开出超过40亿欧元GDPR罚款。SHEIN此次调查与2025年12月欧盟委员会依据《数字服务法》(DSA)对其展开的儿童安全调查并行推进。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "impact_summary": "DPC对SHEIN的调查标志着欧盟对华数据传输执法进入新阶段。DPC作为众多全球科技公司的欧盟主管监管机构，明确将对华数据传输列为「战略优先事项」，信号意义远超个案：任何将欧盟用户数据传输至中国的企业——无论是电商平台、AI服务还是云基础设施提供商——都面临同等审查压力。中国缺乏欧盟充分性认定意味着企业须完成传输影响评估(TIA)、实施补充保护措施并证明其有效性，举证责任沉重。继TikTok之后SHEIN成为第二个因对华数据传输被DPC正式调查的中国背景企业，对在欧盟运营的中国科技公司具有系统性风险信号意义。",
+      "key_points": [
+        "DPC于5月5日正式对SHEIN Ireland启动调查——聚焦欧盟用户个人数据传至中国",
+        "审查范围：GDPR第5条（数据处理原则）、第13条（透明度）、第五章（第三国传输）",
+        "DPC将对华数据传输列为「重要战略优先事项」——信号远超个案",
+        "中国无欧盟充分性认定——数据传输须满足SCCs等严格条件并证明实质等同保护",
+        "继TikTok后第二个因对华数据传输被DPC调查的中国背景企业",
+        "DPC自2020年以来累计开出超40亿欧元GDPR罚款——执法力度全球领先"
+      ],
+      "sources": [
+        "https://www.thejournal.ie/shein-data-protectio-investigation-7031578-May2026/",
+        "https://corestreamgrc.com/resources/news/shein-ireland-dpc-cross-border-data-risk/",
+        "https://www.rte.ie/news/business/2026/0505/1571828-shein/"
+      ],
+      "tags": [
+        "SHEIN",
+        "DPC",
+        "GDPR",
+        "跨境数据传输",
+        "中国",
+        "爱尔兰",
+        "充分性认定",
+        "数据保护"
+      ]
+    },
+    {
+      "id": "2026-05-18-005",
+      "priority": "P2",
+      "category": "enforcement",
+      "title": "白宫AI行政令草案曝光——不含强制性模型测试，聚焦网络安全信息共享",
+      "region": "US",
+      "institution": "白宫 / 商务部",
+      "date": "2026-05-08",
+      "status": "ongoing",
+      "summary": "5月8日，Bloomberg独家报道特朗普政府正在准备的AI安全行政令草案内容——与此前Kevin Hassett「FDA式审批」的强硬表态不同，草案实际上不包含强制性AI模型预发布测试要求。取而代之的是，草案将改造现有网络安全信息共享机制以纳入AI公司，鼓励（但不强制）AI开发者与政府机构协调以降低新模型的网络安全风险。这一退缩反映了白宫内部「安全审查」派与「创新友好」派之间的持续博弈。此前一周（5月5日），商务部CAISI已宣布与Google DeepMind、Microsoft和xAI达成自愿安全测试协议，Hassett也表示正在「研究」行政令。但草案内容显示，特朗普政府最终倾向于维持自愿合作模式而非引入强制性监管框架。Politico报道指出，草案引发了科技行业的恐慌，尽管实际内容远不如预期严厉。行政令最终版本和发布时间仍不明确。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://seekingalpha.com/news/4590140-draft-version-of-us-ai-security-order-does-not-require-model-testing-report",
+        "https://www.politico.com/news/2026/05/07/white-house-ai-oversight-00910837",
+        "https://federalnewsnetwork.com/artificial-intelligence/2026/05/wh-studying-ai-security-executive-order/"
+      ],
+      "tags": [
+        "白宫",
+        "行政令",
+        "AI安全",
+        "模型测试",
+        "CAISI",
+        "网络安全",
+        "自愿合作"
+      ]
+    },
+    {
+      "id": "2026-05-18-006",
+      "priority": "P2",
+      "category": "enforcement",
+      "title": "加拿大四省联合发布OpenAI/ChatGPT隐私调查报告——认定初始训练阶段多项隐私违规，OpenAI已整改",
+      "region": "CA",
+      "institution": "加拿大隐私专员办公室(OPC) / 魁北克信息获取委员会(CAI) / 不列颠哥伦比亚省信息与隐私专员(OIPC-BC) / 阿尔伯塔省信息与隐私专员(OIPC-AB)",
+      "date": "2026-05-06",
+      "status": "resolved",
+      "summary": "5月6日，加拿大隐私专员办公室(OPC)联合魁北克、不列颠哥伦比亚和阿尔伯塔三省隐私监管机构，发布128页联合调查报告(PIPEDA Findings #2026-002)，认定OpenAI在开发和部署ChatGPT(GPT-3.5和GPT-4)的初始阶段存在多项隐私法违规。调查始于2023年，历时近三年。核心发现：(1)过度收集——OpenAI从公开网站爬取训练数据时未筛除社交媒体、儿童网站和敏感信息网站，收集范围过于宽泛；(2)缺乏有效同意——在收集大部分公开数据用于训练GPT-3.5和GPT-4时，GPTBot的robots.txt退出机制尚不存在（2023年8月才上线），用户无法知情或控制个人信息被用于AI训练；(3)透明度不足——未充分告知用户其数据如何被收集和使用；(4)准确性问题——ChatGPT生成涉及个人的内容可能包含事实性错误，且用户难以更正；(5)访问/更正/删除权利受限；(6)问责制度不健全。OpenAI在调查过程中已实施整改措施，包括显著限制新模型训练中使用的个人和敏感信息。联邦隐私专员Philippe Dufresne认定投诉「有依据且附条件地解决」(well-founded and conditionally resolved)，将持续监控OpenAI后续执行情况。Dufresne同时强调，此调查凸显加拿大隐私法亟需现代化改革以应对AI时代。由于四省法律存在差异，各办公室的结论有所不同。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "impact_summary": "这是全球范围内针对AI大模型训练数据隐私合规最全面的官方调查报告之一。128页报告详细剖析了LLM训练全流程（预训练数据爬取、微调、部署）的隐私合规问题，为全球隐私监管机构提供了评估框架和先例。「有依据且附条件地解决」的结论模式——即认定违规但在企业整改后不追究处罚——体现了监管机构在AI创新与隐私保护之间寻求平衡的务实态度。该报告对所有使用公开数据训练大模型的AI公司具有直接警示意义：须事前实施隐私影响评估、建立数据筛选机制、提供有效的退出选项，并确保生成内容的准确性。加拿大隐私专员明确呼吁修法，预示着加拿大可能推出AI时代的新隐私立法。",
+      "key_points": [
+        "四省联合128页调查报告——历时近三年，审查GPT-3.5和GPT-4训练全流程",
+        "核心违规：过度收集公开数据（未排除社交媒体/儿童/敏感网站）、GPTBot退出机制上线前数据已被收集",
+        "缺乏有效同意和透明度——用户无法知情或控制个人信息被用于AI训练",
+        "准确性问题——ChatGPT可能生成关于个人的事实性错误内容",
+        "OpenAI已整改：显著限制新模型训练中的个人/敏感信息使用",
+        "结论：有依据且附条件地解决——认定违规但不追究处罚，OPC将持续监控",
+        "隐私专员呼吁加拿大隐私法现代化改革以应对AI时代"
+      ],
+      "sources": [
+        "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-002-overview/",
+        "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/",
+        "https://ppc.land/canadian-regulators-find-chatgpt-privacy-rules-broken-from-the-start/"
+      ],
+      "tags": [
+        "加拿大",
+        "OPC",
+        "OpenAI",
+        "ChatGPT",
+        "PIPEDA",
+        "隐私",
+        "AI训练数据",
+        "调查报告"
+      ]
+    },
+    {
+      "id": "2026-05-18-007",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "科罗拉多州长Polis签署SB 189彻底重写AI法——从合规义务转向透明度披露，xAI/DOJ诉讼因此失去标的",
+      "region": "US",
+      "institution": "科罗拉多州长Jared Polis / 科罗拉多州议会",
+      "date": "2026-05-14",
+      "status": "signed",
+      "summary": "5月14日，科罗拉多州长Jared Polis签署SB 26-189，彻底废止并替代2024年通过的科罗拉多AI法案(SB 24-205)。新法以压倒性两党支持通过（参议院34-1、众议院57-6），是Polis召集的由科技公司、商业团体、进步组织和劳工组织组成的政策工作组历时数月达成的「脆弱共识」的产物。SB 189删除了原法中最具争议的核心条款——注意义务(duty of care)、强制性算法影响评估(algorithmic impact assessments)和风险管理计划要求，代之以更轻量的透明度框架：开发者须向部署者提供文档（涵盖预期用途、训练数据类别、已知限制等）；部署者须在使用AI做出「重大决策」前进行事前告知，并在产生不利结果时30天内提供决策说明和AI角色解释；消费者可请求其个人数据、更正事实错误数据、请求「商业上合理」的有意义人工审查。执行权专属州总检察长，无私人诉权。新法2027年1月1日生效。SB 189签署也使xAI和DOJ联合提起的针对原法的联邦诉讼实质上失去标的。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2027-01-01",
+      "sources": [
+        "https://www.nixonpeabody.com/insights/alerts/2026/05/14/colorado-legislature-passes-bill-to-repeal-and-replace-the-colorado-ai-act",
+        "https://www.eptrail.com/2026/05/14/colorado-artificial-intelligence-new-law-signed/",
+        "https://www.littler.com/news-analysis/asap/colorado-amends-its-artificial-intelligence-law-substantially-reducing"
+      ],
+      "tags": [
+        "科罗拉多",
+        "SB 189",
+        "AI法重写",
+        "透明度",
+        "Polis",
+        "xAI",
+        "DOJ",
+        "州级AI立法"
+      ]
+    },
+    {
+      "id": "2026-05-18-008",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "康涅狄格SB5签署成法——全美最全面AI法案覆盖就业AI、聊天机器人安全、合成媒体和前沿模型",
+      "region": "US",
+      "institution": "康涅狄格州长Ned Lamont / 康涅狄格州议会",
+      "date": "2026-05-15",
+      "status": "signed",
+      "summary": "康涅狄格州长Ned Lamont签署SB 5（Public Act 26-15），使康涅狄格成为拥有全美最全面AI法律之一的州。这部67页法案覆盖六大领域，是参议员James Maroney第三次推动AI立法——前两年法案均因州长否决威胁而止步。法案核心内容：(1)就业AI监管——定义「自动化就业相关决策过程」(AERDP)，要求雇主在使用AI影响招聘/晋升/解雇决策时进行事前告知，不利决定时30天内提供AI角色说明，修改公平就业法以覆盖AI歧视（法院须考虑反偏见测试证据），确立「AI不构成辩护」原则；(2)AI聊天机器人安全——要求聊天机器人运营者实施披露和年龄验证；(3)合成媒体透明度——数据溯源要求；(4)前沿模型开发者义务；(5)AI反歧视保护；(6)劳动力AI培训——设立Connecticut AI Academy。法案采用分阶段生效日期，最早2026年10月1日开始，就业相关条款由州总检察长依《不公平贸易行为法》执行。K&L Gates分析指出，雇主应立即开始盘点AI工具、审查供应商协议、起草合规通知和反偏见测试程序。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-10-01",
+      "sources": [
+        "https://www.klgates.com/Connecticut-Passes-Legislation-Regulating-the-Use-of-AI-in-Employment-Decisions-5-15-2026",
+        "https://www.dlapiper.com/insights/publications/2026/05/unpacking-connecticuts-new-ai-law",
+        "https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/connecticut-poised-to-enact-one-of-the-nations-most-comprehensive-ai-laws-102mrpv"
+      ],
+      "tags": [
+        "康涅狄格",
+        "SB 5",
+        "就业AI",
+        "AERDP",
+        "聊天机器人",
+        "合成媒体",
+        "前沿模型",
+        "州级AI立法"
+      ]
+    },
+    {
+      "id": "2026-05-18-009",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "佐治亚州长Kemp签署SB 540 AI聊天机器人安全法——要求披露和年龄验证",
+      "region": "US",
+      "institution": "佐治亚州长Brian Kemp / 佐治亚州议会",
+      "date": "2026-05-13",
+      "status": "signed",
+      "summary": "5月13日，佐治亚州长Brian Kemp签署SB 540《AI伴侣聊天机器人安全法》。法律规范「AI伴侣聊天机器人」——即设计用于模拟持续类人关系、通过记忆过去互动来维持连续性的AI系统。核心要求：(1)运营者须明确披露用户正在与AI系统而非人类交互；(2)对可能面向未成年人使用的服务实施年龄验证；(3)对AI系统如何处理用户情感互动和个人数据进行信息披露。该法案是佐治亚2026年立法会期通过的三项AI法案之一，另外两项涉及AI在医疗保险审批中的使用。SB 540将于2027年7月1日生效，由州总检察长执行。该法案与联邦GUARD Act、康涅狄格SB 5中的聊天机器人安全条款形成呼应，反映了AI伴侣/聊天机器人安全正在成为2026年美国AI立法的核心议题之一。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": "2027-07-01",
+      "sources": [
+        "https://privacy-daily.com/article/2026/05/13/georgia-ai-chatbots-bill-signed-will-take-effect-july-2027-2605130044?BC=bc_6a089017ad17e",
+        "https://www.jdsupra.com/legalnews/who-s-talking-and-to-whom-georgia-s-sb-4319610/",
+        "https://legiscan.com/GA/bill/SB540/2025"
+      ],
+      "tags": [
+        "佐治亚",
+        "SB 540",
+        "AI聊天机器人",
+        "年龄验证",
+        "AI伴侣",
+        "未成年人保护"
+      ]
+    },
+    {
+      "id": "2026-05-18-010",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "加州5月14日悬搁投票推进多项AI法案——PAUSE Act过关，工人AI替代保护法被搁置",
+      "region": "US",
+      "institution": "加州议会拨款委员会",
+      "date": "2026-05-14",
+      "status": "ongoing",
+      "summary": "5月14日，加州议会举行年度「悬搁」(suspense)投票，对数百项涉及拨款的法案进行一次性表决。多项AI相关法案结果：通过悬搁的包括——AB 1988 PAUSE Act（AI聊天机器人安全法，要求平台对AI聊天机器人实施安全措施防止诱导自杀/自残等危害行为）；AB 2023/SB 1119（聊天机器人与儿童安全法）；AB 1979（AI在医疗服务中的使用监管）；AB 1883（工作场所AI监控披露）；AB 1609（客服聊天机器人监管）。被搁置的包括——AB 2027（禁止雇主使用工人个人信息训练AI系统以替代该工人的工作）；AB 2169（修改CCPA要求AI模型运营商允许消费者请求其个人信息副本）；AB 1898（要求雇主在使用AI做出就业决定时向员工提供书面通知）。加州作为全美AI立法最活跃的州，此次悬搁投票结果显示：AI安全保护类法案（聊天机器人安全、儿童保护、医疗AI）获得较强支持，但涉及工人权利和消费者数据权利的AI法案面临更大阻力。多项通过的法案将进入全院表决阶段。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-may15-2026",
+        "https://www.softwareimprovementgroup.com/blog/us-ai-legislation-overview/",
+        "https://www.troutmanprivacy.com/2026/05/proposed-state-ai-law-update-may-4-2026/"
+      ],
+      "tags": [
+        "加州",
+        "PAUSE Act",
+        "AB 1988",
+        "悬搁投票",
+        "AI聊天机器人",
+        "工人保护",
+        "CCPA",
+        "州级AI立法"
+      ]
+    }
+  ],
+  "trends": [
+    "AI内容平台责任进入全球同步执法阶段：美国FTC启动TAKE IT DOWN Act执法（5月19日起48小时移除深度伪造），叠加中国已在执行的AI内容标识处罚和EU 8月2日生效的Art 50透明度义务，三大法域对AI生成内容的平台合规要求正在形成闭环",
+    "美国州级AI立法从「高合规负担」向「可执行透明度」模式成熟演进：科罗拉多SB 189彻底放弃合规义务转向披露模式，康涅狄格SB5以分阶段透明度框架取代一步到位的全面监管，标志着州级立法者从2024年的理想主义转向务实路径",
+    "AI伴侣/聊天机器人安全成为2026年美国AI立法的核心议题：联邦GUARD Act待参议院全体表决，佐治亚SB 540签署，康涅狄格SB5含聊天机器人安全条款，加州PAUSE Act通过悬搁投票——未成年人与AI聊天机器人的交互安全正在催生跨党派立法共识",
+    "AI智能体(AI Agent)监管框架全球竞速启动：中国率先发布国家级AI智能体政策框架并阻止Meta收购Manus，EU AI Act Art 50指南已明确将Agent纳入透明度义务，美国尚无Agent专项政策但白宫EO草案涉及AI系统安全",
+    "AI版权定价体系正在通过诉讼和解确立市场基准：Bartz诉Anthropic 15亿美元和解（$3,000/作品）逼近最终批准，92.77%索赔率显示版权所有者接受度极高，这一基准将深刻影响Meta/OpenAI/Google面临的同类版权诉讼的和解策略"
+  ],
+  "key_deadlines": [
+    {
+      "date": "2026-05-19",
+      "item": "FTC正式启动TAKE IT DOWN Act平台执法——48小时深度伪造内容移除义务生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-05-21",
+      "item": "Bartz诉Anthropic和解案补充材料提交截止——法官要求律师费支持判例等额外提交",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-06-03",
+      "item": "欧盟AI Act第50条透明度义务指南草案征求意见截止",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-07-15",
+      "item": "中国《拟人化AI交互服务管理暂行办法》正式生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-08-02",
+      "item": "EU AI Act第50条透明度义务部分生效——AI交互告知、部署者深度伪造标注（提供者水印义务推迟至12月2日）",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-08-02",
+      "item": "欧委会对GPAI通用模型提供者的执法权正式启动——违规可处罚款",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-12-02",
+      "item": "EU AI Act第50(2)条提供者水印义务生效；AI深度伪造/CSAM新禁令生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2027-12-02",
+      "item": "EU AI Act Annex III高风险AI系统合规义务生效（Digital Omnibus推迟后）",
+      "priority": "P0"
+    }
+  ]
+}

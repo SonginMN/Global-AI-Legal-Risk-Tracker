@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-05-18",
+      "issue": 17,
+      "period_start": "2026-05-12",
+      "period_end": "2026-05-18",
+      "count": 10,
+      "headline": "FTC启动TAKE IT DOWN Act深度伪造执法每次违规$53K，Anthropic 15亿美元版权和解听证法官聚焦律师费未当庭批准，中国三部门发布全球首个国家级AI智能体政策框架，爱尔兰DPC对SHEIN启动对华数据传输调查"
+    },
+    {
       "date": "2026-05-11",
       "issue": 16,
       "period_start": "2026-04-28",
