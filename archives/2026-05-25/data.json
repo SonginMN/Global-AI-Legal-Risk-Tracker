@@ -1,0 +1,208 @@
+{
+  "report_meta": {
+    "issue": 18,
+    "date": "2026-05-25",
+    "period_start": "2026-05-19",
+    "period_end": "2026-05-25",
+    "generated_at": "2026-05-25T10:30:00Z",
+    "item_count": 6
+  },
+  "overview": {
+    "summary": "本周AI法律风险格局的核心事件是特朗普总统5月21日在签署仪式前数小时突然叫停AI行政令——该行政令本将赋予联邦政府在AI模型发布前进行安全评估的权力，但在前白宫AI与加密货币政策负责人David Sacks代表业界施压后被撤回，特朗普表示「不想做任何阻碍美国AI领先地位的事」。这一逆转标志着即便在特朗普政府内部，AI安全监管的推进也面临产业界的强力抵制。在版权领域，Bartz诉Anthropic 15亿美元和解案5月21日补充材料提交截止，法官裁定预计近期公布。州级立法方面，加州州长Newsom签署全美首个AI劳动力保护行政令，探索AI裁员补偿和全民基本资本等政策；康涅狄格67页综合AI法案待州长签署；科罗拉多AI法案6月30日执法在即。在联邦AI监管停滞的背景下，州级立法正在成为美国AI合规的实际标准制定者。",
+    "highlights": [],
+    "risk_alert": "特朗普AI行政令被撤回意味着美国联邦层面短期内不会出现AI模型发布前审查机制——企业在联邦层面仍面临监管真空，但州级立法（科罗拉多6月30日、康涅狄格即将签署）正在快速填补。建议企业：(1)关注科罗拉多6月30日AI法案执法启动，高风险AI系统部署者需完成合规评估；(2)评估康涅狄格SB5对高风险AI使用的披露和影响评估要求；(3)跟踪Bartz和解案裁定——若获批准将确立AI训练数据$3,000/作品的赔偿基准。"
+  },
+  "items": [
+    {
+      "id": "2026-05-25-001",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "特朗普签署前数小时突然叫停AI行政令——前白宫AI政策负责人Sacks施压，安全评估条款引发产业界反弹",
+      "region": "US",
+      "institution": "白宫 / 总统行政办公室",
+      "date": "2026-05-21",
+      "status": "postponed",
+      "summary": "5月21日，特朗普总统在原定签署仪式前数小时突然宣布推迟AI行政令。该行政令本将标志着特朗普政府AI政策的重大转向——从2025年1月上任后的「拆除监管壁垒」路线，转向赋予联邦政府在AI模型发布前进行安全评估的权力。据《纽约时报》和CNBC报道，该行政令将允许美国政府对AI模型进行预发布安全漏洞评估，建立联邦层面的AI模型审查框架。然而，前白宫AI沙皇David Sacks在签署前向总统办公室提出产业界的强烈反对意见。特朗普在椭圆形办公室对记者表示：「我推迟了，因为我不喜欢其中的某些方面」「我不想做任何阻碍（美国AI领先地位）的事情」。据Politico报道，Sacks认为该行政令中的某些条款可能对AI产业施加过重负担，影响美国与中国的AI竞赛。白宫新闻秘书确认行政令仍在修改中，但未提供新的签署时间表。这一事件暴露了特朗普政府内部的政策分裂：一方面国家安全官员推动AI模型安全审查，另一方面产业界代表（以Sacks为首）坚持放松监管的立场。此前泄露的行政令草案已在Issue #16和#17中报道——当时分析认为这可能代表白宫AI政策的「急转弯」。如今行政令被叫停，进一步凸显了美国联邦AI监管的不确定性。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "impact_summary": "AI行政令被叫停意味着美国联邦层面短期内不会建立AI模型发布前审查机制。对于AI开发者而言，联邦监管真空将持续，但州级AI法律（科罗拉多6月30日、康涅狄格即将生效）正在填补空白。产业界通过Sacks成功阻止了联邦监管的推进，但这也意味着AI安全问题将继续由分散的州法律和行业自律来解决。行政令仍可能以修改后的形式重新推出，企业应持续关注。",
+      "key_points": [
+        "特朗普5月21日签署前数小时叫停AI行政令——称「不喜欢其中某些方面」",
+        "行政令本将赋予联邦政府AI模型预发布安全评估权力——标志着从放松监管到主动监管的转向",
+        "前白宫AI与加密货币政策负责人David Sacks代表产业界施压——认为部分条款对AI产业负担过重",
+        "美国联邦AI监管真空将持续——州级法律（科罗拉多/康涅狄格）成为主要合规压力来源",
+        "行政令仍在修改中——白宫未提供新签署时间表，政策不确定性加剧"
+      ],
+      "sources": [
+        "https://www.cnbc.com/2026/05/21/trump-ai-executive-order-postponed.html",
+        "https://www.pbs.org/newshour/politics/watch-trump-explains-why-he-postponed-signing-ai-executive-order",
+        "https://www.wsj.com/tech/ai/trump-executive-order-ai-advanced-models-57bcc955"
+      ],
+      "tags": [
+        "特朗普",
+        "AI行政令",
+        "David Sacks",
+        "联邦监管",
+        "AI安全评估",
+        "白宫"
+      ]
+    },
+    {
+      "id": "2026-05-25-002",
+      "priority": "P2",
+      "category": "litigation",
+      "title": "Bartz诉Anthropic和解案补充材料5月21日提交——法官裁定预计近期公布",
+      "region": "US",
+      "institution": "旧金山联邦地区法院 / 法官Martinez-Olguin",
+      "date": "2026-05-21",
+      "status": "pending",
+      "summary": "5月21日，Bartz诉Anthropic 15亿美元版权和解案的补充材料提交截止。法官Martinez-Olguin在5月14日公平性听证后发布命令，要求原告律师团在5月21日前就律师费结构提供第九巡回法院支持判例等补充材料。CourtListener显示案件最后已知提交日期为5月21日。此前听证中披露的关键数据：索赔率92.77%、有效退出仅350份（涉及1,802部作品）、约12万版权所有者提交索赔、律师费乘数6.92倍。法官聚焦律师费审查而非异议实质，被普遍解读为和解获批的积极信号。裁定预计近期公布。若获批准，$3,000/作品的赔偿标准将成为AI训练数据使用的首个大规模市场基准。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/",
+        "https://www.publishersweekly.com/pw/by-topic/digital/copyright/article/100438-little-drama-at-anthropic-s-settlement-hearing.html",
+        "https://www.authorsalliance.org/2026/05/14/bartz-v-anthropic-fairness-hearing-observations-and-takeaways/"
+      ],
+      "tags": [
+        "Anthropic",
+        "版权",
+        "和解",
+        "集体诉讼",
+        "AI训练数据",
+        "律师费"
+      ]
+    },
+    {
+      "id": "2026-05-25-003",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "加州州长Newsom签署全美首个AI劳动力保护行政令——探索AI裁员补偿和全民基本资本",
+      "region": "US",
+      "institution": "加利福尼亚州州长办公室",
+      "date": "2026-05-21",
+      "status": "signed",
+      "summary": "5月21日，加州州长Gavin Newsom签署全美首个专门应对AI劳动力影响的行政令。该行政令指示加州各州机构、劳工专家、经济学家、大学和产业界领袖制定新政策，应对AI对劳动力市场的潜在冲击。行政令探索的政策方向包括：AI裁员补偿标准(severance standards)、失业保险和转型支持、工人所有权模式(worker ownership models)、全民基本资本(universal basic capital)概念、扩大劳动力培训，以及加强招聘和薪资趋势追踪以更快识别大规模裁员风险。Newsom表示：「加州从不袖手旁观任由未来降临——我们不会现在开始。」加州目前拥有全球前50大私营AI公司中的33家。该行政令标志着AI劳动力政策从「技能再培训」的传统思路扩展到「收益再分配」的更广泛框架。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.gov.ca.gov/2026/05/21/governor-newsom-signs-first-of-its-kind-executive-order-to-prepare-workers-and-businesses-for-potential-ai-disruption/"
+      ],
+      "tags": [
+        "加州",
+        "Newsom",
+        "AI劳动力",
+        "行政令",
+        "全民基本资本",
+        "工人保护"
+      ]
+    },
+    {
+      "id": "2026-05-25-004",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "加州AI聊天机器人安全法(PAUSE Act)通过州众议院——禁止AI系统对用户造成自我伤害风险",
+      "region": "US",
+      "institution": "加利福尼亚州议会",
+      "date": "2026-05-21",
+      "status": "passed_assembly",
+      "summary": "5月21日，加州众议院通过AB 1988——《防止AI用户自我伤害法》(Preventing AI User Self Endangerment Act, PAUSE Act)，该法案已送往州参议院审议。PAUSE Act此前在众议院健康委员会和拨款委员会均获通过。该法案针对AI聊天机器人（特别是companion chatbot类产品）可能对用户心理健康造成的危害进行规制，要求AI服务提供商对聊天机器人与用户的互动中可能产生的自我伤害风险采取预防措施。加州众议员Pellerin为该法案的发起人。PAUSE Act是加州本轮AI立法潮中约30部通过suspense审查的AI相关法案之一，与AB 2023/SB 1119（AI聊天机器人与儿童安全配套法案）同步推进。在联邦AI监管停滞的背景下，加州作为全球AI产业中心的立法动向对行业具有风向标意义。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-may22-2026",
+        "https://legiscan.com/CA/bill/AB1988/2025"
+      ],
+      "tags": [
+        "加州",
+        "PAUSE Act",
+        "AI聊天机器人",
+        "心理健康",
+        "用户安全",
+        "州级法律"
+      ]
+    },
+    {
+      "id": "2026-05-25-005",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "康涅狄格SB5综合AI法案通过立法机关——67页法案待州长签署",
+      "region": "US",
+      "institution": "康涅狄格州议会 / 州长Ned Lamont",
+      "date": "2026-05-01",
+      "status": "awaiting_signature",
+      "summary": "康涅狄格州参议院法案SB5已通过州议会两院，成为全美最全面的AI法案之一。州长Ned Lamont此前已表示将签署该法案。这部67页的法律涵盖高风险AI系统的使用规范，对在金融服务、医疗保健等高风险领域使用AI的企业提出披露、评估和消费者保护要求。SB5是康涅狄格州参议员James Maroney第三次推动AI综合立法——前两次尝试均未成功。DLA Piper的分析指出，该法案不是一个宽泛的治理框架，而是针对特定高风险使用场景的精细化规制。在特朗普行政令被叫停、联邦AI监管停滞的背景下，康涅狄格与科罗拉多等州的AI立法成为美国AI合规的实际标准制定者。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-may8-2026",
+        "https://www.troutmanprivacy.com/2026/05/proposed-state-ai-law-update-may-4-2026/"
+      ],
+      "tags": [
+        "康涅狄格",
+        "SB5",
+        "AI立法",
+        "高风险AI",
+        "州级法律"
+      ]
+    },
+    {
+      "id": "2026-05-25-006",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "科罗拉多AI法案(SB 24-205)——6月30日执法启动倒计时，全美最严AI消费者保护法",
+      "region": "US",
+      "institution": "科罗拉多州总检察长办公室",
+      "date": "2026-05-25",
+      "status": "pending_enforcement",
+      "summary": "科罗拉多AI法案(SB 24-205)将于2026年6月30日正式进入执法阶段，距执法启动仅剩35天。该法案原定2026年2月1日生效，后因合规准备不足在2025年8月特别会议中推迟至6月30日。SB 24-205被TrustArc称为「全美最详细的AI专项消费者保护法」，对高风险AI系统的开发者(developers)和部署者(deployers)分别设定义务：开发者须提供系统说明文档和已知局限性披露；部署者须实施风险管理框架、完成影响评估、确保人工审查机制，并在AI系统做出对消费者产生重大影响的决定时提供通知和解释。值得注意的是，2025年科罗拉多还通过了SB 189对SB 24-205进行重写和简化（已在Issue #17报道）。执法权专属州总检察长，无私人诉权。在联邦AI监管真空持续的背景下，科罗拉多法案的执法启动将成为美国AI合规的重要风向标。",
+      "impact": "medium",
+      "action_required": true,
+      "deadline": "2026-06-30",
+      "sources": [
+        "https://www.clarkhill.com/news-events/news/colorados-ai-law-delayed-until-june-2026-what-the-latest-setback-means-for-businesses/",
+        "https://trustarc.com/resource/colorado-ai-law-sb24-205-compliance-guide/"
+      ],
+      "tags": [
+        "科罗拉多",
+        "SB 24-205",
+        "AI消费者保护",
+        "高风险AI",
+        "执法",
+        "合规"
+      ]
+    }
+  ],
+  "trends": [
+    "美国联邦AI监管政策反复——行政令被叫停后州级立法成为实际合规标准制定者",
+    "AI版权定价基准即将形成——Bartz和解案裁定在即，$3,000/作品可能成为行业参考",
+    "AI劳动力影响进入政策议程——加州首个AI裁员补偿和全民基本资本行政令"
+  ],
+  "key_deadlines": [
+    {
+      "date": "2026-06-30",
+      "item": "科罗拉多AI法案(SB 24-205)执法正式启动——高风险AI系统开发者和部署者合规义务生效",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-08-02",
+      "item": "EU AI Act Art 50透明度义务对新上市AI系统生效；欧委会对GPAI通用模型提供者执法权启动",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-12-02",
+      "item": "EU AI Act新增nudifier/CSAM禁令生效（Digital Omnibus）；Art 50(2)合成内容水印义务对存量系统生效",
+      "priority": "P0"
+    },
+    {
+      "date": "2027-12-02",
+      "item": "EU AI Act Annex III高风险AI系统合规义务生效（Digital Omnibus延期后）",
+      "priority": "P0"
+    }
+  ]
+}
