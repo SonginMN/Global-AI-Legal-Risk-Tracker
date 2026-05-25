@@ -5,10 +5,10 @@
     "period_start": "2026-05-19",
     "period_end": "2026-05-25",
     "generated_at": "2026-05-25T10:30:00Z",
-    "item_count": 6
+    "item_count": 7
   },
   "overview": {
-    "summary": "本周AI法律风险格局的核心事件是特朗普总统5月21日在签署仪式前数小时突然叫停AI行政令——该行政令本将赋予联邦政府在AI模型发布前进行安全评估的权力，但在前白宫AI与加密货币政策负责人David Sacks代表业界施压后被撤回，特朗普表示「不想做任何阻碍美国AI领先地位的事」。这一逆转标志着即便在特朗普政府内部，AI安全监管的推进也面临产业界的强力抵制。在版权领域，Bartz诉Anthropic 15亿美元和解案5月21日补充材料提交截止，法官裁定预计近期公布。州级立法方面，加州州长Newsom签署全美首个AI劳动力保护行政令，探索AI裁员补偿和全民基本资本等政策；康涅狄格67页综合AI法案待州长签署；科罗拉多AI法案6月30日执法在即。在联邦AI监管停滞的背景下，州级立法正在成为美国AI合规的实际标准制定者。",
+    "summary": "本周AI法律风险格局的核心事件是特朗普总统5月21日在签署仪式前数小时突然叫停AI行政令——该行政令本将赋予联邦政府在AI模型发布前进行安全评估的权力，但在前白宫AI与加密货币政策负责人David Sacks代表业界施压后被撤回，特朗普表示「不想做任何阻碍美国AI领先地位的事」。这一逆转标志着即便在特朗普政府内部，AI安全监管的推进也面临产业界的强力抵制。欧盟方面，欧盟委员会5月19日发布了AI Act高风险系统分类指南草案，首次明确Annex III下独立高风险AI系统的判定标准，公众咨询至6月23日截止。在版权领域，Bartz诉Anthropic 15亿美元和解案5月21日补充材料提交截止，法官裁定预计近期公布。州级立法方面，加州州长Newsom签署全美首个AI劳动力保护行政令，探索AI裁员补偿和全民基本资本等政策；康涅狄格67页综合AI法案待州长签署；科罗拉多AI法案6月30日执法在即。在联邦AI监管停滞的背景下，州级立法正在成为美国AI合规的实际标准制定者。",
     "highlights": [],
     "risk_alert": "特朗普AI行政令被撤回意味着美国联邦层面短期内不会出现AI模型发布前审查机制——企业在联邦层面仍面临监管真空，但州级立法（科罗拉多6月30日、康涅狄格即将签署）正在快速填补。建议企业：(1)关注科罗拉多6月30日AI法案执法启动，高风险AI系统部署者需完成合规评估；(2)评估康涅狄格SB5对高风险AI使用的披露和影响评估要求；(3)跟踪Bartz和解案裁定——若获批准将确立AI训练数据$3,000/作品的赔偿基准。"
   },
@@ -50,6 +50,42 @@
     },
     {
       "id": "2026-05-25-002",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "欧盟委员会发布高风险AI系统分类指南草案——首次明确Annex III判定标准，公众咨询至6月23日",
+      "region": "EU",
+      "institution": "欧盟委员会(European Commission)",
+      "date": "2026-05-19",
+      "status": "consultation",
+      "summary": "5月19日，欧盟委员会依据AI Act第6(5)条发布高风险AI系统分类指南草案，并启动为期约五周的定向公众咨询（截止2026年6月23日）。这是欧盟首次就如何判定AI系统是否属于「高风险」发布官方指导文件。指南分为三部分：(1)高风险分类的一般原则及AI Act第6条下的两类高风险AI系统概述；(2)第6(1)条及Annex I下的产品安全类高风险AI系统（作为受监管产品安全组件的AI）；(3)第6(2)条及Annex III下的独立高风险AI系统（用于生物识别、教育、就业、基本服务、执法等领域的AI）。指南提供了大量非穷尽性示例，说明哪些AI系统可能或不可能被归类为高风险。该指南原定2026年2月2日前发布，延迟超过三个月——正是因为缺乏分类指导和配套标准，才促成了Digital Omnibus将高风险AI合规期限延长16个月的决定。指南为非约束性文件，最终解释权归欧洲法院。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": "2026-06-23",
+      "impact_summary": "这是AI Act高风险合规体系的基石性文件。企业需要依据该指南评估自身AI系统是否落入高风险分类——这一判定直接决定了是否需要承担AI Act第三章下的全套合规义务（风险管理、数据治理、技术文档、透明度、人工监督、准确性和网络安全）。公众咨询截止6月23日，建议有高风险AI部署的企业在咨询期内提交反馈。虽然Digital Omnibus已将Annex III合规期限延至2027年12月2日，但及早完成分类评估有助于制定合规路线图和预算规划。",
+      "key_points": [
+        "欧盟委员会5月19日发布AI Act高风险分类指南草案——首个官方分类指导文件",
+        "指南覆盖两类高风险AI：产品安全组件类(Annex I)和独立使用类(Annex III，含生物识别/就业/执法等)",
+        "提供大量示例说明哪些AI系统属于或不属于高风险——帮助企业完成自评估",
+        "原定2月发布延迟至5月——缺乏指导是Digital Omnibus延期的核心原因之一",
+        "公众咨询至6月23日——企业可提交反馈影响最终版本",
+        "非约束性指南——最终解释权归欧洲法院(CJEU)"
+      ],
+      "sources": [
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://www.hunton.com/privacy-and-cybersecurity-law-blog/european-commission-releases-draft-guidelines-on-high-risk-ai-under-the-eu-ai-act",
+        "https://dwfgroup.com/en/news-and-insights/insights/2026/5/eu-ai-act-high-risk-guidance-and-uk-impact"
+      ],
+      "tags": [
+        "EU AI Act",
+        "高风险AI",
+        "分类指南",
+        "欧盟委员会",
+        "公众咨询",
+        "Annex III"
+      ]
+    },
+    {
+      "id": "2026-05-25-003",
       "priority": "P2",
       "category": "litigation",
       "title": "Bartz诉Anthropic和解案补充材料5月21日提交——法官裁定预计近期公布",
@@ -76,7 +112,7 @@
       ]
     },
     {
-      "id": "2026-05-25-003",
+      "id": "2026-05-25-004",
       "priority": "P2",
       "category": "legislation",
       "title": "加州州长Newsom签署全美首个AI劳动力保护行政令——探索AI裁员补偿和全民基本资本",
@@ -101,7 +137,7 @@
       ]
     },
     {
-      "id": "2026-05-25-004",
+      "id": "2026-05-25-005",
       "priority": "P2",
       "category": "legislation",
       "title": "加州AI聊天机器人安全法(PAUSE Act)通过州众议院——禁止AI系统对用户造成自我伤害风险",
@@ -127,7 +163,7 @@
       ]
     },
     {
-      "id": "2026-05-25-005",
+      "id": "2026-05-25-006",
       "priority": "P2",
       "category": "legislation",
       "title": "康涅狄格SB5综合AI法案通过立法机关——67页法案待州长签署",
@@ -152,7 +188,7 @@
       ]
     },
     {
-      "id": "2026-05-25-006",
+      "id": "2026-05-25-007",
       "priority": "P2",
       "category": "legislation",
       "title": "科罗拉多AI法案(SB 24-205)——6月30日执法启动倒计时，全美最严AI消费者保护法",
