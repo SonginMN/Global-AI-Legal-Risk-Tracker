@@ -1,20 +1,95 @@
 {
   "report_meta": {
-    "issue": 20,
+    "issue": 19,
     "date": "2026-06-01",
     "period_start": "2026-05-26",
     "period_end": "2026-06-01",
     "generated_at": "2026-06-01T10:00:00Z",
-    "item_count": 6
+    "item_count": 11
   },
   "overview": {
-    "summary": "本周AI法律领域最重要的联邦级进展是伊利诺伊州通过SB 315前沿AI模型安全法案（州长已确认将签署），成为继科罗拉多之后第二个对前沿AI模型开发者施加实质性安全义务的州。与此同时，FTC和DOJ宣布将于6月17日发布首份生成式AI竞争联合声明，信号意义重大。州级立法本周迎来密集冲刺：路易斯安那州通过消费者数据隐私法案（含AI相关条款）、科罗拉多州长即将签署AI聊天机器人安全法和AI心理治疗限制法。中国方面，新发布的商业秘密保护规则6月生效，明确将算法、源代码和训练数据纳入保护范围。在国际层面，爱尔兰DPC发布了一项涉及AI系统数据泄露的最终决定。",
+    "summary": "本周AI法律风险格局呈现三大主线：第一，宗教与国际层面——教皇利奥十四世发布人类历史首部AI通谕《Magnifica Humanitas》，呼吁各国建立AI法律框架、保护劳工权益、禁止自主致命武器；第二，中国AI管控全面收紧——旅行限制扩展至DeepSeek和阿里巴巴等私营AI企业核心研究人员（出境须获政府批准），商业秘密保护新规6月生效将算法和训练数据明确纳入保护；第三，美国联邦与州级双线并进——FTC/DOJ宣布6月17日发布首份生成式AI竞争联合声明（反垄断成为联邦AI政策主通道），伊利诺伊通过前沿AI模型安全法案成全美第二州对大模型开发者施加安全义务，科罗拉多州长签署AI聊天机器人安全法和AI心理治疗限制法。数据隐私方面，爱尔兰DPC发布AI系统相关数据泄露最终决定，路易斯安那通过消费者数据隐私法案。FTC还与Cox Media Group就虚假AI产品营销达成93万美元和解。",
     "highlights": [],
-    "risk_alert": "伊利诺伊SB 315对前沿AI模型开发者施加安全评估、红队测试和事件报告义务——若签署生效，将与科罗拉多法案形成合力，使美国多州对大型AI模型的监管从零散走向体系化。FTC/DOJ 6月17日AI竞争联合声明预示联邦层面对AI市场集中度的关注即将具象化——OpenAI/Microsoft/Nvidia等企业的商业安排可能面临更严格审视。建议企业：(1)前沿AI模型开发者评估伊利诺伊SB 315合规义务；(2)关注6月17日FTC/DOJ联合声明对AI产业竞争格局的定性；(3)路易斯安那数据隐私法案签署后评估是否触发$25M适用门槛。"
+    "risk_alert": "教皇AI通谕虽无法律约束力但对全球13亿天主教徒及其政策制定者具有深远道德权威影响，可能推动多国加速AI立法。中国对AI研究人员的旅行限制+商业秘密新规形成人才和技术的双重锁定——跨国AI企业需重新评估中国AI团队的人才流动风险和IP保护策略。FTC/DOJ 6月17日AI竞争联合声明预示联邦对AI市场集中度的关注即将具象化。建议企业：(1)关注6月17日FTC/DOJ联合声明对AI产业竞争格局的定性；(2)前沿AI模型开发者评估伊利诺伊SB 315合规义务；(3)在华AI团队评估旅行限制和商业秘密新规的双重影响。"
   },
   "items": [
     {
       "id": "2026-06-01-001",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "教皇利奥十四世发布首部AI通谕《Magnifica Humanitas》——呼吁各国建立AI法律框架、保护劳工、禁止自主武器无人控制",
+      "region": "INTL",
+      "institution": "梵蒂冈 / 教皇利奥十四世",
+      "date": "2026-05-25",
+      "status": "published",
+      "summary": "5月25日，教皇利奥十四世在梵蒂冈新主教会议厅正式发布其任期内首部通谕（Encyclical）《Magnifica Humanitas：关于在人工智能时代保护人的尊严》。这部42,300字的文件于5月15日签署——恰逢教皇利奥十三世《劳工通谕》(Rerum Novarum)发布135周年纪念日，刻意将当前AI革命与19世纪工业革命相类比。通谕分为五章，核心立场包括：(1)技术本身不是人类的敌人，但「技术从不是中立的」，它反映了设计者、资助者和使用者的特征；(2)AI驱动的自动化不能以利润最大化为名系统性地牺牲就业岗位，「人是目的而非手段」；(3)自主武器系统的无人控制使用与人类尊严不相容；(4)AI发展的权力不能集中在「少数逐利实体」手中；(5)政府不能将AI的未来交给市场的「看不见的手」，必须建立「健全的法律框架、独立监督、知情用户和不推卸责任的政治体系」。值得注意的是，Anthropic联合创始人兼可解释性研究负责人Christopher Olah受邀作为平信徒在发布会上发言——梵蒂冈选择他是因为其专注于理解AI模型内部机制的研究工作，与通谕强调的AI透明度主张一致。通谕为非约束性教会文件，但鉴于天主教会覆盖全球14亿信徒，其政策影响力尤其在欧洲和拉美国家不可忽视。这是继教皇方济各2020年《罗马人工智能伦理呼吁》之后，天主教会就AI议题发布的最高级别文件，也是有史以来首部专门论述AI的教皇通谕。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "impact_summary": "《Magnifica Humanitas》虽无法律约束力，但作为天主教会最高级别的社会训导文件，其影响力将通过三个路径传导至AI政策制定：(1)在欧洲，天主教社会训导传统对劳工保护和社会公正立法有深远影响，通谕中关于AI劳工保护的立场将为EU AI Act实施细则中的劳工权利条款提供道德论据；(2)在拉美，天主教会影响力最为直接，多国可能援引通谕推动国内AI立法；(3)在全球层面，通谕关于自主武器的明确立场将强化联合国AI军事应用谈判中的禁令呼声。对企业而言，通谕对AI透明度、劳工保护和权力集中的批评，虽不构成直接合规义务，但预示了未来全球AI监管的方向性共识。",
+      "key_points": [
+        "教皇利奥十四世5月25日发布首部AI通谕《Magnifica Humanitas》——42,300字，历史上首部专论AI的教皇通谕",
+        "通谕5月15日签署，恰逢《劳工通谕》135周年——刻意将AI革命与工业革命类比",
+        "核心立场：AI不中立、禁止以利润牺牲就业、自主武器与人类尊严不相容、反对AI权力集中",
+        "Anthropic联合创始人Christopher Olah受邀在梵蒂冈发布会发言——AI可解释性研究获教会认可",
+        "呼吁各国建立健全法律框架——政府不能将AI未来交给市场「看不见的手」",
+        "无法律约束力但覆盖14亿天主教徒——对欧洲和拉美AI立法有方向性影响"
+      ],
+      "sources": [
+        "http://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+        "https://time.com/article/2026/05/25/pope-leo-encyclical-ai-magnifica-humanitas/",
+        "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html"
+      ],
+      "tags": [
+        "教皇",
+        "利奥十四世",
+        "Magnifica Humanitas",
+        "AI伦理",
+        "自主武器",
+        "劳工保护",
+        "梵蒂冈",
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "2026-06-01-002",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "中国将海外旅行限制扩展至DeepSeek、阿里巴巴等私营AI企业核心研究人员——出境须获政府批准",
+      "region": "CN",
+      "institution": "中国政府相关部门",
+      "date": "2026-05-26",
+      "status": "enforced",
+      "summary": "5月26日，Bloomberg报道中国已将海外旅行限制扩展至DeepSeek、阿里巴巴集团等私营企业的顶尖AI专业人员。据多位知情人士透露（均因事件敏感性要求匿名），这些研究人员现在出境前须获得「相关部门」批准。部分人员被要求上交护照。这不是公开的政策公告，而是一种安静的执法措施。此前，此类旅行限制主要针对国有企业和军工体系的人员，此次扩展至民营AI企业属首次。分析认为中国此举有两重考量：一是防御性的——防止顶尖AI人才和专有模型知识被外国政府接触、招募或传唤，避免重演孟晚舟式事件（华为CFO2018年在加拿大被拘留）；二是战略性的——确保核心研究人员专注于国内AI开发，降低被美国实验室招募的风险，减少技术知识通过非正式渠道流向美国情报机构的可能性。该措施在中美AI竞争加剧和美国芯片出口管制持续收紧的背景下出台。有报道称部分研究人员被要求上交护照——这意味着限制的执行力度已超出一般的行政审批，进入了实质性的人身自由限制范畴。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "impact_summary": "这一措施标志着中国AI人才管控从国企/军工体系正式扩展至民营科技企业，对全球AI生态产生三重影响：(1)人才流动——跨国AI企业从中国招募高端人才的难度进一步上升，中国AI研究人员参加国际学术会议和技术合作的能力受限；(2)技术脱钩——中美AI研究社区的物理隔离加深，开源模型合作可能受到影响；(3)竞争格局——短期内有助于中国集中AI研发资源，但长期可能降低中国AI实验室对全球顶尖人才的吸引力。对在华运营的跨国企业而言，需评估中国研发团队的国际交流限制对技术协作的影响，并审视知识产权保护策略。",
+      "key_points": [
+        "Bloomberg 5月26日报道：中国将海外旅行限制扩展至DeepSeek、阿里巴巴等私营AI企业",
+        "核心AI研究人员出境前须获政府批准——部分人员被要求上交护照",
+        "首次从国企/军工体系扩展至民营AI领域——属安静执法措施而非公开政策",
+        "防御性考量：防止人才被外国政府招募或传唤，避免重演孟晚舟事件",
+        "战略性考量：确保核心人才专注国内AI开发，减少技术外泄风险",
+        "中美AI人才脱钩趋势加速——跨国AI企业在华招聘和国际合作受限"
+      ],
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms",
+        "https://aiweekly.co/alerts/china-locks-down-ai-talent-at-alibaba-deepseek",
+        "https://mlq.ai/news/china-requires-government-approval-for-ai-researchers-at-alibaba-deepseek-to-travel-abroad/"
+      ],
+      "tags": [
+        "中国",
+        "DeepSeek",
+        "阿里巴巴",
+        "AI人才",
+        "旅行限制",
+        "人才管控",
+        "中美竞争"
+      ]
+    },
+    {
+      "id": "2026-06-01-003",
       "priority": "P1",
       "category": "enforcement",
       "title": "FTC与DOJ宣布6月17日发布生成式AI竞争联合声明——联邦反垄断执法聚焦AI市场集中度",
@@ -50,7 +125,35 @@
       ]
     },
     {
-      "id": "2026-06-01-002",
+      "id": "2026-06-01-004",
+      "priority": "P2",
+      "category": "enforcement",
+      "title": "FTC与Cox Media Group等三家公司达成93万美元和解——虚假AI「Active Listening」产品从未真正窃听用户",
+      "region": "US",
+      "institution": "美国联邦贸易委员会(FTC)",
+      "date": "2026-05-21",
+      "status": "settled",
+      "summary": "5月21日，FTC宣布与Cox Media Group(CMG)、MindSift LLC和1010 Digital Works达成总计93万美元和解（CMG支付88万美元，MindSift和1010 Digital Works各支付2.5万美元），指控三家公司欺骗广告客户。CMG曾向企业客户推销一款名为「Active Listening」的AI广告定向服务，声称该产品能够通过用户智能手机和智能电视的麦克风收集环境对话数据，利用AI分析对话内容后投放精准广告。FTC调查发现，「Active Listening」产品从未真正具备通过设备麦克风窃听用户对话的能力——其所谓的AI分析功能是虚假的。CMG在内部培训材料中将该产品描述为能够「倾听」消费者对话，并据此为广告客户提供超精准定向能力，但实际上该产品依赖的是传统的数据分析方法，与其宣传的AI窃听能力毫无关系。根据和解协议，三家公司被禁止继续虚假宣传AI数据收集能力，和解金将用于向受骗客户提供退款。该案是FTC「Operation AI Comply」系列执法行动的延续，体现了FTC对虚假AI功能声明（AI washing）的持续打击。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived",
+        "https://radioink.com/2026/05/22/ftc-says-cox-media-group-falsified-active-listening-ai-ad-tool/",
+        "https://natlawreview.com/article/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges"
+      ],
+      "tags": [
+        "FTC",
+        "AI washing",
+        "虚假广告",
+        "Cox Media Group",
+        "Active Listening",
+        "执法",
+        "Operation AI Comply"
+      ]
+    },
+    {
+      "id": "2026-06-01-005",
       "priority": "P2",
       "category": "enforcement",
       "title": "爱尔兰DPC就AI系统相关数据泄露作出最终决定——对系统性数据安全失败的执法信号",
@@ -74,7 +177,7 @@
       ]
     },
     {
-      "id": "2026-06-01-003",
+      "id": "2026-06-01-006",
       "priority": "P2",
       "category": "legislation",
       "title": "中国商业秘密保护新规6月生效——明确将算法、源代码和AI训练数据纳入保护范围",
@@ -98,7 +201,61 @@
       ]
     },
     {
-      "id": "2026-06-01-004",
+      "id": "2026-06-01-007",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "佛蒙特州州长Scott签署H 814法案——全美第二州承认神经数据隐私权并将AI纳入保护框架",
+      "region": "US",
+      "institution": "佛蒙特州州长办公室 / 州长Phil Scott",
+      "date": "2026-05-19",
+      "status": "signed",
+      "summary": "佛蒙特州州长Phil Scott签署H 814法案，该法案的全称为「关于神经权利和人工智能技术在健康与人类服务中的使用的法案」。佛蒙特州成为继科罗拉多州之后全美第二个在法律中承认个人神经权利的州。H 814具体确认了以下权利：(1)神经数据和心理数据隐私权——为神经数据制定隐私标准；(2)思想自由权——禁止电子设备在未经同意的情况下绕过用户认知自主权；(3)认知自主权——确保个人对涉及其神经数据的决策拥有知情和参与的权利。该法案不仅涉及传统的脑机接口(BCI)技术，还明确将AI技术纳入神经数据保护框架——法案标题直接提及「人工智能技术」，要求在健康和人类服务领域使用AI处理神经相关数据时遵守特定保护标准。在脑机接口技术（如Neuralink）和AI辅助心理健康工具快速发展的背景下，该法案为保护个人神经数据免受AI系统侵入性收集和分析提供了法律依据。州长Scott同时宣布成立AI工作组，评估AI在佛蒙特州政府服务中的应用。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://legislature.vermont.gov/bill/status/2026/H.814",
+        "https://www.mychamplainvalley.com/news/local-news/vermont/phil-scott-signs-bill-recognizing-neurological-rights-appoints-ai-task-force/",
+        "https://legiscan.com/VT/bill/H0814/2025"
+      ],
+      "tags": [
+        "佛蒙特",
+        "神经权利",
+        "神经数据",
+        "隐私",
+        "AI",
+        "脑机接口",
+        "Phil Scott"
+      ]
+    },
+    {
+      "id": "2026-06-01-008",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "密苏里州议会通过SB 1019禁止AI心理治疗聊天机器人——待州长签署",
+      "region": "US",
+      "institution": "密苏里州议会",
+      "date": "2026-05-15",
+      "status": "awaiting_signature",
+      "summary": "密苏里州议会在5月15日休会前通过SB 1019法案，该法案对多项医疗保健条款进行修改，其中包含一项具有突破意义的AI限制条款：禁止在该州提供AI心理治疗聊天机器人服务。这意味着AI驱动的心理健康聊天机器人（如Woebot、Wysa等类型的产品）将不能在密苏里州作为心理治疗工具向消费者提供服务。该法案的AI条款反映了立法者对AI聊天机器人在心理健康领域应用安全性的担忧——此前多起涉及AI伴侣聊天机器人导致用户心理伤害的事件（包括Character.ai相关的青少年自杀案件）引发了全国性的立法关注。SB 1019现已送交州长，等待签署。与加州正在推进的PAUSE Act（防止AI用户自我伤害法案）不同，密苏里州采取了更为直接的禁止路径，而非设定安全标准和预防措施。在联邦层面缺乏AI心理健康服务统一监管的背景下，各州采取了不同的监管策略——禁止使用（密苏里）与安全标准（加州）两种路径并存。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-may22-2026",
+        "https://legiscan.com/MO/bill/SB1019/2026"
+      ],
+      "tags": [
+        "密苏里",
+        "AI聊天机器人",
+        "心理健康",
+        "心理治疗",
+        "SB 1019",
+        "州级法律"
+      ]
+    },
+    {
+      "id": "2026-06-01-009",
       "priority": "P2",
       "category": "legislation",
       "title": "伊利诺伊州通过SB 315前沿AI模型安全法案——州长确认将签署，全美第二州对大模型施加安全义务",
@@ -131,7 +288,7 @@
       ]
     },
     {
-      "id": "2026-06-01-005",
+      "id": "2026-06-01-010",
       "priority": "P2",
       "category": "legislation",
       "title": "路易斯安那州通过消费者数据隐私法案——$25M门槛、AI相关条款，待州长签署",
@@ -154,7 +311,7 @@
       ]
     },
     {
-      "id": "2026-06-01-006",
+      "id": "2026-06-01-011",
       "priority": "P2",
       "category": "legislation",
       "title": "科罗拉多州长即将签署AI聊天机器人安全法(HB 1263)和AI心理治疗限制法(HB 1195)",
@@ -179,6 +336,9 @@
     }
   ],
   "trends": [
+    "AI治理从政府监管扩展至全球伦理层面——教皇首部AI通谕将宗教和道德权威引入AI政策讨论，与联合国AI治理框架和EU AI Act形成多层次治理格局",
+    "中美AI人才脱钩加速——中国将人才管控从国企扩展至DeepSeek等民营AI企业，叠加美国芯片出口管制，两国AI生态系统的物理隔离进一步深化",
+    "FTC持续打击AI虚假营销（AI washing）——Cox Media Group案再次表明，虚构AI功能的企业将面临联邦执法风险，企业AI产品营销需确保功能声明有技术支撑",
     "美国州级前沿AI模型监管正式起步——伊利诺伊SB 315通过，与科罗拉多SB 24-205形成「开发端+部署端」双重合规要求",
     "联邦反垄断执法成为AI政策主通道——FTC/DOJ 6月17日将发布生成式AI竞争联合声明",
     "AI安全与聊天机器人规制成为各州共识领域——科罗拉多、伊利诺伊、密苏里、加州PAUSE Act密集立法",
