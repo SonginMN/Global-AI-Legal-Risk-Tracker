@@ -16,44 +16,6 @@
     {
       "id": "2026-06-01-001",
       "priority": "P1",
-      "category": "legislation",
-      "title": "教皇利奥十四世发布首部AI通谕《Magnifica Humanitas》——呼吁各国建立AI法律框架、保护劳工、禁止自主武器无人控制",
-      "region": "INTL",
-      "institution": "梵蒂冈 / 教皇利奥十四世",
-      "date": "2026-05-25",
-      "status": "published",
-      "summary": "5月25日，教皇利奥十四世在梵蒂冈新主教会议厅正式发布其任期内首部通谕（Encyclical）《Magnifica Humanitas：关于在人工智能时代保护人的尊严》。这部42,300字的文件于5月15日签署——恰逢教皇利奥十三世《劳工通谕》(Rerum Novarum)发布135周年纪念日，刻意将当前AI革命与19世纪工业革命相类比。通谕分为五章，核心立场包括：(1)技术本身不是人类的敌人，但「技术从不是中立的」，它反映了设计者、资助者和使用者的特征；(2)AI驱动的自动化不能以利润最大化为名系统性地牺牲就业岗位，「人是目的而非手段」；(3)自主武器系统的无人控制使用与人类尊严不相容；(4)AI发展的权力不能集中在「少数逐利实体」手中；(5)政府不能将AI的未来交给市场的「看不见的手」，必须建立「健全的法律框架、独立监督、知情用户和不推卸责任的政治体系」。值得注意的是，Anthropic联合创始人兼可解释性研究负责人Christopher Olah受邀作为平信徒在发布会上发言——梵蒂冈选择他是因为其专注于理解AI模型内部机制的研究工作，与通谕强调的AI透明度主张一致。通谕为非约束性教会文件，但鉴于天主教会覆盖全球14亿信徒，其政策影响力尤其在欧洲和拉美国家不可忽视。这是继教皇方济各2020年《罗马人工智能伦理呼吁》之后，天主教会就AI议题发布的最高级别文件，也是有史以来首部专门论述AI的教皇通谕。",
-      "impact": "high",
-      "action_required": false,
-      "deadline": null,
-      "impact_summary": "《Magnifica Humanitas》虽无法律约束力，但作为天主教会最高级别的社会训导文件，其影响力将通过三个路径传导至AI政策制定：(1)在欧洲，天主教社会训导传统对劳工保护和社会公正立法有深远影响，通谕中关于AI劳工保护的立场将为EU AI Act实施细则中的劳工权利条款提供道德论据；(2)在拉美，天主教会影响力最为直接，多国可能援引通谕推动国内AI立法；(3)在全球层面，通谕关于自主武器的明确立场将强化联合国AI军事应用谈判中的禁令呼声。对企业而言，通谕对AI透明度、劳工保护和权力集中的批评，虽不构成直接合规义务，但预示了未来全球AI监管的方向性共识。",
-      "key_points": [
-        "教皇利奥十四世5月25日发布首部AI通谕《Magnifica Humanitas》——42,300字，历史上首部专论AI的教皇通谕",
-        "通谕5月15日签署，恰逢《劳工通谕》135周年——刻意将AI革命与工业革命类比",
-        "核心立场：AI不中立、禁止以利润牺牲就业、自主武器与人类尊严不相容、反对AI权力集中",
-        "Anthropic联合创始人Christopher Olah受邀在梵蒂冈发布会发言——AI可解释性研究获教会认可",
-        "呼吁各国建立健全法律框架——政府不能将AI未来交给市场「看不见的手」",
-        "无法律约束力但覆盖14亿天主教徒——对欧洲和拉美AI立法有方向性影响"
-      ],
-      "sources": [
-        "http://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
-        "https://time.com/article/2026/05/25/pope-leo-encyclical-ai-magnifica-humanitas/",
-        "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html"
-      ],
-      "tags": [
-        "教皇",
-        "利奥十四世",
-        "Magnifica Humanitas",
-        "AI伦理",
-        "自主武器",
-        "劳工保护",
-        "梵蒂冈",
-        "Anthropic"
-      ]
-    },
-    {
-      "id": "2026-06-01-002",
-      "priority": "P1",
       "category": "enforcement",
       "title": "中国将海外旅行限制扩展至DeepSeek、阿里巴巴等私营AI企业核心研究人员——出境须获政府批准",
       "region": "CN",
@@ -89,7 +51,7 @@
       ]
     },
     {
-      "id": "2026-06-01-003",
+      "id": "2026-06-01-002",
       "priority": "P1",
       "category": "enforcement",
       "title": "FTC与DOJ宣布6月17日发布生成式AI竞争联合声明——联邦反垄断执法聚焦AI市场集中度",
@@ -125,7 +87,67 @@
       ]
     },
     {
+      "id": "2026-06-01-003",
+      "priority": "P1",
+      "category": "legislation",
+      "title": "中国商业秘密保护新规6月生效——明确将算法、源代码和AI训练数据纳入保护范围",
+      "region": "CN",
+      "institution": "中国国家市场监督管理总局",
+      "date": "2026-06-01",
+      "status": "effective",
+      "summary": "中国新修订的商业秘密保护规则于2026年6月正式生效。新规明确将算法(algorithms)、源代码(source code)和训练数据(training data)纳入商业秘密的保护范围。这意味着AI企业的核心技术资产——包括模型算法架构、代码实现和用于训练的数据集——在中国法律下获得了明确的商业秘密保护。对于在华运营的AI企业，新规提供了更强的技术保护手段；同时对外国AI企业而言，这可能增加在中国知识产权纠纷中的合规复杂度。结合此前中国对AI研究人员实施旅行限制（Issue #19报道），中国正在构建从人才到技术的全方位AI资产管控体系。",
+      "impact": "medium",
+      "action_required": true,
+      "deadline": null,
+      "sources": [
+        "https://www.globalindubrief.com/news/China_s_New_Commercial_Secret_Rules_Take_Effect_June_2026.html"
+      ],
+      "tags": [
+        "中国",
+        "商业秘密",
+        "算法",
+        "训练数据",
+        "知识产权"
+      ],
+      "impact_summary": "新规首次在中国法律中明确将AI算法、源代码和训练数据列为商业秘密保护客体。对在华运营的AI企业，核心技术资产获得更强法律保护；但对外国企业而言，在中国的AI合作、人才流动和技术转让中需更谨慎评估商业秘密风险。结合此前对AI研究人员的旅行限制，中国正在构建从人才到技术的全方位AI资产管控体系，跨国AI企业需重新审视中国团队的IP隔离和合规架构。",
+      "key_points": [
+        "6月生效——明确将算法、源代码和训练数据纳入商业秘密保护范围",
+        "中国首次对AI核心技术资产给予明确的商业秘密法律定性",
+        "结合AI人才旅行限制形成人才+技术双重管控体系",
+        "跨国AI企业需评估中国团队IP隔离和技术转让合规风险"
+      ]
+    },
+    {
       "id": "2026-06-01-004",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "教皇利奥十四世发布首部AI通谕《Magnifica Humanitas》——呼吁各国建立AI法律框架、保护劳工、禁止自主武器无人控制",
+      "region": "INTL",
+      "institution": "梵蒂冈 / 教皇利奥十四世",
+      "date": "2026-05-25",
+      "status": "published",
+      "summary": "5月25日，教皇利奥十四世在梵蒂冈新主教会议厅正式发布其任期内首部通谕（Encyclical）《Magnifica Humanitas：关于在人工智能时代保护人的尊严》。这部42,300字的文件于5月15日签署——恰逢教皇利奥十三世《劳工通谕》(Rerum Novarum)发布135周年纪念日，刻意将当前AI革命与19世纪工业革命相类比。通谕分为五章，核心立场包括：(1)技术本身不是人类的敌人，但「技术从不是中立的」，它反映了设计者、资助者和使用者的特征；(2)AI驱动的自动化不能以利润最大化为名系统性地牺牲就业岗位，「人是目的而非手段」；(3)自主武器系统的无人控制使用与人类尊严不相容；(4)AI发展的权力不能集中在「少数逐利实体」手中；(5)政府不能将AI的未来交给市场的「看不见的手」，必须建立「健全的法律框架、独立监督、知情用户和不推卸责任的政治体系」。值得注意的是，Anthropic联合创始人兼可解释性研究负责人Christopher Olah受邀作为平信徒在发布会上发言——梵蒂冈选择他是因为其专注于理解AI模型内部机制的研究工作，与通谕强调的AI透明度主张一致。通谕为非约束性教会文件，但鉴于天主教会覆盖全球14亿信徒，其政策影响力尤其在欧洲和拉美国家不可忽视。这是继教皇方济各2020年《罗马人工智能伦理呼吁》之后，天主教会就AI议题发布的最高级别文件，也是有史以来首部专门论述AI的教皇通谕。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "http://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+        "https://time.com/article/2026/05/25/pope-leo-encyclical-ai-magnifica-humanitas/",
+        "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html"
+      ],
+      "tags": [
+        "教皇",
+        "利奥十四世",
+        "Magnifica Humanitas",
+        "AI伦理",
+        "自主武器",
+        "劳工保护",
+        "梵蒂冈",
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "2026-06-01-005",
       "priority": "P2",
       "category": "enforcement",
       "title": "FTC与Cox Media Group等三家公司达成93万美元和解——虚假AI「Active Listening」产品从未真正窃听用户",
@@ -153,7 +175,7 @@
       ]
     },
     {
-      "id": "2026-06-01-005",
+      "id": "2026-06-01-006",
       "priority": "P2",
       "category": "enforcement",
       "title": "爱尔兰DPC就AI系统相关数据泄露作出最终决定——对系统性数据安全失败的执法信号",
@@ -174,30 +196,6 @@
         "数据泄露",
         "爱尔兰",
         "执法"
-      ]
-    },
-    {
-      "id": "2026-06-01-006",
-      "priority": "P2",
-      "category": "legislation",
-      "title": "中国商业秘密保护新规6月生效——明确将算法、源代码和AI训练数据纳入保护范围",
-      "region": "CN",
-      "institution": "中国国家市场监督管理总局",
-      "date": "2026-06-01",
-      "status": "effective",
-      "summary": "中国新修订的商业秘密保护规则于2026年6月正式生效。新规明确将算法(algorithms)、源代码(source code)和训练数据(training data)纳入商业秘密的保护范围。这意味着AI企业的核心技术资产——包括模型算法架构、代码实现和用于训练的数据集——在中国法律下获得了明确的商业秘密保护。对于在华运营的AI企业，新规提供了更强的技术保护手段；同时对外国AI企业而言，这可能增加在中国知识产权纠纷中的合规复杂度。结合此前中国对AI研究人员实施旅行限制（Issue #19报道），中国正在构建从人才到技术的全方位AI资产管控体系。",
-      "impact": "medium",
-      "action_required": true,
-      "deadline": null,
-      "sources": [
-        "https://www.globalindubrief.com/news/China_s_New_Commercial_Secret_Rules_Take_Effect_June_2026.html"
-      ],
-      "tags": [
-        "中国",
-        "商业秘密",
-        "算法",
-        "训练数据",
-        "知识产权"
       ]
     },
     {
