@@ -1,0 +1,209 @@
+{
+  "report_meta": {
+    "issue": 20,
+    "date": "2026-06-01",
+    "period_start": "2026-05-26",
+    "period_end": "2026-06-01",
+    "generated_at": "2026-06-01T10:00:00Z",
+    "item_count": 6
+  },
+  "overview": {
+    "summary": "本周AI法律领域最重要的联邦级进展是伊利诺伊州通过SB 315前沿AI模型安全法案（州长已确认将签署），成为继科罗拉多之后第二个对前沿AI模型开发者施加实质性安全义务的州。与此同时，FTC和DOJ宣布将于6月17日发布首份生成式AI竞争联合声明，信号意义重大。州级立法本周迎来密集冲刺：路易斯安那州通过消费者数据隐私法案（含AI相关条款）、科罗拉多州长即将签署AI聊天机器人安全法和AI心理治疗限制法。中国方面，新发布的商业秘密保护规则6月生效，明确将算法、源代码和训练数据纳入保护范围。在国际层面，爱尔兰DPC发布了一项涉及AI系统数据泄露的最终决定。",
+    "highlights": [],
+    "risk_alert": "伊利诺伊SB 315对前沿AI模型开发者施加安全评估、红队测试和事件报告义务——若签署生效，将与科罗拉多法案形成合力，使美国多州对大型AI模型的监管从零散走向体系化。FTC/DOJ 6月17日AI竞争联合声明预示联邦层面对AI市场集中度的关注即将具象化——OpenAI/Microsoft/Nvidia等企业的商业安排可能面临更严格审视。建议企业：(1)前沿AI模型开发者评估伊利诺伊SB 315合规义务；(2)关注6月17日FTC/DOJ联合声明对AI产业竞争格局的定性；(3)路易斯安那数据隐私法案签署后评估是否触发$25M适用门槛。"
+  },
+  "items": [
+    {
+      "id": "2026-06-01-001",
+      "priority": "P1",
+      "category": "enforcement",
+      "title": "FTC与DOJ宣布6月17日发布生成式AI竞争联合声明——联邦反垄断执法聚焦AI市场集中度",
+      "region": "US",
+      "institution": "美国联邦贸易委员会(FTC) / 美国司法部反垄断司(DOJ)",
+      "date": "2026-05-28",
+      "status": "announced",
+      "summary": "FTC官网显示，FTC和DOJ将于6月17日发布关于「生成式AI基础模型和AI产品中的竞争」的联合声明。这将是美国联邦执法机构首次就AI领域的竞争问题发布正式联合立场文件。此前2月23日，FTC和DOJ已启动关于商业协作指引更新的联合公众咨询（RFI），特别关注AI领域的竞争者协作问题。5月21日，信息技术和创新基金会(ITIF)已向DOJ/FTC提交了关于AI领域商业协作反垄断指引的意见书。6月17日联合声明预计将涉及：AI基础模型市场的竞争结构、垂直整合风险（如Microsoft-OpenAI关系）、AI芯片供应集中度（Nvidia主导地位）、以及模型训练数据获取中的竞争壁垒。这标志着联邦层面在AI监管真空中，反垄断执法正在成为最活跃的联邦AI政策工具。",
+      "impact": "high",
+      "action_required": false,
+      "deadline": "2026-06-17",
+      "impact_summary": "这将是美国联邦层面对AI市场竞争格局的首次正式定性——在AI行政令被叫停、国会立法停滞的背景下，反垄断执法正在成为联邦干预AI产业的主要通道。联合声明可能为后续针对Microsoft-OpenAI投资关系、Nvidia AI芯片市场支配地位、以及AI训练数据独占行为的执法行动奠定理论基础。对AI企业而言，这是联邦层面对「赢者通吃」模式发出的明确警告信号。",
+      "key_points": [
+        "FTC和DOJ将于6月17日发布生成式AI基础模型和AI产品竞争联合声明",
+        "美国联邦执法机构首次就AI竞争问题发布正式联合立场文件",
+        "此前已启动AI商业协作反垄断指引公众咨询——ITIF等已提交意见",
+        "预计涉及AI模型市场集中度、垂直整合、芯片供应集中、数据壁垒等议题",
+        "反垄断执法正成为联邦AI监管真空中最活跃的政策工具"
+      ],
+      "sources": [
+        "https://www.ftc.gov/legal-library/browse/joint-statement-competition-generative-ai-foundation-models-ai-products",
+        "https://itif.org/publications/2026/05/21/comments-department-justice-federal-trade-commission-guidance-business-collaborations/"
+      ],
+      "tags": [
+        "FTC",
+        "DOJ",
+        "反垄断",
+        "AI竞争",
+        "生成式AI",
+        "OpenAI",
+        "Microsoft",
+        "Nvidia"
+      ]
+    },
+    {
+      "id": "2026-06-01-002",
+      "priority": "P2",
+      "category": "enforcement",
+      "title": "爱尔兰DPC就AI系统相关数据泄露作出最终决定——对系统性数据安全失败的执法信号",
+      "region": "EU",
+      "institution": "爱尔兰数据保护委员会(DPC)",
+      "date": "2026-05-08",
+      "status": "decision_issued",
+      "summary": "5月8日，爱尔兰数据保护委员会(DPC)发布了一项关于系列个人数据泄露事件的最终决定。DPC作为众多全球科技公司（包括主要AI公司）的欧盟主管监管机构，该决定的发布具有系统性意义。虽然具体涉事企业和罚款金额尚待完整公开，但DPC在新闻稿中确认该调查涉及一系列数据泄露事件。这是继DPC 5月初对SHEIN启动对华数据传输调查后，DPC本月发布的第二项重要执法行动。DPC自2020年以来已累计开出超过40亿欧元GDPR罚款，其执法信号对在爱尔兰设有欧洲总部的AI公司（包括OpenAI、Google、Meta、Microsoft等）具有直接管辖影响。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "http://www.dataprotection.ie/en/news-media/press-releases"
+      ],
+      "tags": [
+        "DPC",
+        "GDPR",
+        "数据泄露",
+        "爱尔兰",
+        "执法"
+      ]
+    },
+    {
+      "id": "2026-06-01-003",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "中国商业秘密保护新规6月生效——明确将算法、源代码和AI训练数据纳入保护范围",
+      "region": "CN",
+      "institution": "中国国家市场监督管理总局",
+      "date": "2026-06-01",
+      "status": "effective",
+      "summary": "中国新修订的商业秘密保护规则于2026年6月正式生效。新规明确将算法(algorithms)、源代码(source code)和训练数据(training data)纳入商业秘密的保护范围。这意味着AI企业的核心技术资产——包括模型算法架构、代码实现和用于训练的数据集——在中国法律下获得了明确的商业秘密保护。对于在华运营的AI企业，新规提供了更强的技术保护手段；同时对外国AI企业而言，这可能增加在中国知识产权纠纷中的合规复杂度。结合此前中国对AI研究人员实施旅行限制（Issue #19报道），中国正在构建从人才到技术的全方位AI资产管控体系。",
+      "impact": "medium",
+      "action_required": true,
+      "deadline": null,
+      "sources": [
+        "https://www.globalindubrief.com/news/China_s_New_Commercial_Secret_Rules_Take_Effect_June_2026.html"
+      ],
+      "tags": [
+        "中国",
+        "商业秘密",
+        "算法",
+        "训练数据",
+        "知识产权"
+      ]
+    },
+    {
+      "id": "2026-06-01-004",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "伊利诺伊州通过SB 315前沿AI模型安全法案——州长确认将签署，全美第二州对大模型施加安全义务",
+      "region": "US",
+      "institution": "伊利诺伊州议会 / 州长J.B. Pritzker",
+      "date": "2026-05-28",
+      "status": "passed_legislature",
+      "summary": "5月28日（周三），伊利诺伊州议会最终通过SB 315——AI安全措施法案(AI Safety Measures Act)。州长Pritzker随即表示将签署该法案。SB 315对前沿AI模型（frontier model）的开发者施加实质性安全义务，包括：在模型发布前进行安全评估、执行红队对抗测试、建立事件报告机制等。伊利诺伊州议会预定5月31日（周日）闭会，SB 315在闭会前获得通过。这使伊利诺伊成为继科罗拉多之后全美第二个对前沿AI模型开发者设定法定安全义务的州。值得注意的是，本周伊利诺伊还同时推进了其他多项AI法案：消费者AI通知法案(Consumer AI Notice Act)、AI伴侣模型安全法案(AI Companion Model Safety Act)通过参议院，算法定价透明法案(Algorithmic Pricing Transparency Act)通过众议院。伊利诺伊在一周内形成了覆盖前沿模型安全、消费者通知、聊天机器人安全和算法透明的多层次AI监管体系。",
+      "impact": "high",
+      "action_required": true,
+      "deadline": null,
+      "key_points": [
+        "5月28日伊利诺伊议会最终通过SB 315前沿AI模型安全法案——州长确认将签署",
+        "对前沿AI模型开发者施加安全评估、红队测试和事件报告义务",
+        "成为继科罗拉多后全美第二个对大模型开发者设定法定安全义务的州",
+        "同周还通过消费者AI通知法案、AI伴侣模型安全法案、算法定价透明法案",
+        "伊利诺伊议会5月31日闭会——法案在闭会前冲刺通过"
+      ],
+      "sources": [
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-may29-2026",
+        "https://www.troutmanprivacy.com/2026/05/proposed-state-privacy-and-ai-law-update-may-25-2026/"
+      ],
+      "tags": [
+        "伊利诺伊",
+        "SB 315",
+        "前沿AI模型",
+        "AI安全",
+        "州级立法",
+        "Pritzker"
+      ]
+    },
+    {
+      "id": "2026-06-01-005",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "路易斯安那州通过消费者数据隐私法案——$25M门槛、AI相关条款，待州长签署",
+      "region": "US",
+      "institution": "路易斯安那州议会 / 州长Jeff Landry",
+      "date": "2026-05-21",
+      "status": "awaiting_signature",
+      "summary": "路易斯安那州议会通过SB 386消费者数据隐私法案，已于5月21日送交州长Landry（10天签署期）。该法案以德克萨斯州隐私法为基础但有显著差异，包括独立的$25M年收入适用门槛（不与数据量挂钩）。路易斯安那将成为2026年第三个通过消费者数据隐私法的州（继俄克拉荷马和阿拉巴马之后）。该法案对AI系统处理消费者数据施加透明度和消费者权利义务，是AI数据合规的又一州级标准。同周路易斯安那还在推进AI转录设备医疗披露法案和应用商店法案修订。议会预定6月1日闭会。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.troutmanprivacy.com/2026/05/proposed-state-privacy-and-ai-law-update-may-25-2026/"
+      ],
+      "tags": [
+        "路易斯安那",
+        "数据隐私",
+        "消费者保护",
+        "州级立法"
+      ]
+    },
+    {
+      "id": "2026-06-01-006",
+      "priority": "P2",
+      "category": "legislation",
+      "title": "科罗拉多州长即将签署AI聊天机器人安全法(HB 1263)和AI心理治疗限制法(HB 1195)",
+      "region": "US",
+      "institution": "科罗拉多州议会 / 州长Jared Polis",
+      "date": "2026-05-29",
+      "status": "awaiting_signature",
+      "summary": "科罗拉多州长Polis预计于5月29日签署HB 1263（AI聊天机器人安全法案）和HB 1195（限制AI用于心理治疗服务）。HB 1263针对AI聊天机器人与用户互动中的安全风险设定平台义务；HB 1195则限制AI系统在精神健康治疗领域的应用，要求对AI介入心理治疗进行专门规制。此外还有两项AI法案（涉及动态定价和医疗授权中的AI使用）已通过议会等待签署。这使科罗拉多在6月30日AI消费者保护法(SB 24-205)执法启动前，进一步扩充了其AI监管工具箱——从高风险AI系统的部署者义务扩展到聊天机器人安全和医疗AI限制。",
+      "impact": "medium",
+      "action_required": false,
+      "deadline": null,
+      "sources": [
+        "https://www.transparencycoalition.ai/news/ai-legislative-update-may29-2026"
+      ],
+      "tags": [
+        "科罗拉多",
+        "AI聊天机器人",
+        "心理治疗",
+        "Polis",
+        "州级立法"
+      ]
+    }
+  ],
+  "trends": [
+    "美国州级前沿AI模型监管正式起步——伊利诺伊SB 315通过，与科罗拉多SB 24-205形成「开发端+部署端」双重合规要求",
+    "联邦反垄断执法成为AI政策主通道——FTC/DOJ 6月17日将发布生成式AI竞争联合声明",
+    "AI安全与聊天机器人规制成为各州共识领域——科罗拉多、伊利诺伊、密苏里、加州PAUSE Act密集立法",
+    "中国AI资产管控体系持续收紧——从人才旅行限制到算法/训练数据商业秘密保护"
+  ],
+  "key_deadlines": [
+    {
+      "date": "2026-06-17",
+      "item": "FTC与DOJ发布生成式AI基础模型和AI产品竞争联合声明",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-06-30",
+      "item": "科罗拉多AI法案(SB 24-205)执法正式启动——高风险AI系统开发者和部署者合规义务生效",
+      "priority": "P1"
+    },
+    {
+      "date": "2026-08-02",
+      "item": "EU AI Act Art 50透明度义务对新上市AI系统生效；欧委会对GPAI通用模型提供者执法权启动",
+      "priority": "P0"
+    },
+    {
+      "date": "2026-12-02",
+      "item": "EU AI Act新增nudifier/CSAM禁令生效（Digital Omnibus）；Art 50(2)合成内容水印义务对存量系统生效",
+      "priority": "P0"
+    }
+  ]
+}
