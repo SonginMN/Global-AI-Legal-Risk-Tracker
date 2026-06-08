@@ -208,7 +208,12 @@ def check_analysis_depth(data, r):
                 if missing:
                     r.fail(f"P0 '{title_short}' deep_analysis missing: {missing}")
                 else:
-                    r.ok(f"P0 '{title_short}' deep_analysis complete")
+                    # Check recommendations is array (app.js uses .map())
+                    rec = da.get("recommendations")
+                    if not isinstance(rec, list):
+                        r.fail(f"P0 '{title_short}' deep_analysis.recommendations must be array, got {type(rec).__name__}")
+                    else:
+                        r.ok(f"P0 '{title_short}' deep_analysis complete")
 
         if priority == "P1":
             if "impact_summary" not in item:
