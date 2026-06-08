@@ -95,6 +95,10 @@ function renderCard(item) {
               <div class="deep-label">行动建议</div>
               <ul class="recs-list">${da.recommendations.map(r=>`<li>${r}</li>`).join('')}</ul>
             </div>` : ''}
+          ${item.deep_research_url ? `
+            <div class="deep-section" style="text-align:center;padding-top:12px;border-top:1px solid #e8e0d4;">
+              <a href="archives/${currentDate}/${item.deep_research_url}" target="_blank" style="display:inline-block;padding:8px 20px;background:#8b6914;color:#fff;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;">查看完整深度研究报告 &rarr;</a>
+            </div>` : ''}
         </div>
       </div>`;
   }

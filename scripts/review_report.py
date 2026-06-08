@@ -290,6 +290,16 @@ def check_consistency(data, r):
     else:
         r.ok(f"item_count consistent ({actual_count})")
 
+    # Check item dates fall within report period
+    ps = data.get("report_meta", {}).get("period_start", "")
+    pe = data.get("report_meta", {}).get("period_end", "")
+    if ps and pe:
+        for item in data.get("items", []):
+            item_date = item.get("date", "")
+            if item_date and not (ps <= item_date <= pe):
+                r.fail(f"item '{item['title'][:30]}' date {item_date} outside period {ps}~{pe}")
+        r.ok("item dates within report period")
+
     overview = data.get("overview", {})
     highlights = overview.get("highlights", [])
     summary = overview.get("summary", "")
