@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-06-15",
+      "issue": 21,
+      "period_start": "2026-06-09",
+      "period_end": "2026-06-15",
+      "count": 6,
+      "headline": "FTC与DOJ发布首个生成式AI竞争政策框架，第三巡回法院审理首个AI训练合理使用上诉案Thomson Reuters v. ROSS，英国CMA发出全球首个AI搜索行为要求允许出版商退出AI Overviews"
+    },
+    {
       "date": "2026-06-08",
       "issue": 20,
       "period_start": "2026-06-02",
