@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-06-22",
+      "issue": 22,
+      "period_start": "2026-06-16",
+      "period_end": "2026-06-22",
+      "count": 5,
+      "headline": "国会质疑Anthropic出口管制法律依据76名网安专家抗议白宫转入AI安全框架谈判，欧洲议会423票通过Digital Omnibus修正案，G7首次举行AI闭门工作午餐Amodei提议国际AI联盟，中国AI拟人化交互服务新规7月15日施行"
+    },
+    {
       "date": "2026-06-15",
       "issue": 21,
       "period_start": "2026-06-09",
